@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>National Geographic Style Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="generator" content="kss-node">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="public/combined.css">
+    <link rel="stylesheet" type="text/css" href="public/github.css">
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,600i">
+
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('fonts/fontawesome-webfont.eot?v=4.0.3}');
+        src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
+          url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'),
+          url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
+          url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+    <style type="text/css">
+    @font-face {
+        font-family: 'icon-society';
+        src: url('fonts/icon-society.woff') format('woff'),
+          url('fonts/icon-society.ttf') format('truetype'),
+          url('fonts/icon-society.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+        .add-100-margin{
+            margin-left:35px;
+            margin-right:35px;
+        }
+    </style>
+
+    <script src="public/jquery.min.js"></script>
+
+      <script>
+          function toggleRightRail(){
+              if($("#right-nav-rail").is(":visible")){
+                  $("#right-nav-rail").hide();
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+              }else{
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+                  $("#right-nav-rail").show();
+
+              }
+          }
+
+      </script>
+</head>
+<body id="kss-node">
+    <div class="wrapper">
+        <div class="full height">
+            <div class="toc" >
+                <nav class="ui vertical inverted menu">
+                        <div class="item">
+                            <div class="header">Introduction</div>
+                            <div class="menu">
+                                <a href="./index.html" class="item">Overview</a>
+                                    <a href="section-introduction-configuration.html" class="item">Configuration</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Layout</div>
+                            <div class="menu">
+                                    <a href="section-layout-column.html" class="item">Column</a>
+                                    <a href="section-layout-cover.html" class="item">Cover</a>
+                                    <a href="section-layout-flexbox.html" class="item">Flexbox</a>
+                                    <a href="section-layout-grids.html" class="item">Grids</a>
+                                    <a href="section-layout-panel.html" class="item">Panel</a>
+                                    <a href="section-layout-utilities.html" class="item">Layout Utilities</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Typography</div>
+                            <div class="menu">
+                                    <a href="section-typography-base.html" class="item">Base Typography</a>
+                                    <a href="section-typography-colors.html" class="item">Color Classes</a>
+                                    <a href="section-typography-lists.html" class="item">Lists</a>
+                                    <a href="section-typography-print.html" class="item">Print</a>
+                                    <a href="section-typography-tables.html" class="item">Tables</a>
+                                    <a href="section-typography-utilities.html" class="item">Text</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Controls</div>
+                            <div class="menu">
+                                    <a href="section-controls-buttons.html" class="item">Buttons</a>
+                                    <a href="section-controls-close.html" class="item">Close</a>
+                                    <a href="section-controls-contrast.html" class="item">Contrast</a>
+                                    <a href="section-controls-date-picker.html" class="item">Datepicker</a>
+                                    <a href="section-controls-dropdown.html" class="item">Dropdown</a>
+                                    <a href="section-controls-forms.html" class="item">Forms</a>
+                                    <a href="section-controls-progress.html" class="item">Progress</a>
+                                    <a href="section-controls-search.html" class="item">Search</a>
+                                    <a href="section-controls-toolbars.html" class="item">Toolbar</a>
+                                    <a href="section-controls-upload.html" class="item">Upload</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Media</div>
+                            <div class="menu">
+                                    <a href="section-media-icons.html" class="item">Icons</a>
+                                    <a href="section-media-media-object.html" class="item">Media object</a>
+                                    <a href="section-media-overlays.html" class="item">Overlay</a>
+                                    <a href="section-media-slideshow.html" class="item">Slideshow</a>
+                                    <a href="section-media-symbols.html" class="item">Symbols</a>
+                                    <a href="section-media-thumbnails.html" class="item">Images</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Callouts</div>
+                            <div class="menu">
+                                    <a href="section-callouts-alerts.html" class="item">Alert</a>
+                                    <a href="section-callouts-badges.html" class="item">Badge</a>
+                                    <a href="section-callouts-modals.html" class="item">Modal</a>
+                                    <a href="section-callouts-popovers.html" class="item">Popovers</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Navigation</div>
+                            <div class="menu">
+                                    <a href="section-navigation-breadcrumbs.html" class="item">Breadcrumbs</a>
+                                    <a href="section-navigation-dot-nav.html" class="item">Dot Navigation</a>
+                                    <a href="section-navigation-nav.html" class="item">Nav</a>
+                                    <a href="section-navigation-navbar.html" class="item">Navbar</a>
+                                    <a href="section-navigation-pagination.html" class="item">Pagination</a>
+                                    <a href="section-navigation-slide-navigation.html" class="item">Slide Navigation</a>
+                                    <a href="section-navigation-sub-nav.html" class="item">Subnav</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Containers</div>
+                            <div class="menu">
+                                    <a href="section-containers-accordion.html" class="item">Accordion</a>
+                                    <a href="section-containers-drawers.html" class="item">Drawer</a>
+                                    <a href="section-containers-off-canvas.html" class="item">Off-canvas</a>
+                                    <a href="section-containers-tabs.html" class="item">Tab</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Components</div>
+                            <div class="menu">
+                                    <a href="section-components-article.html" class="item">Article Components</a>
+                                    <a href="section-components-articleheading.html" class="item">Article Heading</a>
+                                    <a href="section-components-comments.html" class="item">Comment</a>
+                                    <a href="section-components-contentcarousel.html" class="item">Content Carousel</a>
+                                    <a href="section-components-dynamicleadcarousel.html" class="item">Carousel</a>
+                                    <a href="section-components-featurelist.html" class="item">Feature Lists</a>
+                                    <a href="section-components-filterresults.html" class="item">Filtering Results</a>
+                                    <a href="section-components-groupheading.html" class="item">Group Heading</a>
+                                    <a href="section-components-heading.html" class="item">Heading</a>
+                                    <a href="section-components-instructionalpathways.html" class="item">Instructional Pathways</a>
+                                    <a href="section-components-itemlisting.html" class="item">Item listing</a>
+                                    <a href="section-components-linkslist.html" class="item">Links List</a>
+                                    <a href="section-components-objectlists.html" class="item">Media Object Lists</a>
+                                    <a href="section-components-relatedmaterials.html" class="item">Related Materials</a>
+                                    <a href="section-components-tease.html" class="item">Tease</a>
+                                    <a href="section-components-thumbnailgrid.html" class="item">Thumbnail Grid</a>
+                                    <a href="section-components-tweetthis.html" class="item">Tweet This</a>
+                                    <a href="section-components-vocabulary.html" class="item">Vocabulary</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">JavaScript</div>
+                            <div class="menu">
+                                    <a href="section-javascript-animation.html" class="item">Animation</a>
+                                    <a href="section-javascript-autocomplete.html" class="item">Autocomplete</a>
+                                    <a href="section-javascript-filtering.html" class="item">Filtering</a>
+                                    <a href="section-javascript-scrollspy.html" class="item">Scrollspy</a>
+                                    <a href="section-javascript-smooth-scroll.html" class="item">Smooth Scroll</a>
+                                    <a href="section-javascript-sticky.html" class="item">Sticky</a>
+                                    <a href="section-javascript-switcher.html" class="item">Switcher</a>
+                                    <a href="section-javascript-template.html" class="item">Basic Templating</a>
+                                    <a href="section-javascript-toggle.html" class="item">Toggle</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Layouts</div>
+                            <div class="menu">
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Modules</div>
+                            <div class="menu">
+                                    <a href="section-pagemodules-03.html" class="item">Audience Navigation Tabs</a>
+                                    <a href="section-pagemodules-05.html" class="item">Audience Navbar</a>
+                                    <a href="section-pagemodules-07.html" class="item">Expandable thumbnail</a>
+                                    <a href="section-pagemodules-globalnavigation.html" class="item">Global Navigation</a>
+                                    <a href="section-pagemodules-sharing.html" class="item">Sharing widget</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Structure</div>
+                            <div class="menu">
+                                    <a href="section-pagestructure-configuration.html" class="item">Configuration</a>
+                                    <a href="section-pagestructure-contentmodules.html" class="item">Content Modules</a>
+                                    <a href="section-pagestructure-pagemodules.html" class="item">Page Modules</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                </nav>
+            </div> <!-- class="toc" -->
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger"></label>
+
+            <article class="content-wrapper">
+
+
+                            <div class="masthead">
+                                <div class="container">
+                                    <div class="introduction">
+                <img src="public/ngkitlogo.svg" style="margin-bottom: 1em" width="66" height="32" alt="NGKit" />
+                                        <div class="ui header">
+                                            Datepicker
+                                                <div class="sub header">
+                                                    <p>Create a toggleable dropdown with an datepicker.</p>
+<p><span class="badge info">JAVASCRIPT</span> Requires <code>components/datepicker.js</code></p>
+
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-top:30px;">
+                                        <button onclick="toggleRightRail()">Toggle Right Rail</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-container-div" class="main ui intro container">
+                                <div id="right-nav-rail" class="ui dividing right rail">
+                                    <div class="ui sticky">
+
+                                        <div class="ui header">Datepicker</div>
+                                        <div class="ui vertical following fluid accordion text menu">
+
+                                                
+                                                
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#controls-date-picker-configuration"><strong>Configuration</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#controls-date-picker-usage"><strong>Usage</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#controls-date-picker-javascript-options"><strong>JavaScript Options</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-date-picker-javascript-options-events">Events</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-date-picker-javascript-options-init-manually">Init element manually</a>
+                                                    </div></div>
+
+                                        </div> <!-- ui vertical following fluid accordion text menu -->
+                                    </div> <!-- ui sticky -->
+                                </div> <!-- ui dividing right rail -->
+                         <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="controls-date-picker-configuration">
+                                Configuration
+                                <a class="kss-title__permalink" href="#controls-date-picker-configuration">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$datepicker-animation</code></td><td>ng-fade</td></tr>
+
+<tr><td><code>$datepicker-nav-height</code></td><td>20px</td></tr>
+<tr><td><code>$datepicker-nav-margin-bottom</code></td><td>10px</td></tr>
+<tr><td><code>$datepicker-nav-color</code></td><td class="ng-datepicker-nav-color">#000</td></tr>
+<tr><td><code>$datepicker-nav-hover-color</code></td><td class="ng-datepicker-nav-hover-color">#000</td></tr>
+<tr><td><code>$datepicker-previous-icon</code></td><td>🢐</td></tr>
+<tr><td><code>$datepicker-next-icon</code></td><td>🢒</td></tr>
+
+<tr><td><code>$datepicker-table-width</code></td><td>26px</td></tr>
+<tr><td><code>$datepicker-table-height</code></td><td>24px</td></tr>
+<tr><td><code>$datepicker-table-color</code></td><td class="ng-datepicker-table-color">#000</td></tr>
+
+<tr><td><code>$datepicker-table-hover-background</code></td><td class="ng-datepicker-table-hover-background">#fafafa</td></tr>
+<tr><td><code>$datepicker-table-hover-color</code></td><td class="ng-datepicker-table-hover-color">#000</td></tr>
+<tr><td><code>$datepicker-table-onclick-background</code></td><td class="ng-datepicker-table-onclick-background">#eee</td></tr>
+<tr><td><code>$datepicker-table-onclick-color</code></td><td class="ng-datepicker-table-onclick-color">#000</td></tr>
+
+<tr><td><code>$datepicker-table-active-background</code></td><td class="ng-datepicker-table-active-background">#fc0</td></tr>
+<tr><td><code>$datepicker-table-active-color</code></td><td class="ng-datepicker-table-active-color">#fff</td></tr>
+
+<tr><td><code>$datepicker-table-muted-color</code></td><td class="ng-datepicker-table-muted-color">#999</td></tr>
+
+<tr><td><code>$datepicker-hover-border</code></td><td class="ng-datepicker-hover-border">rgba(0, 0, 0, 0.16)</td></tr>
+<tr><td><code>$datepicker-hover-text-shadow</code></td><td class="ng-datepicker-hover-text-shadow">#fff</td></tr>
+
+<tr><td><code>$datepicker-contrast-text-shadow</code></td><td class="ng-datepicker-contrast-text-shadow">rgba(0, 0, 0, 0.1)</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="controls-date-picker-usage">
+                                Usage
+                                <a class="kss-title__permalink" href="#controls-date-picker-usage">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To create a datepicker, just add the <code>data-ng-datepicker</code> attribute to an <code>&lt;input&gt;</code>
+element. You also have the possibility of customizing the date format. Just add
+the format option to the <code>data-ng-datepicker</code> attribute.</p>
+<p>The datepicker detects whether the JavaScript from the Form select add-on is
+being loaded. This allows you to quickly toggle between years and months through
+a select form inside the datepicker.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form">
+    <input type="" data-ng-datepicker="{format:'DD.MM.YYYY'}">
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form&quot;&gt;
+    &lt;input type=&quot;&quot; data-ng-datepicker=&quot;{format:&#x27;DD.MM.YYYY&#x27;}&quot;&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="controls-date-picker-javascript-options">
+                                JavaScript Options
+                                <a class="kss-title__permalink" href="#controls-date-picker-javascript-options">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>This is an example of how to set options via attribute:</p>
+<pre><code>data-ng-datepicker="{weekstart:0, format:'DD.MM.YYYY'}"</code></pre>
+
+<table class="settings">
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th>Possible value</th>
+            <th>Default</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>weekstart</code></td>
+            <td><code>integer (0..6)</code></td>
+            <td><code>1</code></td>
+            <td>Start of the week</td>
+        </tr>
+        <tr>
+            <td><code>i18n</code></td>
+            <td><code>JSON object</code></td>
+            <td>
+<pre>{ months:[&#39;January&#39;,...],
+  weekdays:[&#39;Sun&#39;,..,&#39;Sat&#39;] }</pre></td>
+            <td>Language string definitions</td>
+        </tr>
+        <tr>
+            <td><code>format</code></td>
+            <td>any combination of <code>DD</code>, <code>MM</code> and <code>YY</code></td>
+            <td><code>&#39;DD.MM.YYYY&#39;</code></td>
+            <td>Date format string</td>
+        </tr>
+        <tr>
+            <td><code>offsettop</code></td>
+            <td><code>integer</code></td>
+            <td><code>5</code></td>
+            <td>Offset to the input value</td>
+        </tr>
+    </tbody>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-date-picker-javascript-options-events">
+                                Events
+                                <a class="kss-title__permalink" href="#controls-date-picker-javascript-options-events">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Parameter</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>show.ng.datepicker</code></td>
+            <td>event</td>
+            <td>On datepicker dropdown show</td>
+        </tr>
+        <tr>
+            <td><code>hide.ng.datepicker</code></td>
+            <td>event</td>
+            <td>On datepicker dropdown hide</td>
+        </tr>
+        <tr>
+            <td><code>update.ng.datepicker</code></td>
+            <td>event</td>
+            <td>On calendar rendering</td>
+        </tr>
+    </tbody>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-date-picker-javascript-options-init-manually">
+                                Init element manually
+                                <a class="kss-title__permalink" href="#controls-date-picker-javascript-options-init-manually">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <pre><code class="code js hljs">var datepicker = NGkit.datepicker(element, {  });</code></pre>
+                        
+
+
+                    </div> <!-- main ui intro container" -->
+            </article>
+        </div>
+        <footer id="footer" class="kss-footer">
+        <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/highlight.pack.js"></script>
+    <script src="js/ngkit.js"></script>
+    <script src="public/docs.js"></script>
+  </body>
+</html>

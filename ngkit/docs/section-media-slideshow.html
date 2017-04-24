@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>National Geographic Style Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="generator" content="kss-node">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="public/combined.css">
+    <link rel="stylesheet" type="text/css" href="public/github.css">
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,600i">
+
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('fonts/fontawesome-webfont.eot?v=4.0.3}');
+        src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
+          url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'),
+          url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
+          url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+    <style type="text/css">
+    @font-face {
+        font-family: 'icon-society';
+        src: url('fonts/icon-society.woff') format('woff'),
+          url('fonts/icon-society.ttf') format('truetype'),
+          url('fonts/icon-society.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+        .add-100-margin{
+            margin-left:35px;
+            margin-right:35px;
+        }
+    </style>
+
+    <script src="public/jquery.min.js"></script>
+
+      <script>
+          function toggleRightRail(){
+              if($("#right-nav-rail").is(":visible")){
+                  $("#right-nav-rail").hide();
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+              }else{
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+                  $("#right-nav-rail").show();
+
+              }
+          }
+
+      </script>
+</head>
+<body id="kss-node">
+    <div class="wrapper">
+        <div class="full height">
+            <div class="toc" >
+                <nav class="ui vertical inverted menu">
+                        <div class="item">
+                            <div class="header">Introduction</div>
+                            <div class="menu">
+                                <a href="./index.html" class="item">Overview</a>
+                                    <a href="section-introduction-configuration.html" class="item">Configuration</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Layout</div>
+                            <div class="menu">
+                                    <a href="section-layout-column.html" class="item">Column</a>
+                                    <a href="section-layout-cover.html" class="item">Cover</a>
+                                    <a href="section-layout-flexbox.html" class="item">Flexbox</a>
+                                    <a href="section-layout-grids.html" class="item">Grids</a>
+                                    <a href="section-layout-panel.html" class="item">Panel</a>
+                                    <a href="section-layout-utilities.html" class="item">Layout Utilities</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Typography</div>
+                            <div class="menu">
+                                    <a href="section-typography-base.html" class="item">Base Typography</a>
+                                    <a href="section-typography-colors.html" class="item">Color Classes</a>
+                                    <a href="section-typography-lists.html" class="item">Lists</a>
+                                    <a href="section-typography-print.html" class="item">Print</a>
+                                    <a href="section-typography-tables.html" class="item">Tables</a>
+                                    <a href="section-typography-utilities.html" class="item">Text</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Controls</div>
+                            <div class="menu">
+                                    <a href="section-controls-buttons.html" class="item">Buttons</a>
+                                    <a href="section-controls-close.html" class="item">Close</a>
+                                    <a href="section-controls-contrast.html" class="item">Contrast</a>
+                                    <a href="section-controls-date-picker.html" class="item">Datepicker</a>
+                                    <a href="section-controls-dropdown.html" class="item">Dropdown</a>
+                                    <a href="section-controls-forms.html" class="item">Forms</a>
+                                    <a href="section-controls-progress.html" class="item">Progress</a>
+                                    <a href="section-controls-search.html" class="item">Search</a>
+                                    <a href="section-controls-toolbars.html" class="item">Toolbar</a>
+                                    <a href="section-controls-upload.html" class="item">Upload</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Media</div>
+                            <div class="menu">
+                                    <a href="section-media-icons.html" class="item">Icons</a>
+                                    <a href="section-media-media-object.html" class="item">Media object</a>
+                                    <a href="section-media-overlays.html" class="item">Overlay</a>
+                                    <a href="section-media-slideshow.html" class="item">Slideshow</a>
+                                    <a href="section-media-symbols.html" class="item">Symbols</a>
+                                    <a href="section-media-thumbnails.html" class="item">Images</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Callouts</div>
+                            <div class="menu">
+                                    <a href="section-callouts-alerts.html" class="item">Alert</a>
+                                    <a href="section-callouts-badges.html" class="item">Badge</a>
+                                    <a href="section-callouts-modals.html" class="item">Modal</a>
+                                    <a href="section-callouts-popovers.html" class="item">Popovers</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Navigation</div>
+                            <div class="menu">
+                                    <a href="section-navigation-breadcrumbs.html" class="item">Breadcrumbs</a>
+                                    <a href="section-navigation-dot-nav.html" class="item">Dot Navigation</a>
+                                    <a href="section-navigation-nav.html" class="item">Nav</a>
+                                    <a href="section-navigation-navbar.html" class="item">Navbar</a>
+                                    <a href="section-navigation-pagination.html" class="item">Pagination</a>
+                                    <a href="section-navigation-slide-navigation.html" class="item">Slide Navigation</a>
+                                    <a href="section-navigation-sub-nav.html" class="item">Subnav</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Containers</div>
+                            <div class="menu">
+                                    <a href="section-containers-accordion.html" class="item">Accordion</a>
+                                    <a href="section-containers-drawers.html" class="item">Drawer</a>
+                                    <a href="section-containers-off-canvas.html" class="item">Off-canvas</a>
+                                    <a href="section-containers-tabs.html" class="item">Tab</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Components</div>
+                            <div class="menu">
+                                    <a href="section-components-article.html" class="item">Article Components</a>
+                                    <a href="section-components-articleheading.html" class="item">Article Heading</a>
+                                    <a href="section-components-comments.html" class="item">Comment</a>
+                                    <a href="section-components-contentcarousel.html" class="item">Content Carousel</a>
+                                    <a href="section-components-dynamicleadcarousel.html" class="item">Carousel</a>
+                                    <a href="section-components-featurelist.html" class="item">Feature Lists</a>
+                                    <a href="section-components-filterresults.html" class="item">Filtering Results</a>
+                                    <a href="section-components-groupheading.html" class="item">Group Heading</a>
+                                    <a href="section-components-heading.html" class="item">Heading</a>
+                                    <a href="section-components-instructionalpathways.html" class="item">Instructional Pathways</a>
+                                    <a href="section-components-itemlisting.html" class="item">Item listing</a>
+                                    <a href="section-components-linkslist.html" class="item">Links List</a>
+                                    <a href="section-components-objectlists.html" class="item">Media Object Lists</a>
+                                    <a href="section-components-relatedmaterials.html" class="item">Related Materials</a>
+                                    <a href="section-components-tease.html" class="item">Tease</a>
+                                    <a href="section-components-thumbnailgrid.html" class="item">Thumbnail Grid</a>
+                                    <a href="section-components-tweetthis.html" class="item">Tweet This</a>
+                                    <a href="section-components-vocabulary.html" class="item">Vocabulary</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">JavaScript</div>
+                            <div class="menu">
+                                    <a href="section-javascript-animation.html" class="item">Animation</a>
+                                    <a href="section-javascript-autocomplete.html" class="item">Autocomplete</a>
+                                    <a href="section-javascript-filtering.html" class="item">Filtering</a>
+                                    <a href="section-javascript-scrollspy.html" class="item">Scrollspy</a>
+                                    <a href="section-javascript-smooth-scroll.html" class="item">Smooth Scroll</a>
+                                    <a href="section-javascript-sticky.html" class="item">Sticky</a>
+                                    <a href="section-javascript-switcher.html" class="item">Switcher</a>
+                                    <a href="section-javascript-template.html" class="item">Basic Templating</a>
+                                    <a href="section-javascript-toggle.html" class="item">Toggle</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Layouts</div>
+                            <div class="menu">
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Modules</div>
+                            <div class="menu">
+                                    <a href="section-pagemodules-03.html" class="item">Audience Navigation Tabs</a>
+                                    <a href="section-pagemodules-05.html" class="item">Audience Navbar</a>
+                                    <a href="section-pagemodules-07.html" class="item">Expandable thumbnail</a>
+                                    <a href="section-pagemodules-globalnavigation.html" class="item">Global Navigation</a>
+                                    <a href="section-pagemodules-sharing.html" class="item">Sharing widget</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Structure</div>
+                            <div class="menu">
+                                    <a href="section-pagestructure-configuration.html" class="item">Configuration</a>
+                                    <a href="section-pagestructure-contentmodules.html" class="item">Content Modules</a>
+                                    <a href="section-pagestructure-pagemodules.html" class="item">Page Modules</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                </nav>
+            </div> <!-- class="toc" -->
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger"></label>
+
+            <article class="content-wrapper">
+
+
+                            <div class="masthead">
+                                <div class="container">
+                                    <div class="introduction">
+                <img src="public/ngkitlogo.svg" style="margin-bottom: 1em" width="66" height="32" alt="NGKit" />
+                                        <div class="ui header">
+                                            Slideshow
+                                                <div class="sub header">
+                                                    <p>Create a responsive image or video slideshow with stunning transition effects,
+fullscreen mode and overlays.</p>
+<p><span class="badge info">JAVASCRIPT</span> Requires <code>components/slideshow.js</code>, <code>components/slideshow-fx.js</code></p>
+
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-top:30px;">
+                                        <button onclick="toggleRightRail()">Toggle Right Rail</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-container-div" class="main ui intro container">
+                                <div id="right-nav-rail" class="ui dividing right rail">
+                                    <div class="ui sticky">
+
+                                        <div class="ui header">Slideshow</div>
+                                        <div class="ui vertical following fluid accordion text menu">
+
+                                                
+                                                
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-slideshow-usage"><strong>Usage</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-slideshow-navigations"><strong>Navigations</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#media-slideshow-navigations-controls">Slidenav and Dotnav</a>
+                                                    </div></div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-slideshow-transitions"><strong>Transitions</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-slideshow-ken-burns"><strong>Ken Burns effect</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-slideshow-fullscreen"><strong>Fullscreen slideshow</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-slideshow-overlays"><strong>Overlays</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-slideshow-video"><strong>Video</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-slideshow-content"><strong>Content</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-slideshow-javascript"><strong>JavaScript Options</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#media-slideshow-javascript-events">Events</a>
+                                                    </div></div>
+
+                                        </div> <!-- ui vertical following fluid accordion text menu -->
+                                    </div> <!-- ui sticky -->
+                                </div> <!-- ui dividing right rail -->
+                         <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-slideshow-usage">
+                                Usage
+                                <a class="kss-title__permalink" href="#media-slideshow-usage">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To create a slideshow, just add the <code>.ng-slideshow</code> class to a <code>&lt;ul&gt;</code> element and
+place your images inside the list items. In order to load the necessary
+JavaScript, you also need to add the <code>data-ng-slideshow</code> attribute.</p>
+<p><span class="badge info">NOTE</span> To activate autoplay, just add the
+<code>{autoplay:true}</code> option to the data attribute.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><ul class="ng-slideshow" data-ng-slideshow="{autoplay:true}">
+    <li><img src="http://lorempixel.com/800/400/city" width="800" height="400" alt=""></li>
+    <li><img src="http://lorempixel.com/800/400/people" width="800" height="400" alt=""></li>
+    <li><img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt=""></li>
+</ul></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;ul class=&quot;ng-slideshow&quot; data-ng-slideshow=&quot;{autoplay:true}&quot;&gt;
+    &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-slideshow-navigations">
+                                Navigations
+                                <a class="kss-title__permalink" href="#media-slideshow-navigations">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To navigate through your slides, just use the <code>data-ng-slideshow-item</code> attribute.
+To target the slides, you need to set the data attribute of every nav item to
+the number of the respective slideshow item. The elements with the
+<code>data-ng-slideshow-item</code> attribute need to be inside the <code>data-ng-slideshow</code>
+container.</p>
+<pre><code class="code hljs html">&lt;div data-ng-slideshow&gt;
+    &lt;ul class="ng-slideshow"&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
+        &lt;li data-ng-slideshow-item="0"&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+        &lt;li data-ng-slideshow-item="1"&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+<p>Setting the attribute to <code>next</code> and <code>previous</code> will switch to the adjacent slides.</p>
+<pre><code class="code hljs html">&lt;div data-ng-slideshow&gt;
+    &lt;ul class="ng-slideshow"&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
+        &lt;li data-ng-slideshow-item="next"&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+        &lt;li data-ng-slideshow-item="previous"&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="media-slideshow-navigations-controls">
+                                Slidenav and Dotnav
+                                <a class="kss-title__permalink" href="#media-slideshow-navigations-controls">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>The flexibility of the Slideshow component enables you to use any of the other
+NGkit components to navigate through items. For example the Slidenav and Dotnav
+can be used to style the slideshow navigations as you can see below.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-slidenav-position" data-ng-slideshow>
+    <ul class="ng-slideshow">
+        <li><img src="http://lorempixel.com/800/400/city" width="800" height="400" alt=""></li>
+        <li><img src="http://lorempixel.com/800/400/people" width="800" height="400" alt=""></li>
+        <li><img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt=""></li>
+    </ul>
+    <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous"></a>
+    <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next"></a>
+    <ul class="ng-dotnav ng-dotnav-contrast ng-position-bottom ng-flex-center">
+        <li data-ng-slideshow-item="0"><a href="#">Item 1</a></li>
+        <li data-ng-slideshow-item="1"><a href="#">Item 2</a></li>
+        <li data-ng-slideshow-item="2"><a href="#">Item 3</a></li>
+    </ul>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow&gt;
+    &lt;ul class=&quot;ng-slideshow&quot;&gt;
+        &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot;&gt;&lt;/a&gt;
+    &lt;ul class=&quot;ng-dotnav ng-dotnav-contrast ng-position-bottom ng-flex-center&quot;&gt;
+        &lt;li data-ng-slideshow-item=&quot;0&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li data-ng-slideshow-item=&quot;1&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li data-ng-slideshow-item=&quot;2&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-slideshow-transitions">
+                                Transitions
+                                <a class="kss-title__permalink" href="#media-slideshow-transitions">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>The Slideshow component allows you to add different animations to items when
+switching between them. All you need to do is add the <code>animation</code> parameter to
+the data-attribute and define the animation that you want to apply. Check the
+table below for an overview of the animations provided.</p>
+<table class="configuration">
+    <thead>
+        <tr><th>Class</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>fade</td>   <td>The item fades in.</td></tr>
+        <tr><td>scroll</td> <td>The items scroll in.</td></tr>
+        <tr><td>scale</td>  <td>The items scale up on out.</td></tr>
+        <tr><td>swipe</td>  <td>The items swipe in and out.</td></tr>
+    </tbody>
+</table>
+
+<p>To apply these more advanced transitions, the <code>components/slideshow-fx.js</code> file
+needs to be included in the document head.</p>
+<table class="configuration">
+    <thead>
+        <tr><th>Class</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>slice-down</td>  <td>The items slide down in slices.</td></tr>
+        <tr><td>slice-up</td>    <td>The items slide up in slices.</td></tr>
+        <tr><td>slice-up-down</td>   <td>The sliced items slide in alterning directions.</td></tr>
+        <tr><td>fold</td>    <td>The items are folded in.</td></tr>
+        <tr><td>puzzle</td>  <td>The items are divided in squares that randomly fade in.</td></tr>
+        <tr><td>boxes</td>   <td>The items are divided in squares that scale in diagonally from the top left corner.</td></tr>
+        <tr><td>boxes-reverse</td>   <td>The items are divided in squares that scale in diagonally from the bottom right corner.</td></tr>
+        <tr><td>random-fx</td>   <td>Different animations are applied randomly.</td></tr>
+    </tbody>
+</table>
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><ul class="ng-grid ng-grid-width-1-1 ng-grid-width-medium-1-2" data-ng-grid-margin>
+    <li>
+        <h3>Scroll</h3>
+        <div class="ng-slidenav-position" data-ng-slideshow="{animation: 'scroll'}">
+            <ul class="ng-slideshow">
+                <li><img src="http://lorempixel.com/800/400/city" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/people" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt=""></li>
+            </ul>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous"></a>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next"></a>
+        </div>
+    </li>
+    <li>
+        <h3>Scale</h3>
+        <div class="ng-slidenav-position" data-ng-slideshow="{animation: 'scale'}">
+            <ul class="ng-slideshow">
+                <li><img src="http://lorempixel.com/800/400/city" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/people" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt=""></li>
+            </ul>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous"></a>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next"></a>
+        </div>
+    </li>
+    <li>
+        <h3>Swipe</h3>
+        <div class="ng-slidenav-position" data-ng-slideshow="{animation: 'swipe'}">
+            <ul class="ng-slideshow">
+                <li><img src="http://lorempixel.com/800/400/city" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/people" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt=""></li>
+            </ul>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous"></a>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next"></a>
+        </div>
+    </li>
+    <li>
+        <h3>Slice Down</h3>
+        <div class="ng-slidenav-position" data-ng-slideshow="{animation: 'slice-down'}">
+            <ul class="ng-slideshow">
+                <li><img src="http://lorempixel.com/800/400/city" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/people" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt=""></li>
+            </ul>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous"></a>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next"></a>
+        </div>
+    </li>
+    <li>
+        <h3>Slice Up</h3>
+        <div class="ng-slidenav-position" data-ng-slideshow="{animation: 'slice-up'}">
+            <ul class="ng-slideshow">
+                <li><img src="http://lorempixel.com/800/400/city" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/people" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt=""></li>
+            </ul>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous"></a>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next"></a>
+        </div>
+    </li>
+    <li>
+        <h3>Slice Up Down</h3>
+        <div class="ng-slidenav-position" data-ng-slideshow="{animation: 'slice-up-down'}">
+            <ul class="ng-slideshow">
+                <li><img src="http://lorempixel.com/800/400/city" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/people" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt=""></li>
+            </ul>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous"></a>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next"></a>
+        </div>
+    </li>
+    <li>
+        <h3>Fold</h3>
+        <div class="ng-slidenav-position" data-ng-slideshow="{animation: 'fold'}">
+            <ul class="ng-slideshow">
+                <li><img src="http://lorempixel.com/800/400/city" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/people" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt=""></li>
+            </ul>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous"></a>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next"></a>
+        </div>
+    </li>
+    <li>
+        <h3>Puzzle</h3>
+        <div class="ng-slidenav-position" data-ng-slideshow="{animation: 'puzzle'}">
+            <ul class="ng-slideshow">
+                <li><img src="http://lorempixel.com/800/400/city" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/people" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt=""></li>
+            </ul>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous"></a>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next"></a>
+        </div>
+    </li>
+    <li>
+        <h3>Boxes</h3>
+        <div class="ng-slidenav-position" data-ng-slideshow="{animation: 'boxes'}">
+            <ul class="ng-slideshow">
+                <li><img src="http://lorempixel.com/800/400/city" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/people" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt=""></li>
+            </ul>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous"></a>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next"></a>
+        </div>
+    </li>
+    <li>
+        <h3>Boxes Reverse</h3>
+        <div class="ng-slidenav-position" data-ng-slideshow="{animation: 'boxes-reverse'}">
+            <ul class="ng-slideshow">
+                <li><img src="http://lorempixel.com/800/400/city" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/people" width="800" height="400" alt=""></li>
+                <li><img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt=""></li>
+            </ul>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous"></a>
+            <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next"></a>
+        </div>
+    </li>
+</ul></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;ul class=&quot;ng-grid ng-grid-width-1-1 ng-grid-width-medium-1-2&quot; data-ng-grid-margin&gt;
+    &lt;li&gt;
+        &lt;h3&gt;Scroll&lt;/h3&gt;
+        &lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow=&quot;{animation: &#x27;scroll&#x27;}&quot;&gt;
+            &lt;ul class=&quot;ng-slideshow&quot;&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;h3&gt;Scale&lt;/h3&gt;
+        &lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow=&quot;{animation: &#x27;scale&#x27;}&quot;&gt;
+            &lt;ul class=&quot;ng-slideshow&quot;&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;h3&gt;Swipe&lt;/h3&gt;
+        &lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow=&quot;{animation: &#x27;swipe&#x27;}&quot;&gt;
+            &lt;ul class=&quot;ng-slideshow&quot;&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;h3&gt;Slice Down&lt;/h3&gt;
+        &lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow=&quot;{animation: &#x27;slice-down&#x27;}&quot;&gt;
+            &lt;ul class=&quot;ng-slideshow&quot;&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;h3&gt;Slice Up&lt;/h3&gt;
+        &lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow=&quot;{animation: &#x27;slice-up&#x27;}&quot;&gt;
+            &lt;ul class=&quot;ng-slideshow&quot;&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;h3&gt;Slice Up Down&lt;/h3&gt;
+        &lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow=&quot;{animation: &#x27;slice-up-down&#x27;}&quot;&gt;
+            &lt;ul class=&quot;ng-slideshow&quot;&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;h3&gt;Fold&lt;/h3&gt;
+        &lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow=&quot;{animation: &#x27;fold&#x27;}&quot;&gt;
+            &lt;ul class=&quot;ng-slideshow&quot;&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;h3&gt;Puzzle&lt;/h3&gt;
+        &lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow=&quot;{animation: &#x27;puzzle&#x27;}&quot;&gt;
+            &lt;ul class=&quot;ng-slideshow&quot;&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;h3&gt;Boxes&lt;/h3&gt;
+        &lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow=&quot;{animation: &#x27;boxes&#x27;}&quot;&gt;
+            &lt;ul class=&quot;ng-slideshow&quot;&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;h3&gt;Boxes Reverse&lt;/h3&gt;
+        &lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow=&quot;{animation: &#x27;boxes-reverse&#x27;}&quot;&gt;
+            &lt;ul class=&quot;ng-slideshow&quot;&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-slideshow-ken-burns">
+                                Ken Burns effect
+                                <a class="kss-title__permalink" href="#media-slideshow-ken-burns">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>The Ken Burns effect can also be applied to slideshow items. Just add the
+<code>{kenburns:true}</code> option to the data attribute. This effect can also be applied
+to videos.</p>
+<p>For a custom animation duration use: <code>{kenburns:&#39;30s&#39;}</code> for 30 seconds.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-slidenav-position" data-ng-slideshow="{kenburns:true, autoplay:true}">
+    <ul class="ng-slideshow">
+        <li><img src="http://lorempixel.com/800/400/city" width="800" height="400" alt=""></li>
+        <li><img src="http://lorempixel.com/800/400/people" width="800" height="400" alt=""></li>
+        <li><img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt=""></li>
+    </ul>
+    <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+    <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow=&quot;{kenburns:true, autoplay:true}&quot;&gt;
+    &lt;ul class=&quot;ng-slideshow&quot;&gt;
+        &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot; style=&quot;color: rgba(255,255,255,0.4)&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot; style=&quot;color: rgba(255,255,255,0.4)&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-slideshow-fullscreen">
+                                Fullscreen slideshow
+                                <a class="kss-title__permalink" href="#media-slideshow-fullscreen">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To create a fullscreen slideshow that stretches to fill the entire viewport,
+just add the .ng-slideshow-fullscreen class.</p>
+<pre><code class="code hljs html">&lt;ul class="ng-slideshow ng-slideshow-fullscreen" data-ng-slideshow&gt;...&lt;/ul&gt;</code></pre>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-slideshow-overlays">
+                                Overlays
+                                <a class="kss-title__permalink" href="#media-slideshow-overlays">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>You can also enhance slideshows with different overlays. Just add the
+<code>.ng-overlay-panel</code> to a <code>&lt;div&gt;</code> element inside the list item. Also add
+<code>.ng-overlay-background</code> and <code>.ng-overlay-fade</code> to show a background and a
+transition.</p>
+<p>To toggle the overlay once a slide becomes active add the <code>.ng-overlay-active</code> to
+the list container. For more options, check out the Overlay component.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-slidenav-position" data-ng-slideshow>
+    <ul class="ng-slideshow ng-overlay-active">
+        <li>
+            <img src="http://lorempixel.com/800/400/city" width="800" height="400" alt="">
+            <div class="ng-overlay-panel ng-overlay-background ng-overlay-fade ng-flex ng-flex-center ng-flex-middle ng-text-center">
+                <div>
+                    <h3>Overlay</h3>
+                    <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr,<br>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                    <button class="ng-button ng-button-primary">Button</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="http://lorempixel.com/800/400/people" width="800" height="400" alt="">
+            <div class="ng-overlay-panel ng-overlay-background ng-overlay-top ng-overlay-slide-top">
+                <h3>Overlay Top</h3>
+                <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                <button class="ng-button ng-button-primary">Button</button>
+            </div>
+        </li>
+        <li>
+            <img src="http://lorempixel.com/800/400/animals" width="800" height="400" alt="">
+            <div class="ng-overlay-panel ng-overlay-background ng-overlay-bottom ng-overlay-slide-bottom">
+                <h3>Overlay Bottom</h3>
+                <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                <button class="ng-button ng-button-primary">Button</button>
+            </div>
+        </li>
+        <li>
+            <img src="http://lorempixel.com/800/400/sports" width="800" height="400" alt="">
+            <div class="ng-overlay-panel ng-overlay-background ng-overlay-left ng-overlay-slide-left ng-width-1-4">
+                <h3>Overlay Left</h3>
+                <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                <button class="ng-button ng-button-primary">Button</button>
+            </div>
+        </li>
+        <li>
+            <img src="http://lorempixel.com/800/400/abstract" width="800" height="400" alt="">
+            <div class="ng-overlay-panel ng-overlay-background ng-overlay-right ng-overlay-slide-right ng-width-1-4">
+                <h3>Overlay Right</h3>
+                <p>Lorem <a href="#">ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                <button class="ng-button ng-button-primary">Button</button>
+            </div>
+        </li>
+    </ul>
+    <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+    <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow&gt;
+    &lt;ul class=&quot;ng-slideshow ng-overlay-active&quot;&gt;
+        &lt;li&gt;
+            &lt;img src=&quot;http://lorempixel.com/800/400/city&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;
+            &lt;div class=&quot;ng-overlay-panel ng-overlay-background ng-overlay-fade ng-flex ng-flex-center ng-flex-middle ng-text-center&quot;&gt;
+                &lt;div&gt;
+                    &lt;h3&gt;Overlay&lt;/h3&gt;
+                    &lt;p&gt;Lorem &lt;a href=&quot;#&quot;&gt;ipsum dolor&lt;/a&gt; sit amet, consetetur sadipscing elitr,&lt;br&gt;sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.&lt;/p&gt;
+                    &lt;button class=&quot;ng-button ng-button-primary&quot;&gt;Button&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src=&quot;http://lorempixel.com/800/400/people&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;
+            &lt;div class=&quot;ng-overlay-panel ng-overlay-background ng-overlay-top ng-overlay-slide-top&quot;&gt;
+                &lt;h3&gt;Overlay Top&lt;/h3&gt;
+                &lt;p&gt;Lorem &lt;a href=&quot;#&quot;&gt;ipsum dolor&lt;/a&gt; sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.&lt;/p&gt;
+                &lt;button class=&quot;ng-button ng-button-primary&quot;&gt;Button&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src=&quot;http://lorempixel.com/800/400/animals&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;
+            &lt;div class=&quot;ng-overlay-panel ng-overlay-background ng-overlay-bottom ng-overlay-slide-bottom&quot;&gt;
+                &lt;h3&gt;Overlay Bottom&lt;/h3&gt;
+                &lt;p&gt;Lorem &lt;a href=&quot;#&quot;&gt;ipsum dolor&lt;/a&gt; sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.&lt;/p&gt;
+                &lt;button class=&quot;ng-button ng-button-primary&quot;&gt;Button&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src=&quot;http://lorempixel.com/800/400/sports&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;
+            &lt;div class=&quot;ng-overlay-panel ng-overlay-background ng-overlay-left ng-overlay-slide-left ng-width-1-4&quot;&gt;
+                &lt;h3&gt;Overlay Left&lt;/h3&gt;
+                &lt;p&gt;Lorem &lt;a href=&quot;#&quot;&gt;ipsum dolor&lt;/a&gt; sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.&lt;/p&gt;
+                &lt;button class=&quot;ng-button ng-button-primary&quot;&gt;Button&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src=&quot;http://lorempixel.com/800/400/abstract&quot; width=&quot;800&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;
+            &lt;div class=&quot;ng-overlay-panel ng-overlay-background ng-overlay-right ng-overlay-slide-right ng-width-1-4&quot;&gt;
+                &lt;h3&gt;Overlay Right&lt;/h3&gt;
+                &lt;p&gt;Lorem &lt;a href=&quot;#&quot;&gt;ipsum dolor&lt;/a&gt; sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.&lt;/p&gt;
+                &lt;button class=&quot;ng-button ng-button-primary&quot;&gt;Button&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot; style=&quot;color: rgba(255,255,255,0.4)&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot; style=&quot;color: rgba(255,255,255,0.4)&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-slideshow-video">
+                                Video
+                                <a class="kss-title__permalink" href="#media-slideshow-video">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>NGkit allows you to present both video elements and Iframes within a slideshow.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-slidenav-position" data-ng-slideshow>
+    <ul class="ng-slideshow">
+        <li>
+            <video width="600" height="400" autoplay="false" loop muted controls>
+                <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
+                <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test2" type="video/ogg">
+            </video>
+        </li>
+        <li>
+            <iframe src="http://player.vimeo.com/video/1084537?title=0&amp;byline=0&amp;autoplay=0&amp;loop=1&amp;setVolume=0" width="500" height="281" frameborder="0" allowfullscreen></iframe>
+        </li>
+    </ul>
+    <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous"></a>
+    <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next"></a>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow&gt;
+    &lt;ul class=&quot;ng-slideshow&quot;&gt;
+        &lt;li&gt;
+            &lt;video width=&quot;600&quot; height=&quot;400&quot; autoplay=&quot;false&quot; loop muted controls&gt;
+                &lt;source src=&quot;http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1&quot; type=&quot;video/mp4&quot;&gt;
+                &lt;source src=&quot;http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test2&quot; type=&quot;video/ogg&quot;&gt;
+            &lt;/video&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;iframe src=&quot;http://player.vimeo.com/video/1084537?title=0&amp;amp;byline=0&amp;amp;autoplay=0&amp;amp;loop=1&amp;amp;setVolume=0&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-slideshow-content">
+                                Content
+                                <a class="kss-title__permalink" href="#media-slideshow-content">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>You can basically insert any content, like text or an entire grid as slideshow items.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-slidenav-position" data-ng-slideshow>
+    <ul class="ng-slideshow ng-text-center">
+        <li>
+            <div class="ng-panel ng-panel-box">
+                <div class="ng-grid">
+                    <div class="ng-width-1-3">
+                        <img src="http://lorempixel.com/200/200/1" width="200" height="200" alt="">
+                    </div>
+                    <div class="ng-width-2-3">
+                        <h3 class="ng-panel-title">Headline 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                        <button class="ng-button">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="ng-panel ng-panel-box ng-panel-box-primary">
+                <div class="ng-grid">
+                    <div class="ng-width-2-3">
+                        <h3 class="ng-panel-title">Headline 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                        <button class="ng-button">Read more</button>
+                    </div>
+                    <div class="ng-width-1-3">
+                        <img src="http://lorempixel.com/200/200/2" width="200" height="200" alt="">
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-previous" data-ng-slideshow-item="previous"></a>
+    <a href="#" class="ng-slidenav ng-slidenav-contrast ng-slidenav-next" data-ng-slideshow-item="next"></a>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-slidenav-position&quot; data-ng-slideshow&gt;
+    &lt;ul class=&quot;ng-slideshow ng-text-center&quot;&gt;
+        &lt;li&gt;
+            &lt;div class=&quot;ng-panel ng-panel-box&quot;&gt;
+                &lt;div class=&quot;ng-grid&quot;&gt;
+                    &lt;div class=&quot;ng-width-1-3&quot;&gt;
+                        &lt;img src=&quot;http://lorempixel.com/200/200/1&quot; width=&quot;200&quot; height=&quot;200&quot; alt=&quot;&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;ng-width-2-3&quot;&gt;
+                        &lt;h3 class=&quot;ng-panel-title&quot;&gt;Headline 1&lt;/h3&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.&lt;/p&gt;
+                        &lt;button class=&quot;ng-button&quot;&gt;Read more&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div class=&quot;ng-panel ng-panel-box ng-panel-box-primary&quot;&gt;
+                &lt;div class=&quot;ng-grid&quot;&gt;
+                    &lt;div class=&quot;ng-width-2-3&quot;&gt;
+                        &lt;h3 class=&quot;ng-panel-title&quot;&gt;Headline 2&lt;/h3&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.&lt;/p&gt;
+                        &lt;button class=&quot;ng-button&quot;&gt;Read more&lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;ng-width-1-3&quot;&gt;
+                        &lt;img src=&quot;http://lorempixel.com/200/200/2&quot; width=&quot;200&quot; height=&quot;200&quot; alt=&quot;&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-previous&quot; data-ng-slideshow-item=&quot;previous&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-slidenav ng-slidenav-contrast ng-slidenav-next&quot; data-ng-slideshow-item=&quot;next&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-slideshow-javascript">
+                                JavaScript Options
+                                <a class="kss-title__permalink" href="#media-slideshow-javascript">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To initialize an element manually:</p>
+<pre><code class="code hljs js">var slideshow = NGkit.slideshow(element, { });</code></pre>
+
+<table class="configuration">
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th>Default</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>animation</code></td>
+            <td>&#39;fade&#39;</td>
+            <td>Defines the preferred transition between items.</td>
+        </tr>
+        <tr>
+            <td><code>duration</code></td>
+            <td>500</td>
+            <td>Defines the transition duration.</td>
+        </tr>
+        <tr>
+            <td><code>height</code></td>
+            <td>&#39;auto&#39;</td>
+            <td>Defines the slideshow height.</td>
+        </tr>
+        <tr>
+            <td><code>start</code></td>
+            <td>0</td>
+            <td>Defines the first slideshow item to be displayed.</td>
+        </tr>
+        <tr>
+            <td><code>autoplay</code></td>
+            <td>false</td>
+            <td>Defines whether or not the slideshow items should switch automatically.</td>
+        </tr>
+        </tr>
+        <tr>
+            <td><code>pauseOnHover</code></td>
+            <td>true</td>
+            <td>Pause autoplay when hovering a slideshow.</td>
+        </tr>
+        <tr>
+            <td><code>autoplayInterval</code></td>
+            <td>7000</td>
+            <td>Defines the timespan between switching slideshow items.</td>
+        </tr>
+        <tr>
+            <td><code>videoautoplay</code></td>
+            <td>true</td>
+            <td>Defines whether or not a video starts automatically.</td>
+        </tr>
+        <tr>
+            <td><code>videomute</code></td>
+            <td>true</td>
+            <td>Defines whether or not a video is muted.</td>
+        </tr>
+        <tr>
+            <td><code>kenburns</code></td>
+            <td>false</td>
+            <td>Defines whether or not the Ken Burns effect is active. If <code>kenburns</code> is a numeric value, it will be used as the animation duration.</td>
+        </tr>
+        <tr>
+            <td><code>kenburnsanimations</code></td>
+            <td>
+                ng-animation-middle-left, ng-animation-top-right,<br>
+                ng-animation-bottom-left, ng-animation-top-center,<br>
+                ng-animation-bottom-right</td>
+            <td>Animation series.</td>
+        </tr>
+        <tr>
+            <td><code>slices</code></td>
+            <td>15</td>
+            <td>Defines the number of slices, if a &quot;Slice&quot; transition is set.</td>
+        </tr>
+    </tbody>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="media-slideshow-javascript-events">
+                                Events
+                                <a class="kss-title__permalink" href="#media-slideshow-javascript-events">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="configuration">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Parameter</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>show.ng.slideshow</code></td>
+            <td>event, next slide, current slide</td>
+            <td>On showing a new slide (after animation is finished)</td>
+        </tr>
+    <tbody>
+        <tr>
+            <td><code>beforeshow.ng.slideshow</code></td>
+            <td>event, next slide, current slide</td>
+            <td>Before showing a new slide (before animation is finished)</td>
+        </tr>
+    </tbody>
+</table>
+                        
+
+
+                    </div> <!-- main ui intro container" -->
+            </article>
+        </div>
+        <footer id="footer" class="kss-footer">
+        <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/highlight.pack.js"></script>
+    <script src="js/ngkit.js"></script>
+    <script src="public/docs.js"></script>
+  </body>
+</html>

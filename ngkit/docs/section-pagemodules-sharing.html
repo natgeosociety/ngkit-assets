@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>National Geographic Style Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="generator" content="kss-node">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="public/combined.css">
+    <link rel="stylesheet" type="text/css" href="public/github.css">
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,600i">
+
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('fonts/fontawesome-webfont.eot?v=4.0.3}');
+        src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
+          url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'),
+          url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
+          url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+    <style type="text/css">
+    @font-face {
+        font-family: 'icon-society';
+        src: url('fonts/icon-society.woff') format('woff'),
+          url('fonts/icon-society.ttf') format('truetype'),
+          url('fonts/icon-society.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+        .add-100-margin{
+            margin-left:35px;
+            margin-right:35px;
+        }
+    </style>
+
+    <script src="public/jquery.min.js"></script>
+
+      <script>
+          function toggleRightRail(){
+              if($("#right-nav-rail").is(":visible")){
+                  $("#right-nav-rail").hide();
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+              }else{
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+                  $("#right-nav-rail").show();
+
+              }
+          }
+
+      </script>
+</head>
+<body id="kss-node">
+    <div class="wrapper">
+        <div class="full height">
+            <div class="toc" >
+                <nav class="ui vertical inverted menu">
+                        <div class="item">
+                            <div class="header">Introduction</div>
+                            <div class="menu">
+                                <a href="./index.html" class="item">Overview</a>
+                                    <a href="section-introduction-configuration.html" class="item">Configuration</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Layout</div>
+                            <div class="menu">
+                                    <a href="section-layout-column.html" class="item">Column</a>
+                                    <a href="section-layout-cover.html" class="item">Cover</a>
+                                    <a href="section-layout-flexbox.html" class="item">Flexbox</a>
+                                    <a href="section-layout-grids.html" class="item">Grids</a>
+                                    <a href="section-layout-panel.html" class="item">Panel</a>
+                                    <a href="section-layout-utilities.html" class="item">Layout Utilities</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Typography</div>
+                            <div class="menu">
+                                    <a href="section-typography-base.html" class="item">Base Typography</a>
+                                    <a href="section-typography-colors.html" class="item">Color Classes</a>
+                                    <a href="section-typography-lists.html" class="item">Lists</a>
+                                    <a href="section-typography-print.html" class="item">Print</a>
+                                    <a href="section-typography-tables.html" class="item">Tables</a>
+                                    <a href="section-typography-utilities.html" class="item">Text</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Controls</div>
+                            <div class="menu">
+                                    <a href="section-controls-buttons.html" class="item">Buttons</a>
+                                    <a href="section-controls-close.html" class="item">Close</a>
+                                    <a href="section-controls-contrast.html" class="item">Contrast</a>
+                                    <a href="section-controls-date-picker.html" class="item">Datepicker</a>
+                                    <a href="section-controls-dropdown.html" class="item">Dropdown</a>
+                                    <a href="section-controls-forms.html" class="item">Forms</a>
+                                    <a href="section-controls-progress.html" class="item">Progress</a>
+                                    <a href="section-controls-search.html" class="item">Search</a>
+                                    <a href="section-controls-toolbars.html" class="item">Toolbar</a>
+                                    <a href="section-controls-upload.html" class="item">Upload</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Media</div>
+                            <div class="menu">
+                                    <a href="section-media-icons.html" class="item">Icons</a>
+                                    <a href="section-media-media-object.html" class="item">Media object</a>
+                                    <a href="section-media-overlays.html" class="item">Overlay</a>
+                                    <a href="section-media-slideshow.html" class="item">Slideshow</a>
+                                    <a href="section-media-symbols.html" class="item">Symbols</a>
+                                    <a href="section-media-thumbnails.html" class="item">Images</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Callouts</div>
+                            <div class="menu">
+                                    <a href="section-callouts-alerts.html" class="item">Alert</a>
+                                    <a href="section-callouts-badges.html" class="item">Badge</a>
+                                    <a href="section-callouts-modals.html" class="item">Modal</a>
+                                    <a href="section-callouts-popovers.html" class="item">Popovers</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Navigation</div>
+                            <div class="menu">
+                                    <a href="section-navigation-breadcrumbs.html" class="item">Breadcrumbs</a>
+                                    <a href="section-navigation-dot-nav.html" class="item">Dot Navigation</a>
+                                    <a href="section-navigation-nav.html" class="item">Nav</a>
+                                    <a href="section-navigation-navbar.html" class="item">Navbar</a>
+                                    <a href="section-navigation-pagination.html" class="item">Pagination</a>
+                                    <a href="section-navigation-slide-navigation.html" class="item">Slide Navigation</a>
+                                    <a href="section-navigation-sub-nav.html" class="item">Subnav</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Containers</div>
+                            <div class="menu">
+                                    <a href="section-containers-accordion.html" class="item">Accordion</a>
+                                    <a href="section-containers-drawers.html" class="item">Drawer</a>
+                                    <a href="section-containers-off-canvas.html" class="item">Off-canvas</a>
+                                    <a href="section-containers-tabs.html" class="item">Tab</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Components</div>
+                            <div class="menu">
+                                    <a href="section-components-article.html" class="item">Article Components</a>
+                                    <a href="section-components-articleheading.html" class="item">Article Heading</a>
+                                    <a href="section-components-comments.html" class="item">Comment</a>
+                                    <a href="section-components-contentcarousel.html" class="item">Content Carousel</a>
+                                    <a href="section-components-dynamicleadcarousel.html" class="item">Carousel</a>
+                                    <a href="section-components-featurelist.html" class="item">Feature Lists</a>
+                                    <a href="section-components-filterresults.html" class="item">Filtering Results</a>
+                                    <a href="section-components-groupheading.html" class="item">Group Heading</a>
+                                    <a href="section-components-heading.html" class="item">Heading</a>
+                                    <a href="section-components-instructionalpathways.html" class="item">Instructional Pathways</a>
+                                    <a href="section-components-itemlisting.html" class="item">Item listing</a>
+                                    <a href="section-components-linkslist.html" class="item">Links List</a>
+                                    <a href="section-components-objectlists.html" class="item">Media Object Lists</a>
+                                    <a href="section-components-relatedmaterials.html" class="item">Related Materials</a>
+                                    <a href="section-components-tease.html" class="item">Tease</a>
+                                    <a href="section-components-thumbnailgrid.html" class="item">Thumbnail Grid</a>
+                                    <a href="section-components-tweetthis.html" class="item">Tweet This</a>
+                                    <a href="section-components-vocabulary.html" class="item">Vocabulary</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">JavaScript</div>
+                            <div class="menu">
+                                    <a href="section-javascript-animation.html" class="item">Animation</a>
+                                    <a href="section-javascript-autocomplete.html" class="item">Autocomplete</a>
+                                    <a href="section-javascript-filtering.html" class="item">Filtering</a>
+                                    <a href="section-javascript-scrollspy.html" class="item">Scrollspy</a>
+                                    <a href="section-javascript-smooth-scroll.html" class="item">Smooth Scroll</a>
+                                    <a href="section-javascript-sticky.html" class="item">Sticky</a>
+                                    <a href="section-javascript-switcher.html" class="item">Switcher</a>
+                                    <a href="section-javascript-template.html" class="item">Basic Templating</a>
+                                    <a href="section-javascript-toggle.html" class="item">Toggle</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Layouts</div>
+                            <div class="menu">
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Modules</div>
+                            <div class="menu">
+                                    <a href="section-pagemodules-03.html" class="item">Audience Navigation Tabs</a>
+                                    <a href="section-pagemodules-05.html" class="item">Audience Navbar</a>
+                                    <a href="section-pagemodules-07.html" class="item">Expandable thumbnail</a>
+                                    <a href="section-pagemodules-globalnavigation.html" class="item">Global Navigation</a>
+                                    <a href="section-pagemodules-sharing.html" class="item">Sharing widget</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Structure</div>
+                            <div class="menu">
+                                    <a href="section-pagestructure-configuration.html" class="item">Configuration</a>
+                                    <a href="section-pagestructure-contentmodules.html" class="item">Content Modules</a>
+                                    <a href="section-pagestructure-pagemodules.html" class="item">Page Modules</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                </nav>
+            </div> <!-- class="toc" -->
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger"></label>
+
+            <article class="content-wrapper">
+
+
+                            <div class="masthead">
+                                <div class="container">
+                                    <div class="introduction">
+                <img src="public/ngkitlogo.svg" style="margin-bottom: 1em" width="66" height="32" alt="NGKit" />
+                                        <div class="ui header">
+                                            Sharing widget
+                                                <div class="sub header">
+                                                    <p>The sharing widget can vary by size and location. The size options are:</p>
+<table class="ng-table">
+<tr><th>mini</th><td><code>.ng-sharing-mini</code></td><td>20px high</td></tr>
+<tr><th>small</th><td><code>.ng-sharing-small</code></td><td>30px high</td></tr>
+<tr><th>normal</th><td><code>.ng-sharing</code></td><td>40px high</td></tr>
+<tr><th>large</th><td><code>.ng-sharing-large</code></td><td>50px high</td></tr>
+</table>
+
+<p>By default the location of the sharing widget is in line with page. Adding
+<code>.ng-sharing-sticky-left</code>, <code>.ng-sharing-sticky-right</code> or <code>.ng-sharing-sticky-bottom</code>
+will cause the widget to stick to the appropriate edge of the browser.</p>
+
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-top:30px;">
+                                        <button onclick="toggleRightRail()">Toggle Right Rail</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-container-div" class="main ui intro container">
+                                <div id="right-nav-rail" class="ui dividing right rail">
+                                    <div class="ui sticky">
+
+                                        <div class="ui header">Sharing widget</div>
+                                        <div class="ui vertical following fluid accordion text menu">
+
+                                                
+                                                
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#pagemodules-sharing-article"><strong>Article Sharing Widget</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#pagemodules-sharing-addthis"><strong>Add This Sharing Dropdown</strong></a>
+                                                    </div>
+
+                                        </div> <!-- ui vertical following fluid accordion text menu -->
+                                    </div> <!-- ui sticky -->
+                                </div> <!-- ui dividing right rail -->
+                         <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-sharing-mini">
+    <a class="addthis_button_twitter ng-icon-twitter ng-color-twitter" href="#" title="Click on this button to share via Twitter">
+        <span class="sr-only">Twitter</span>
+    </a>
+    <a class="addthis_button_facebook ng-icon-facebook ng-color-facebook" href="#" title="Click on this button to share via Facebook">
+        <span class="sr-only">Facebook</span>
+    </a>
+    <a class="addthis_button_googleplus ng-icon-google-plus ng-color-googleplus" href="#" title="Click on this button to share via Google+">
+        <span class="sr-only">Google+</span>
+    </a>
+    <a class="addthis_button_email ng-icon-envelope" href="#" title="Click on this button to share via email">
+        <span class="sr-only">Email</span>
+    </a>
+</div>
+<div class="ng-sharing-small">
+    <a class="addthis_button_twitter ng-icon-twitter ng-color-twitter" href="#" title="Click on this button to share via Twitter">
+        <span class="sr-only">Twitter</span>
+    </a>
+    <a class="addthis_button_facebook ng-icon-facebook ng-color-facebook" href="#" title="Click on this button to share via Facebook">
+        <span class="sr-only">Facebook</span>
+    </a>
+    <a class="addthis_button_googleplus ng-icon-google-plus ng-color-googleplus" href="#" title="Click on this button to share via Google+">
+        <span class="sr-only">Google+</span>
+    </a>
+    <a class="addthis_button_email ng-icon-envelope" href="#" title="Click on this button to share via email">
+        <span class="sr-only">Email</span>
+    </a>
+</div>
+<div class="ng-sharing">
+    <a class="addthis_button_twitter ng-icon-twitter ng-color-twitter" href="#" title="Click on this button to share via Twitter">
+        <span class="sr-only">Twitter</span>
+    </a>
+    <a class="addthis_button_facebook ng-icon-facebook ng-color-facebook" href="#" title="Click on this button to share via Facebook">
+        <span class="sr-only">Facebook</span>
+    </a>
+    <a class="addthis_button_googleplus ng-icon-google-plus ng-color-googleplus" href="#" title="Click on this button to share via Google+">
+        <span class="sr-only">Google+</span>
+    </a>
+    <a class="addthis_button_email ng-icon-envelope" href="#" title="Click on this button to share via email">
+        <span class="sr-only">Email</span>
+    </a>
+</div>
+<div class="ng-sharing-large">
+    <a class="addthis_button_twitter ng-icon-twitter ng-color-twitter" href="#" title="Click on this button to share via Twitter">
+        <span class="sr-only">Twitter</span>
+    </a>
+    <a class="addthis_button_facebook ng-icon-facebook ng-color-facebook" href="#" title="Click on this button to share via Facebook">
+        <span class="sr-only">Facebook</span>
+    </a>
+    <a class="addthis_button_googleplus ng-icon-google-plus ng-color-googleplus" href="#" title="Click on this button to share via Google+">
+        <span class="sr-only">Google+</span>
+    </a>
+    <a class="addthis_button_email ng-icon-envelope" href="#" title="Click on this button to share via email">
+        <span class="sr-only">Email</span>
+    </a>
+</div>
+<div class="ng-sharing ng-sharing-sticky-left">
+    <a class="addthis_button_twitter ng-icon-twitter ng-color-twitter" href="#" title="Click on this button to share via Twitter">
+        <span class="sr-only">Twitter</span>
+    </a>
+    <a class="addthis_button_facebook ng-icon-facebook ng-color-facebook" href="#" title="Click on this button to share via Facebook">
+        <span class="sr-only">Facebook</span>
+    </a>
+    <a class="addthis_button_googleplus ng-icon-google-plus ng-color-googleplus" href="#" title="Click on this button to share via Google+">
+        <span class="sr-only">Google+</span>
+    </a>
+    <a class="addthis_button_email ng-icon-envelope" href="#" title="Click on this button to share via email">
+        <span class="sr-only">Email</span>
+    </a>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-sharing-mini&quot;&gt;
+    &lt;a class=&quot;addthis_button_twitter ng-icon-twitter ng-color-twitter&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Twitter&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Twitter&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_facebook ng-icon-facebook ng-color-facebook&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Facebook&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Facebook&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_googleplus ng-icon-google-plus ng-color-googleplus&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Google+&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Google+&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_email ng-icon-envelope&quot; href=&quot;#&quot; title=&quot;Click on this button to share via email&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Email&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ng-sharing-small&quot;&gt;
+    &lt;a class=&quot;addthis_button_twitter ng-icon-twitter ng-color-twitter&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Twitter&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Twitter&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_facebook ng-icon-facebook ng-color-facebook&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Facebook&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Facebook&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_googleplus ng-icon-google-plus ng-color-googleplus&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Google+&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Google+&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_email ng-icon-envelope&quot; href=&quot;#&quot; title=&quot;Click on this button to share via email&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Email&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ng-sharing&quot;&gt;
+    &lt;a class=&quot;addthis_button_twitter ng-icon-twitter ng-color-twitter&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Twitter&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Twitter&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_facebook ng-icon-facebook ng-color-facebook&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Facebook&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Facebook&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_googleplus ng-icon-google-plus ng-color-googleplus&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Google+&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Google+&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_email ng-icon-envelope&quot; href=&quot;#&quot; title=&quot;Click on this button to share via email&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Email&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ng-sharing-large&quot;&gt;
+    &lt;a class=&quot;addthis_button_twitter ng-icon-twitter ng-color-twitter&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Twitter&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Twitter&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_facebook ng-icon-facebook ng-color-facebook&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Facebook&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Facebook&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_googleplus ng-icon-google-plus ng-color-googleplus&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Google+&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Google+&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_email ng-icon-envelope&quot; href=&quot;#&quot; title=&quot;Click on this button to share via email&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Email&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ng-sharing ng-sharing-sticky-left&quot;&gt;
+    &lt;a class=&quot;addthis_button_twitter ng-icon-twitter ng-color-twitter&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Twitter&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Twitter&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_facebook ng-icon-facebook ng-color-facebook&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Facebook&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Facebook&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_googleplus ng-icon-google-plus ng-color-googleplus&quot; href=&quot;#&quot; title=&quot;Click on this button to share via Google+&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Google+&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;addthis_button_email ng-icon-envelope&quot; href=&quot;#&quot; title=&quot;Click on this button to share via email&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Email&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="pagemodules-sharing-article">
+                                Article Sharing Widget
+                                <a class="kss-title__permalink" href="#pagemodules-sharing-article">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-toolbar" data-ng-toolbar>
+    <ul class="ng-toolbar-nav">
+        <li>
+            <a href="#comment">
+                <i class="ng-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M26 23h6V1H0v22h16v8"/></svg></i>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="ng-toolbar" data-ng-toolbar>
+    <ul class="ng-toolbar-nav">
+        <li>
+            <a class="addthis_button_twitter" href="https://twitter.com/share?url=#&amp;text=#&amp;" target="_blank">
+            </a>
+        </li>
+        <li>
+            <a class="addthis_button_facebook" href="http://www.facebook.com/sharer.php?u=#" target="_blank">
+            </a>
+        </li>
+        <li>
+            <a class="addthis_button_google_plusone_share" href="https://plus.google.com/share?url=#" target="_blank">
+            </a>
+        </li>
+        <li>
+            <a class="addthis_button_pinterest_share" href="https://pinterest.com/pin/create/bookmarklet/?media=#&amp;url=#&amp;is_video=&amp;description=#" target="_blank">
+            </a>
+        </li>
+        <li>
+            <a href="#print_link" class="addthis_button_print" title="Click on this button to get to the printer friendly version">
+                <span class="sr-only">Print</span>
+                <i class="ng-icon-print"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#archive_link" title="Click on this button to download all the materials in an archive.">
+                <span class="sr-only">Download</span>
+                <i class="ng-icon-download"></i>
+            </a>
+        </li>
+    </ul>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-toolbar&quot; data-ng-toolbar&gt;
+    &lt;ul class=&quot;ng-toolbar-nav&quot;&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;#comment&quot;&gt;
+                &lt;i class=&quot;ng-icon&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 32 32&quot;&gt;&lt;path d=&quot;M26 23h6V1H0v22h16v8&quot;/&gt;&lt;/svg&gt;&lt;/i&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ng-toolbar&quot; data-ng-toolbar&gt;
+    &lt;ul class=&quot;ng-toolbar-nav&quot;&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;addthis_button_twitter&quot; href=&quot;https://twitter.com/share?url=#&amp;amp;text=#&amp;amp;&quot; target=&quot;_blank&quot;&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;addthis_button_facebook&quot; href=&quot;http://www.facebook.com/sharer.php?u=#&quot; target=&quot;_blank&quot;&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;addthis_button_google_plusone_share&quot; href=&quot;https://plus.google.com/share?url=#&quot; target=&quot;_blank&quot;&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;addthis_button_pinterest_share&quot; href=&quot;https://pinterest.com/pin/create/bookmarklet/?media=#&amp;amp;url=#&amp;amp;is_video=&amp;amp;description=#&quot; target=&quot;_blank&quot;&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;#print_link&quot; class=&quot;addthis_button_print&quot; title=&quot;Click on this button to get to the printer friendly version&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Print&lt;/span&gt;
+                &lt;i class=&quot;ng-icon-print&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;#archive_link&quot; title=&quot;Click on this button to download all the materials in an archive.&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Download&lt;/span&gt;
+                &lt;i class=&quot;ng-icon-download&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="pagemodules-sharing-addthis">
+                                Add This Sharing Dropdown
+                                <a class="kss-title__permalink" href="#pagemodules-sharing-addthis">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-sharing">
+    <a href="#" class="ng-icon-button ng-icon-share" data-ng-dropdown="{mode:'click'}"></a>
+    <div class="ng-dropdown-blank ng-dropdown-bottom">
+        <div class="ng-panel ng-panel-box ng-social-sharing-dropdown">
+            <ul class="ng-nav ng-nav-side ng-nav-parent-icon addthis_toolbox addthis_32x32_style" data-ng-nav>
+                <li><a class="addthis_button_twitter"
+                       href="https://twitter.com/share?url=/path/to/page&amp;text=Page%20Title&amp;via=[via]&amp;hashtags=" target="_blank"></a></li>
+                <li><a class="addthis_button_facebook"
+                       href="http://www.facebook.com/sharer.php?u=/path/to/page" target="_blank"></a></li>
+                <li><a class="addthis_button_google_plusone_share" href="https://plus.google.com/share?url=/path/to/page" target="_blank"></a></li>
+                <li><a class="addthis_button_pinterest_share"
+                       href="https://pinterest.com/pin/create/bookmarklet/?media=&amp;url=/path/to/page&amp;is_video=&amp;description=" target="_blank"></a></li>
+                <li><a class="addthis_button_linkedin"
+                       href="http://www.linkedin.com/shareArticle?url=/path/to/page&amp;title=Page%20Title" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#async=1"></script>
+<script>
+    var addthis_config = {
+        pubid: "ra-533b69011a5de587",
+        data_ga_property: "UA-3104240-2",
+        ui_header_color: "#000000",
+        ui_header_background: "#ffffff",
+        ui_508_compliant: true,
+        ui_click: true,
+        data_ga_social: true,
+        services_exclude: "print, email",
+        services_compact: "facebook,stumbleupon,digg,reddit,delicious,twitter,digo,linkedin,google_plusone_share"
+    };
+    if (typeof(addthis)!=="undefined")
+        addthis.init();
+</script></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-sharing&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-icon-button ng-icon-share&quot; data-ng-dropdown=&quot;{mode:&#x27;click&#x27;}&quot;&gt;&lt;/a&gt;
+    &lt;div class=&quot;ng-dropdown-blank ng-dropdown-bottom&quot;&gt;
+        &lt;div class=&quot;ng-panel ng-panel-box ng-social-sharing-dropdown&quot;&gt;
+            &lt;ul class=&quot;ng-nav ng-nav-side ng-nav-parent-icon addthis_toolbox addthis_32x32_style&quot; data-ng-nav&gt;
+                &lt;li&gt;&lt;a class=&quot;addthis_button_twitter&quot;
+                       href=&quot;https://twitter.com/share?url=/path/to/page&amp;amp;text=Page%20Title&amp;amp;via=[via]&amp;amp;hashtags=&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;addthis_button_facebook&quot;
+                       href=&quot;http://www.facebook.com/sharer.php?u=/path/to/page&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;addthis_button_google_plusone_share&quot; href=&quot;https://plus.google.com/share?url=/path/to/page&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;addthis_button_pinterest_share&quot;
+                       href=&quot;https://pinterest.com/pin/create/bookmarklet/?media=&amp;amp;url=/path/to/page&amp;amp;is_video=&amp;amp;description=&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;addthis_button_linkedin&quot;
+                       href=&quot;http://www.linkedin.com/shareArticle?url=/path/to/page&amp;amp;title=Page%20Title&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://s7.addthis.com/js/250/addthis_widget.js#async=1&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var addthis_config = {
+        pubid: &quot;ra-533b69011a5de587&quot;,
+        data_ga_property: &quot;UA-3104240-2&quot;,
+        ui_header_color: &quot;#000000&quot;,
+        ui_header_background: &quot;#ffffff&quot;,
+        ui_508_compliant: true,
+        ui_click: true,
+        data_ga_social: true,
+        services_exclude: &quot;print, email&quot;,
+        services_compact: &quot;facebook,stumbleupon,digg,reddit,delicious,twitter,digo,linkedin,google_plusone_share&quot;
+    };
+    if (typeof(addthis)!==&quot;undefined&quot;)
+        addthis.init();
+&lt;/script&gt;</code></pre>
+                            </div>
+                        </div>
+
+                    </div> <!-- main ui intro container" -->
+            </article>
+        </div>
+        <footer id="footer" class="kss-footer">
+        <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/highlight.pack.js"></script>
+    <script src="js/ngkit.js"></script>
+    <script src="public/docs.js"></script>
+  </body>
+</html>

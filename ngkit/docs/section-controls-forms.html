@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>National Geographic Style Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="generator" content="kss-node">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="public/combined.css">
+    <link rel="stylesheet" type="text/css" href="public/github.css">
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,600i">
+
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('fonts/fontawesome-webfont.eot?v=4.0.3}');
+        src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
+          url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'),
+          url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
+          url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+    <style type="text/css">
+    @font-face {
+        font-family: 'icon-society';
+        src: url('fonts/icon-society.woff') format('woff'),
+          url('fonts/icon-society.ttf') format('truetype'),
+          url('fonts/icon-society.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+        .add-100-margin{
+            margin-left:35px;
+            margin-right:35px;
+        }
+    </style>
+
+    <script src="public/jquery.min.js"></script>
+
+      <script>
+          function toggleRightRail(){
+              if($("#right-nav-rail").is(":visible")){
+                  $("#right-nav-rail").hide();
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+              }else{
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+                  $("#right-nav-rail").show();
+
+              }
+          }
+
+      </script>
+</head>
+<body id="kss-node">
+    <div class="wrapper">
+        <div class="full height">
+            <div class="toc" >
+                <nav class="ui vertical inverted menu">
+                        <div class="item">
+                            <div class="header">Introduction</div>
+                            <div class="menu">
+                                <a href="./index.html" class="item">Overview</a>
+                                    <a href="section-introduction-configuration.html" class="item">Configuration</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Layout</div>
+                            <div class="menu">
+                                    <a href="section-layout-column.html" class="item">Column</a>
+                                    <a href="section-layout-cover.html" class="item">Cover</a>
+                                    <a href="section-layout-flexbox.html" class="item">Flexbox</a>
+                                    <a href="section-layout-grids.html" class="item">Grids</a>
+                                    <a href="section-layout-panel.html" class="item">Panel</a>
+                                    <a href="section-layout-utilities.html" class="item">Layout Utilities</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Typography</div>
+                            <div class="menu">
+                                    <a href="section-typography-base.html" class="item">Base Typography</a>
+                                    <a href="section-typography-colors.html" class="item">Color Classes</a>
+                                    <a href="section-typography-lists.html" class="item">Lists</a>
+                                    <a href="section-typography-print.html" class="item">Print</a>
+                                    <a href="section-typography-tables.html" class="item">Tables</a>
+                                    <a href="section-typography-utilities.html" class="item">Text</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Controls</div>
+                            <div class="menu">
+                                    <a href="section-controls-buttons.html" class="item">Buttons</a>
+                                    <a href="section-controls-close.html" class="item">Close</a>
+                                    <a href="section-controls-contrast.html" class="item">Contrast</a>
+                                    <a href="section-controls-date-picker.html" class="item">Datepicker</a>
+                                    <a href="section-controls-dropdown.html" class="item">Dropdown</a>
+                                    <a href="section-controls-forms.html" class="item">Forms</a>
+                                    <a href="section-controls-progress.html" class="item">Progress</a>
+                                    <a href="section-controls-search.html" class="item">Search</a>
+                                    <a href="section-controls-toolbars.html" class="item">Toolbar</a>
+                                    <a href="section-controls-upload.html" class="item">Upload</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Media</div>
+                            <div class="menu">
+                                    <a href="section-media-icons.html" class="item">Icons</a>
+                                    <a href="section-media-media-object.html" class="item">Media object</a>
+                                    <a href="section-media-overlays.html" class="item">Overlay</a>
+                                    <a href="section-media-slideshow.html" class="item">Slideshow</a>
+                                    <a href="section-media-symbols.html" class="item">Symbols</a>
+                                    <a href="section-media-thumbnails.html" class="item">Images</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Callouts</div>
+                            <div class="menu">
+                                    <a href="section-callouts-alerts.html" class="item">Alert</a>
+                                    <a href="section-callouts-badges.html" class="item">Badge</a>
+                                    <a href="section-callouts-modals.html" class="item">Modal</a>
+                                    <a href="section-callouts-popovers.html" class="item">Popovers</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Navigation</div>
+                            <div class="menu">
+                                    <a href="section-navigation-breadcrumbs.html" class="item">Breadcrumbs</a>
+                                    <a href="section-navigation-dot-nav.html" class="item">Dot Navigation</a>
+                                    <a href="section-navigation-nav.html" class="item">Nav</a>
+                                    <a href="section-navigation-navbar.html" class="item">Navbar</a>
+                                    <a href="section-navigation-pagination.html" class="item">Pagination</a>
+                                    <a href="section-navigation-slide-navigation.html" class="item">Slide Navigation</a>
+                                    <a href="section-navigation-sub-nav.html" class="item">Subnav</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Containers</div>
+                            <div class="menu">
+                                    <a href="section-containers-accordion.html" class="item">Accordion</a>
+                                    <a href="section-containers-drawers.html" class="item">Drawer</a>
+                                    <a href="section-containers-off-canvas.html" class="item">Off-canvas</a>
+                                    <a href="section-containers-tabs.html" class="item">Tab</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Components</div>
+                            <div class="menu">
+                                    <a href="section-components-article.html" class="item">Article Components</a>
+                                    <a href="section-components-articleheading.html" class="item">Article Heading</a>
+                                    <a href="section-components-comments.html" class="item">Comment</a>
+                                    <a href="section-components-contentcarousel.html" class="item">Content Carousel</a>
+                                    <a href="section-components-dynamicleadcarousel.html" class="item">Carousel</a>
+                                    <a href="section-components-featurelist.html" class="item">Feature Lists</a>
+                                    <a href="section-components-filterresults.html" class="item">Filtering Results</a>
+                                    <a href="section-components-groupheading.html" class="item">Group Heading</a>
+                                    <a href="section-components-heading.html" class="item">Heading</a>
+                                    <a href="section-components-instructionalpathways.html" class="item">Instructional Pathways</a>
+                                    <a href="section-components-itemlisting.html" class="item">Item listing</a>
+                                    <a href="section-components-linkslist.html" class="item">Links List</a>
+                                    <a href="section-components-objectlists.html" class="item">Media Object Lists</a>
+                                    <a href="section-components-relatedmaterials.html" class="item">Related Materials</a>
+                                    <a href="section-components-tease.html" class="item">Tease</a>
+                                    <a href="section-components-thumbnailgrid.html" class="item">Thumbnail Grid</a>
+                                    <a href="section-components-tweetthis.html" class="item">Tweet This</a>
+                                    <a href="section-components-vocabulary.html" class="item">Vocabulary</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">JavaScript</div>
+                            <div class="menu">
+                                    <a href="section-javascript-animation.html" class="item">Animation</a>
+                                    <a href="section-javascript-autocomplete.html" class="item">Autocomplete</a>
+                                    <a href="section-javascript-filtering.html" class="item">Filtering</a>
+                                    <a href="section-javascript-scrollspy.html" class="item">Scrollspy</a>
+                                    <a href="section-javascript-smooth-scroll.html" class="item">Smooth Scroll</a>
+                                    <a href="section-javascript-sticky.html" class="item">Sticky</a>
+                                    <a href="section-javascript-switcher.html" class="item">Switcher</a>
+                                    <a href="section-javascript-template.html" class="item">Basic Templating</a>
+                                    <a href="section-javascript-toggle.html" class="item">Toggle</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Layouts</div>
+                            <div class="menu">
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Modules</div>
+                            <div class="menu">
+                                    <a href="section-pagemodules-03.html" class="item">Audience Navigation Tabs</a>
+                                    <a href="section-pagemodules-05.html" class="item">Audience Navbar</a>
+                                    <a href="section-pagemodules-07.html" class="item">Expandable thumbnail</a>
+                                    <a href="section-pagemodules-globalnavigation.html" class="item">Global Navigation</a>
+                                    <a href="section-pagemodules-sharing.html" class="item">Sharing widget</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Structure</div>
+                            <div class="menu">
+                                    <a href="section-pagestructure-configuration.html" class="item">Configuration</a>
+                                    <a href="section-pagestructure-contentmodules.html" class="item">Content Modules</a>
+                                    <a href="section-pagestructure-pagemodules.html" class="item">Page Modules</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                </nav>
+            </div> <!-- class="toc" -->
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger"></label>
+
+            <article class="content-wrapper">
+
+
+                            <div class="masthead">
+                                <div class="container">
+                                    <div class="introduction">
+                <img src="public/ngkitlogo.svg" style="margin-bottom: 1em" width="66" height="32" alt="NGKit" />
+                                        <div class="ui header">
+                                            Forms
+                                                <div class="sub header">
+                                                    <p>Easily create nicely looking forms with different styles and layouts.</p>
+
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-top:30px;">
+                                        <button onclick="toggleRightRail()">Toggle Right Rail</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-container-div" class="main ui intro container">
+                                <div id="right-nav-rail" class="ui dividing right rail">
+                                    <div class="ui sticky">
+
+                                        <div class="ui header">Forms</div>
+                                        <div class="ui vertical following fluid accordion text menu">
+
+                                                
+                                                
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#controls-forms-layoutexample"><strong>Typical Form Layout</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#controls-forms-configuration"><strong>Configuration</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#controls-forms-usage"><strong>Usage</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-forms-usage-rows">Rows</a>
+                                                    </div></div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#controls-forms-states"><strong>States</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-forms-states-disabled">Disabled state</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-forms-states-validation">Validation states</a>
+                                                    </div></div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#controls-forms-modifiers"><strong>Control Modifiers</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-forms-modifiers-blank">Blank form</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-forms-modifiers-help-text">Help text</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-forms-modifiers-size">Size modifiers</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-forms-modifiers-width">Width modifiers</a>
+                                                    </div></div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#controls-forms-layout"><strong>Layout modifiers</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-forms-layout-grids">Forms and Grids</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-forms-layout-horizontal">Form Horizontal</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-forms-layout-spacing">Condensed Vertical Spacing</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-forms-layout-stacked">Form Stacked</a>
+                                                    </div></div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#controls-forms-customized"><strong>Customized Inputs</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-forms-customized-icons">Form Icons</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-forms-customized-input-groups">Input Groups</a>
+                                                    </div></div>
+
+                                        </div> <!-- ui vertical following fluid accordion text menu -->
+                                    </div> <!-- ui sticky -->
+                                </div> <!-- ui dividing right rail -->
+                         <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="controls-forms-layoutexample">
+                                Typical Form Layout
+                                <a class="kss-title__permalink" href="#controls-forms-layoutexample">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-grid">
+    <div class="ng-width-1-2">
+        <form class="ng-form ng-form-stacked">
+            <div class="ng-form-row">
+                <label class="ng-form-label" for="validinput">Text input</label>
+                <div class="ng-form-controls ng-valid-input">
+                    <input type="text" class="ng-width-1-1 ng-form-large" id="validinput" placeholder="Text input" value="Valid Input">
+                    <p class="ng-form-help-block">The help text is going to be here.</p>
+                </div>
+            </div>
+            <div class="ng-form-row">
+                <label class="ng-form-label" for="invalidinput">Text input</label>
+                <div class="ng-form-controls ng-invalid-input">
+                    <input type="text" class="ng-width-1-1 ng-form-large" id="invalidinput" placeholder="Text input" value="Invalid Input">
+                    <p class="ng-form-error-block">The error text is should be above the help text.</p>
+                    <p class="ng-form-help-block">The help text is going to be here.</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-grid&quot;&gt;
+    &lt;div class=&quot;ng-width-1-2&quot;&gt;
+        &lt;form class=&quot;ng-form ng-form-stacked&quot;&gt;
+            &lt;div class=&quot;ng-form-row&quot;&gt;
+                &lt;label class=&quot;ng-form-label&quot; for=&quot;validinput&quot;&gt;Text input&lt;/label&gt;
+                &lt;div class=&quot;ng-form-controls ng-valid-input&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;ng-width-1-1 ng-form-large&quot; id=&quot;validinput&quot; placeholder=&quot;Text input&quot; value=&quot;Valid Input&quot;&gt;
+                    &lt;p class=&quot;ng-form-help-block&quot;&gt;The help text is going to be here.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ng-form-row&quot;&gt;
+                &lt;label class=&quot;ng-form-label&quot; for=&quot;invalidinput&quot;&gt;Text input&lt;/label&gt;
+                &lt;div class=&quot;ng-form-controls ng-invalid-input&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;ng-width-1-1 ng-form-large&quot; id=&quot;invalidinput&quot; placeholder=&quot;Text input&quot; value=&quot;Invalid Input&quot;&gt;
+                    &lt;p class=&quot;ng-form-error-block&quot;&gt;The error text is should be above the help text.&lt;/p&gt;
+                    &lt;p class=&quot;ng-form-help-block&quot;&gt;The help text is going to be here.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="controls-forms-configuration">
+                                Configuration
+                                <a class="kss-title__permalink" href="#controls-forms-configuration">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$form-height</code></td><td class="ng-form-height">30px</td></tr>
+<tr><td><code>$form-padding</code></td><td class="ng-form-padding">4px 6px</td></tr>
+<tr><td><code>$form-border</code></td><td class="ng-form-border">#ddd</td></tr>
+<tr><td><code>$form-border-width</code></td><td class="ng-form-border-width">1px</td></tr>
+<tr><td><code>$form-background</code></td><td class="ng-form-background">#fff</td></tr>
+<tr><td><code>$form-color</code></td><td class="ng-form-color">#000</td></tr>
+<tr><td><code>$form-focus-border</code></td><td class="ng-form-focus-border">#fc0</td></tr>
+<tr><td><code>$form-focus-background</code></td><td class="ng-form-focus-background">#fff</td></tr>
+<tr><td><code>$form-focus-color</code></td><td class="ng-form-focus-color">#000</td></tr>
+<tr><td><code>$form-disabled-border</code></td><td class="ng-form-disabled-border">#ddd</td></tr>
+<tr><td><code>$form-disabled-background</code></td><td class="ng-form-disabled-background">#fafafa</td></tr>
+<tr><td><code>$form-disabled-color</code></td><td class="ng-form-disabled-color">#999</td></tr>
+<tr><td><code>$form-placeholder-color</code></td><td class="ng-form-placeholder-color">#999</td></tr>
+<tr><td><code>$form-gutter</code></td><td class="ng-form-gutter">30px</td></tr>
+<tr><td><code>$form-legend-border</code></td><td class="ng-form-legend-border">#ddd</td></tr>
+<tr><td><code>$form-legend-border-width</code></td><td class="ng-form-legend-border-width">1px</td></tr>
+<tr><td><code>$form-legend-font-size</code></td><td class="ng-form-legend-font-size">20px</td></tr>
+<tr><td><code>$form-legend-line-height</code></td><td class="ng-form-legend-line-height">33px</td></tr>
+<tr><td><code>$form-small-height</code></td><td class="ng-form-small-height">25px</td></tr>
+<tr><td><code>$form-large-height</code></td><td class="ng-form-large-height">60px</td></tr>
+<tr><td><code>$form-small-padding</code></td><td class="ng-form-small-padding">3px 3px</td></tr>
+<tr><td><code>$form-large-padding</code></td><td class="ng-form-large-padding">18px 16px</td></tr>
+<tr><td><code>$form-small-font-size</code></td><td class="ng-form-small-font-size">14px</td></tr>
+<tr><td><code>$form-large-font-size</code></td><td class="ng-form-large-font-size">16px</td></tr>
+<tr><td><code>$form-danger-border</code></td><td class="ng-form-danger-border">#dc8d99</td></tr>
+<tr><td><code>$form-danger-background</code></td><td class="ng-form-danger-background">#fff7f8</td></tr>
+<tr><td><code>$form-danger-color</code></td><td class="ng-form-danger-color">#c91032</td></tr>
+<tr><td><code>$form-success-border</code></td><td class="ng-form-success-border">#8ec73b</td></tr>
+<tr><td><code>$form-success-background</code></td><td class="ng-form-success-background">#fafff2</td></tr>
+<tr><td><code>$form-success-color</code></td><td class="ng-form-success-color">#539022</td></tr>
+<tr><td><code>$form-blank-border</code></td><td class="ng-form-blank-border">#ddd</td></tr>
+<tr><td><code>$form-blank-border-style</code></td><td class="ng-form-blank-border-style">dashed</td></tr>
+<tr><td><code>$form-mini-width</code></td><td class="ng-form-mini-width">40px</td></tr>
+<tr><td><code>$form-small-width</code></td><td class="ng-form-small-width">130px</td></tr>
+<tr><td><code>$form-medium-width</code></td><td class="ng-form-medium-width">200px</td></tr>
+<tr><td><code>$form-large-width</code></td><td class="ng-form-large-width">500px</td></tr>
+<tr><td><code>$form-help-inline-margin-left</code></td><td class="ng-form-help-inline-margin-left">10px</td></tr>
+<tr><td><code>$form-help-block-margin-top</code></td><td class="ng-form-help-block-margin-top">5px</td></tr>
+<tr><td><code>$form-controls-condensed-margin-vertical</code></td><td class="ng-form-controls-condensed-margin-vertical">5px</td></tr>
+<tr><td><code>$form-stacked-margin-bottom</code></td><td class="ng-form-stacked-margin-bottom">5px</td></tr>
+<tr><td><code>$form-stacked-font-weight</code></td><td class="ng-form-stacked-font-weight">normal</td></tr>
+<tr><td><code>$form-horizontal-label-width</code></td><td class="ng-form-horizontal-label-width">200px</td></tr>
+<tr><td><code>$form-horizontal-label-margin-top</code></td><td class="ng-form-horizontal-label-margin-top">5px</td></tr>
+<tr><td><code>$form-horizontal-controls-margin-left</code></td><td class="ng-form-horizontal-controls-margin-left">215px</td></tr>
+<tr><td><code>$form-horizontal-controls-text-padding-top</code></td><td class="ng-form-horizontal-controls-text-padding-top">5px</td></tr>
+<tr><td><code>$form-icon-width</code></td><td class="ng-form-icon-width">30px</td></tr>
+<tr><td><code>$form-icon-font-size</code></td><td class="ng-form-icon-font-size">16px</td></tr>
+<tr><td><code>$form-icon-color</code></td><td class="ng-form-icon-color">#999</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="controls-forms-usage">
+                                Usage
+                                <a class="kss-title__permalink" href="#controls-forms-usage">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To apply this component, add the <code>.ng-form</code> class to a form element. All form
+control elements are placed side by side within the next row.</p>
+<p><span class="badge info">NOTE</span> In this example we used a button from the
+Button component. To add a top margin to form elements when they stack on smaller
+viewports, just add the <code>data-uk-margin</code> attribute from the Utility component to
+the parent element.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form">
+    <fieldset>
+        <legend>I am the legend of the fieldset</legend>
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+        <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select>
+        <button class="ng-button">Button</button>
+        <label><input type="checkbox"> Checkbox</label>
+    </fieldset>
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;I am the legend of the fieldset&lt;/legend&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;username&quot;&gt;
+        &lt;input type=&quot;password&quot; placeholder=&quot;password&quot;&gt;
+        &lt;select&gt;
+            &lt;option&gt;Option 1&lt;/option&gt;
+            &lt;option&gt;Option 2&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;button class=&quot;ng-button&quot;&gt;Button&lt;/button&gt;
+        &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Checkbox&lt;/label&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-forms-usage-rows">
+                                Rows
+                                <a class="kss-title__permalink" href="#controls-forms-usage-rows">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Add the <code>.ng-form-row</code> class to a <code>&lt;div&gt;</code> element to stack form controls.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form">
+    <fieldset>
+        <legend>I am the legend of the fieldset</legend>
+        <div class="ng-form-row">
+            <input type="text" placeholder="username">
+        </div>
+        <div class="ng-form-row">
+            <input type="password" placeholder="password">
+        </div>
+        <div class="ng-form-row">
+            <select>
+                <option>Option 1</option>
+                <option>Option 2</option>
+            </select>
+        </div>
+        <div class="ng-form-row">
+            <button>Button</button>
+        </div>
+        <div class="ng-form-row">
+            <label><input type="checkbox"> Checkbox</label>
+        </div>
+    </fieldset>
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;I am the legend of the fieldset&lt;/legend&gt;
+        &lt;div class=&quot;ng-form-row&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;username&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;ng-form-row&quot;&gt;
+            &lt;input type=&quot;password&quot; placeholder=&quot;password&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;ng-form-row&quot;&gt;
+            &lt;select&gt;
+                &lt;option&gt;Option 1&lt;/option&gt;
+                &lt;option&gt;Option 2&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;ng-form-row&quot;&gt;
+            &lt;button&gt;Button&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;ng-form-row&quot;&gt;
+            &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Checkbox&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="controls-forms-states">
+                                States
+                                <a class="kss-title__permalink" href="#controls-forms-states">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>Provide the user with basic information through feedback states on form controls.</p>
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-forms-states-disabled">
+                                Disabled state
+                                <a class="kss-title__permalink" href="#controls-forms-states-disabled">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Add the <code>disabled</code> attribute to a form control and it will be appear muted.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form">
+    <input type="text" placeholder="Don't touch this" disabled>
+    <select disabled>
+        <option>Option 1</option>
+        <option>Option 2</option>
+    </select>
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Don&#x27;t touch this&quot; disabled&gt;
+    &lt;select disabled&gt;
+        &lt;option&gt;Option 1&lt;/option&gt;
+        &lt;option&gt;Option 2&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-forms-states-validation">
+                                Validation states
+                                <a class="kss-title__permalink" href="#controls-forms-states-validation">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Add the <code>.ng-form-danger</code> or <code>.ng-form-success</code> class to a form control to notify
+the user whether or not the value is validated.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form">
+    <input type="text" placeholder="danger" class="ng-form-danger">
+    <input type="text" placeholder="success" class="ng-form-success">
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;danger&quot; class=&quot;ng-form-danger&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;success&quot; class=&quot;ng-form-success&quot;&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="controls-forms-modifiers">
+                                Control Modifiers
+                                <a class="kss-title__permalink" href="#controls-forms-modifiers">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-forms-modifiers-blank">
+                                Blank form
+                                <a class="kss-title__permalink" href="#controls-forms-modifiers-blank">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Add the <code>.ng-form-blank</code> class to minimize the styling of form controls. The
+border and border style is used when the control is in focus.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form">
+    <input type="text" placeholder="text" class="ng-form-blank">
+    <select class="ng-form-blank">
+        <option>Option 1</option>
+        <option>Option 2</option>
+    </select>
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;text&quot; class=&quot;ng-form-blank&quot;&gt;
+    &lt;select class=&quot;ng-form-blank&quot;&gt;
+        &lt;option&gt;Option 1&lt;/option&gt;
+        &lt;option&gt;Option 2&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-forms-modifiers-help-text">
+                                Help text
+                                <a class="kss-title__permalink" href="#controls-forms-modifiers-help-text">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Use the <code>.ng-form-help-inline</code> or <code>.ng-form-help-block</code> class to add inline or
+block level help text for the controls.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form">
+    <div class="ng-form-row">
+        <input type="text" placeholder="text input">
+        <span class="ng-form-help-inline">The
+        <code>.ng-form-help-inline</code> class creates spacing on the left.</span>
+    </div>
+    <div class="ng-form-row">
+        <textarea cols="30" rows="5" placeholder="textarea"></textarea>
+        <p class="ng-form-help-block">The <code>.ng-form-help-block</code> class
+        on a <code>&lt;p&gt;</code> tag creates an associated block of help text.</p>
+    </div>
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form&quot;&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;text input&quot;&gt;
+        &lt;span class=&quot;ng-form-help-inline&quot;&gt;The
+        &lt;code&gt;.ng-form-help-inline&lt;/code&gt; class creates spacing on the left.&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;textarea cols=&quot;30&quot; rows=&quot;5&quot; placeholder=&quot;textarea&quot;&gt;&lt;/textarea&gt;
+        &lt;p class=&quot;ng-form-help-block&quot;&gt;The &lt;code&gt;.ng-form-help-block&lt;/code&gt; class
+        on a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag creates an associated block of help text.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-forms-modifiers-size">
+                                Size modifiers
+                                <a class="kss-title__permalink" href="#controls-forms-modifiers-size">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Add the <code>.ng-form-large</code> or <code>.ng-form-small</code> class to an <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>
+or <code>&lt;textarea&gt;</code> element to make it smaller or larger.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form">
+    <div class="ng-form-row">
+        <input type="text" placeholder="form-large" class="ng-form-large">
+    </div>
+    <div class="ng-form-row">
+        <input type="text" placeholder="default">
+    </div>
+    <div class="ng-form-row">
+        <input type="text" placeholder="form-small" class="ng-form-small">
+    </div>
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form&quot;&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;form-large&quot; class=&quot;ng-form-large&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;default&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;form-small&quot; class=&quot;ng-form-small&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-forms-modifiers-width">
+                                Width modifiers
+                                <a class="kss-title__permalink" href="#controls-forms-modifiers-width">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Add the <code>ng-form-width-large</code>, <code>ng-form-width-medium</code>, <code>ng-form-width-small</code> or
+<code>ng-form-width-mini</code> class to an <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> or <code>&lt;textarea&gt;</code> element
+to adjust its width.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form">
+    <div class="ng-form-row"><input type="text" placeholder="form-width-large" class="ng-form-width-large"></div>
+    <div class="ng-form-row"><input type="text" placeholder="form-width-medium" class="ng-form-width-medium"></div>
+    <div class="ng-form-row"><input type="text" placeholder="form-width-small" class="ng-form-width-small"></div>
+    <div class="ng-form-row"><input type="text" placeholder="form-width-mini" class="ng-form-width-mini"></div>
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form&quot;&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;&lt;input type=&quot;text&quot; placeholder=&quot;form-width-large&quot; class=&quot;ng-form-width-large&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;&lt;input type=&quot;text&quot; placeholder=&quot;form-width-medium&quot; class=&quot;ng-form-width-medium&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;&lt;input type=&quot;text&quot; placeholder=&quot;form-width-small&quot; class=&quot;ng-form-width-small&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;&lt;input type=&quot;text&quot; placeholder=&quot;form-width-mini&quot; class=&quot;ng-form-width-mini&quot;&gt;&lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="controls-forms-layout">
+                                Layout modifiers
+                                <a class="kss-title__permalink" href="#controls-forms-layout">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>There are two layout modifiers available: <code>.ng-form-stacked</code> and
+<code>.ng-form-horizontal</code>. Both require form controls to be wrapped with the
+<code>.ng-form-row class</code> in order to stack them. Labels need the <code>.ng-form-label</code>
+class and controls must be wrapped in the <code>.ng-form-controls</code> class.</p>
+<pre><code class="code html hljs xml">&lt;form class="ng-form ng-form-stacked"&gt;
+    &lt;div class="ng-form-row"&gt;
+        &lt;label class="ng-form-label" for=""&gt;...&lt;/label&gt;
+        &lt;div class="ng-form-controls"&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+
+<p><span class="badge info">Note</span> Layout modifiers can also be added to a
+<code>&lt;fieldset&gt;</code> element. This means if you use fieldsets you can have different
+form layouts for each fieldset.</p>
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-forms-layout-grids">
+                                Forms and Grids
+                                <a class="kss-title__permalink" href="#controls-forms-layout-grids">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>This is an example of how to use forms with the Grid component.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form">
+    <div class="ng-grid">
+        <div class="ng-width-1-1">
+            <input type="text" placeholder="100" class="ng-width-1-1">
+        </div>
+    </div>
+    <div class="ng-grid">
+        <div class="ng-width-1-2"><input type="text" placeholder="50" class="ng-width-1-1"></div>
+        <div class="ng-width-1-4"><input type="text" placeholder="25" class="ng-width-1-1"></div>
+        <div class="ng-width-1-4"><input type="text" placeholder="25" class="ng-width-1-1"></div>
+    </div>
+    <div class="ng-grid" data-ng-grid-margin="">
+        <div class="ng-width-medium-1-2">
+            <div class="ng-form-controls">
+                <input type="text" placeholder="50" class="ng-width-1-1">
+            </div>
+        </div>
+        <div class="ng-width-medium-1-2">
+            <div class="ng-form-controls">
+                <input type="text" placeholder="50" class="ng-width-1-1">
+            </div>
+        </div>
+    </div>
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form&quot;&gt;
+    &lt;div class=&quot;ng-grid&quot;&gt;
+        &lt;div class=&quot;ng-width-1-1&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;100&quot; class=&quot;ng-width-1-1&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-grid&quot;&gt;
+        &lt;div class=&quot;ng-width-1-2&quot;&gt;&lt;input type=&quot;text&quot; placeholder=&quot;50&quot; class=&quot;ng-width-1-1&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;ng-width-1-4&quot;&gt;&lt;input type=&quot;text&quot; placeholder=&quot;25&quot; class=&quot;ng-width-1-1&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;ng-width-1-4&quot;&gt;&lt;input type=&quot;text&quot; placeholder=&quot;25&quot; class=&quot;ng-width-1-1&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-grid&quot; data-ng-grid-margin=&quot;&quot;&gt;
+        &lt;div class=&quot;ng-width-medium-1-2&quot;&gt;
+            &lt;div class=&quot;ng-form-controls&quot;&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;50&quot; class=&quot;ng-width-1-1&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;ng-width-medium-1-2&quot;&gt;
+            &lt;div class=&quot;ng-form-controls&quot;&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;50&quot; class=&quot;ng-width-1-1&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-forms-layout-horizontal">
+                                Form Horizontal
+                                <a class="kss-title__permalink" href="#controls-forms-layout-horizontal">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Add the <code>.ng-form-horizontal</code> class to display labels and controls side by side.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form ng-form-horizontal">
+    <div class="ng-form-row">
+        <label class="ng-form-label" for="form-s-it">Text input</label>
+        <div class="ng-form-controls">
+            <input type="text" id="form-s-it" placeholder="Text input">
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <label class="ng-form-label" for="form-s-ip">Password input</label>
+        <div class="ng-form-controls">
+            <input type="password" id="form-s-ip" placeholder="Password input">
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <label class="ng-form-label" for="form-s-s">Select field</label>
+        <div class="ng-form-controls">
+            <select id="form-s-s">
+                <option>Option 01</option>
+                <option>Option 02</option>
+            </select>
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <label class="ng-form-label" for="form-s-t">Textarea</label>
+        <div class="ng-form-controls">
+            <textarea id="form-s-t" cols="30" rows="5" placeholder="Textarea text"></textarea>
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <span class="ng-form-label">Radio input</span>
+        <div class="ng-form-controls">
+            <input type="radio" id="form-s-r" name="radio"> <label for="form-s-r">Radio input</label><br>
+            <input type="radio" id="form-s-r1" name="radio"> <label for="form-s-r1">1</label>
+            <label><input type="radio" name="radio"> 2</label>
+            <label><input type="radio" name="radio"> 3</label>
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <span class="ng-form-label">Checkbox input</span>
+        <div class="ng-form-controls">
+            <input type="checkbox" id="form-s-c"> <label for="form-s-c">Checkbox input</label><br>
+            <input type="checkbox" id="form-s-c1"> <label for="form-s-c1">1</label>
+            <label><input type="checkbox"> 2</label>
+            <label><input type="checkbox"> 3</label>
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <span class="ng-form-label">Mixed controls</span>
+        <div class="ng-form-controls">
+            <input type="checkbox" id="form-s-mix1"> <label for="form-s-mix1">Checkbox input</label>
+            <input type="number" id="form-s-mix2" min="0" max="10" value="5" class="ng-form-width-mini ng-form-small"> <label for="form-s-mix2">Number input</label>
+            <select id="form-s-mix3" class="ng-form-small">
+                <option selected="selected">Option 01</option>
+                <option>Option 02</option>
+            </select>
+            <label for="form-s-mix3">Select field</label>
+        </div>
+    </div>
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form ng-form-horizontal&quot;&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;label class=&quot;ng-form-label&quot; for=&quot;form-s-it&quot;&gt;Text input&lt;/label&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;input type=&quot;text&quot; id=&quot;form-s-it&quot; placeholder=&quot;Text input&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;label class=&quot;ng-form-label&quot; for=&quot;form-s-ip&quot;&gt;Password input&lt;/label&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;input type=&quot;password&quot; id=&quot;form-s-ip&quot; placeholder=&quot;Password input&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;label class=&quot;ng-form-label&quot; for=&quot;form-s-s&quot;&gt;Select field&lt;/label&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;select id=&quot;form-s-s&quot;&gt;
+                &lt;option&gt;Option 01&lt;/option&gt;
+                &lt;option&gt;Option 02&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;label class=&quot;ng-form-label&quot; for=&quot;form-s-t&quot;&gt;Textarea&lt;/label&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;textarea id=&quot;form-s-t&quot; cols=&quot;30&quot; rows=&quot;5&quot; placeholder=&quot;Textarea text&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;span class=&quot;ng-form-label&quot;&gt;Radio input&lt;/span&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;input type=&quot;radio&quot; id=&quot;form-s-r&quot; name=&quot;radio&quot;&gt; &lt;label for=&quot;form-s-r&quot;&gt;Radio input&lt;/label&gt;&lt;br&gt;
+            &lt;input type=&quot;radio&quot; id=&quot;form-s-r1&quot; name=&quot;radio&quot;&gt; &lt;label for=&quot;form-s-r1&quot;&gt;1&lt;/label&gt;
+            &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;radio&quot;&gt; 2&lt;/label&gt;
+            &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;radio&quot;&gt; 3&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;span class=&quot;ng-form-label&quot;&gt;Checkbox input&lt;/span&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;form-s-c&quot;&gt; &lt;label for=&quot;form-s-c&quot;&gt;Checkbox input&lt;/label&gt;&lt;br&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;form-s-c1&quot;&gt; &lt;label for=&quot;form-s-c1&quot;&gt;1&lt;/label&gt;
+            &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; 2&lt;/label&gt;
+            &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; 3&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;span class=&quot;ng-form-label&quot;&gt;Mixed controls&lt;/span&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;form-s-mix1&quot;&gt; &lt;label for=&quot;form-s-mix1&quot;&gt;Checkbox input&lt;/label&gt;
+            &lt;input type=&quot;number&quot; id=&quot;form-s-mix2&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;5&quot; class=&quot;ng-form-width-mini ng-form-small&quot;&gt; &lt;label for=&quot;form-s-mix2&quot;&gt;Number input&lt;/label&gt;
+            &lt;select id=&quot;form-s-mix3&quot; class=&quot;ng-form-small&quot;&gt;
+                &lt;option selected=&quot;selected&quot;&gt;Option 01&lt;/option&gt;
+                &lt;option&gt;Option 02&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;label for=&quot;form-s-mix3&quot;&gt;Select field&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-forms-layout-spacing">
+                                Condensed Vertical Spacing
+                                <a class="kss-title__permalink" href="#controls-forms-layout-spacing">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>If you create paragraphs in form controls, add the <code>.ng-form-controls-condensed</code>
+class to reduce spacing.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form ng-form-stacked">
+    <div class="ng-form-row">
+        <span class="ng-form-label">Mixed controls</span>
+        <div class="ng-form-controls ng-form-controls-text">
+            <p class="ng-form-controls-condensed">
+                <input type="checkbox" id="form-h-mix1"> <label for="form-h-mix1">Checkbox input</label>
+                <input type="number" id="form-h-mix2" min="0" max="10" value="5" class="ng-form-width-mini ng-form-small"> <label for="form-h-mix2">Number input</label>
+                <select id="form-h-mix3" class="ng-form-small">
+                    <option selected="selected">Option 01</option>
+                    <option>Option 02</option>
+                </select>
+                <label for="form-h-mix3">Select field</label>
+            </p>
+            <p class="ng-form-controls-condensed">
+                <label><input type="checkbox"> Checkbox input</label>
+                <label><input type="number" min="0" max="10" value="5" class="ng-form-width-mini ng-form-small"> Number input</label>
+                <label>
+                    <select class="ng-form-small">
+                        <option selected="selected">Option 01</option>
+                        <option>Option 02</option>
+                    </select>
+                    Select field
+                </label>
+            </p>
+        </div>
+    </div>
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form ng-form-stacked&quot;&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;span class=&quot;ng-form-label&quot;&gt;Mixed controls&lt;/span&gt;
+        &lt;div class=&quot;ng-form-controls ng-form-controls-text&quot;&gt;
+            &lt;p class=&quot;ng-form-controls-condensed&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;form-h-mix1&quot;&gt; &lt;label for=&quot;form-h-mix1&quot;&gt;Checkbox input&lt;/label&gt;
+                &lt;input type=&quot;number&quot; id=&quot;form-h-mix2&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;5&quot; class=&quot;ng-form-width-mini ng-form-small&quot;&gt; &lt;label for=&quot;form-h-mix2&quot;&gt;Number input&lt;/label&gt;
+                &lt;select id=&quot;form-h-mix3&quot; class=&quot;ng-form-small&quot;&gt;
+                    &lt;option selected=&quot;selected&quot;&gt;Option 01&lt;/option&gt;
+                    &lt;option&gt;Option 02&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;label for=&quot;form-h-mix3&quot;&gt;Select field&lt;/label&gt;
+            &lt;/p&gt;
+            &lt;p class=&quot;ng-form-controls-condensed&quot;&gt;
+                &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Checkbox input&lt;/label&gt;
+                &lt;label&gt;&lt;input type=&quot;number&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;5&quot; class=&quot;ng-form-width-mini ng-form-small&quot;&gt; Number input&lt;/label&gt;
+                &lt;label&gt;
+                    &lt;select class=&quot;ng-form-small&quot;&gt;
+                        &lt;option selected=&quot;selected&quot;&gt;Option 01&lt;/option&gt;
+                        &lt;option&gt;Option 02&lt;/option&gt;
+                    &lt;/select&gt;
+                    Select field
+                &lt;/label&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-forms-layout-stacked">
+                                Form Stacked
+                                <a class="kss-title__permalink" href="#controls-forms-layout-stacked">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Add the <code>.ng-form-stacked</code> class to display labels on top of controls.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form ng-form-stacked">
+    <div class="ng-form-row">
+        <label class="ng-form-label" for="form-s-it">Text input</label>
+        <div class="ng-form-controls">
+            <input type="text" id="form-s-it" placeholder="Text input">
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <label class="ng-form-label" for="form-s-ip">Password input</label>
+        <div class="ng-form-controls">
+            <input type="password" id="form-s-ip" placeholder="Password input">
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <label class="ng-form-label" for="form-s-s">Select field</label>
+        <div class="ng-form-controls">
+            <select id="form-s-s">
+                <option>Option 01</option>
+                <option>Option 02</option>
+            </select>
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <label class="ng-form-label" for="form-s-t">Textarea</label>
+        <div class="ng-form-controls">
+            <textarea id="form-s-t" cols="30" rows="5" placeholder="Textarea text"></textarea>
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <span class="ng-form-label">Radio input</span>
+        <div class="ng-form-controls">
+            <input type="radio" id="form-s-r" name="radio"> <label for="form-s-r">Radio input</label><br>
+            <input type="radio" id="form-s-r1" name="radio"> <label for="form-s-r1">1</label>
+            <label><input type="radio" name="radio"> 2</label>
+            <label><input type="radio" name="radio"> 3</label>
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <span class="ng-form-label">Checkbox input</span>
+        <div class="ng-form-controls">
+            <input type="checkbox" id="form-s-c"> <label for="form-s-c">Checkbox input</label><br>
+            <input type="checkbox" id="form-s-c1"> <label for="form-s-c1">1</label>
+            <label><input type="checkbox"> 2</label>
+            <label><input type="checkbox"> 3</label>
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <span class="ng-form-label">Mixed controls</span>
+        <div class="ng-form-controls">
+            <input type="checkbox" id="form-s-mix1"> <label for="form-s-mix1">Checkbox input</label>
+            <input type="number" id="form-s-mix2" min="0" max="10" value="5" class="ng-form-width-mini ng-form-small"> <label for="form-s-mix2">Number input</label>
+            <select id="form-s-mix3" class="ng-form-small">
+                <option selected="selected">Option 01</option>
+                <option>Option 02</option>
+            </select>
+            <label for="form-s-mix3">Select field</label>
+        </div>
+    </div>
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form ng-form-stacked&quot;&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;label class=&quot;ng-form-label&quot; for=&quot;form-s-it&quot;&gt;Text input&lt;/label&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;input type=&quot;text&quot; id=&quot;form-s-it&quot; placeholder=&quot;Text input&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;label class=&quot;ng-form-label&quot; for=&quot;form-s-ip&quot;&gt;Password input&lt;/label&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;input type=&quot;password&quot; id=&quot;form-s-ip&quot; placeholder=&quot;Password input&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;label class=&quot;ng-form-label&quot; for=&quot;form-s-s&quot;&gt;Select field&lt;/label&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;select id=&quot;form-s-s&quot;&gt;
+                &lt;option&gt;Option 01&lt;/option&gt;
+                &lt;option&gt;Option 02&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;label class=&quot;ng-form-label&quot; for=&quot;form-s-t&quot;&gt;Textarea&lt;/label&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;textarea id=&quot;form-s-t&quot; cols=&quot;30&quot; rows=&quot;5&quot; placeholder=&quot;Textarea text&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;span class=&quot;ng-form-label&quot;&gt;Radio input&lt;/span&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;input type=&quot;radio&quot; id=&quot;form-s-r&quot; name=&quot;radio&quot;&gt; &lt;label for=&quot;form-s-r&quot;&gt;Radio input&lt;/label&gt;&lt;br&gt;
+            &lt;input type=&quot;radio&quot; id=&quot;form-s-r1&quot; name=&quot;radio&quot;&gt; &lt;label for=&quot;form-s-r1&quot;&gt;1&lt;/label&gt;
+            &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;radio&quot;&gt; 2&lt;/label&gt;
+            &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;radio&quot;&gt; 3&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;span class=&quot;ng-form-label&quot;&gt;Checkbox input&lt;/span&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;form-s-c&quot;&gt; &lt;label for=&quot;form-s-c&quot;&gt;Checkbox input&lt;/label&gt;&lt;br&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;form-s-c1&quot;&gt; &lt;label for=&quot;form-s-c1&quot;&gt;1&lt;/label&gt;
+            &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; 2&lt;/label&gt;
+            &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; 3&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;span class=&quot;ng-form-label&quot;&gt;Mixed controls&lt;/span&gt;
+        &lt;div class=&quot;ng-form-controls&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;form-s-mix1&quot;&gt; &lt;label for=&quot;form-s-mix1&quot;&gt;Checkbox input&lt;/label&gt;
+            &lt;input type=&quot;number&quot; id=&quot;form-s-mix2&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;5&quot; class=&quot;ng-form-width-mini ng-form-small&quot;&gt; &lt;label for=&quot;form-s-mix2&quot;&gt;Number input&lt;/label&gt;
+            &lt;select id=&quot;form-s-mix3&quot; class=&quot;ng-form-small&quot;&gt;
+                &lt;option selected=&quot;selected&quot;&gt;Option 01&lt;/option&gt;
+                &lt;option&gt;Option 02&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;label for=&quot;form-s-mix3&quot;&gt;Select field&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="controls-forms-customized">
+                                Customized Inputs
+                                <a class="kss-title__permalink" href="#controls-forms-customized">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-forms-customized-icons">
+                                Form Icons
+                                <a class="kss-title__permalink" href="#controls-forms-customized-icons">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>This is an example of how to add an icon from the Icon component to a form.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form" data-ng-margin="">
+    <div class="ng-form-icon">
+        <i class="ng-icon-calendar"></i>
+        <input type="text">
+    </div>
+    <div class="ng-form-icon">
+        <i class="ng-icon-clock-o"></i>
+        <input type="text">
+    </div>
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form&quot; data-ng-margin=&quot;&quot;&gt;
+    &lt;div class=&quot;ng-form-icon&quot;&gt;
+        &lt;i class=&quot;ng-icon-calendar&quot;&gt;&lt;/i&gt;
+        &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-icon&quot;&gt;
+        &lt;i class=&quot;ng-icon-clock-o&quot;&gt;&lt;/i&gt;
+        &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-forms-customized-input-groups">
+                                Input Groups
+                                <a class="kss-title__permalink" href="#controls-forms-customized-input-groups">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><form class="ng-form">
+    <div class="ng-form-row">
+        <div class="ng-input-group">
+          <label for="username">Username</label>
+          <span class="ng-input-group-addon">@</span>
+          <input id="username" type="text" placeholder="Username">
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <div class="ng-input-group">
+          <input type="text" placeholder="Recipient's username">
+          <span class="ng-input-group-addon">@example.com</span>
+        </div>
+    </div>
+    <div class="ng-form-row">
+        <div class="ng-input-group">
+          <label for="amount">Amount</label>
+          <span class="ng-input-group-addon">$</span>
+          <input type="text" aria-label="Amount (to the nearest dollar)">
+          <span class="ng-input-group-addon">.00</span>
+        </div>
+    </div>
+</form></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;form class=&quot;ng-form&quot;&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;div class=&quot;ng-input-group&quot;&gt;
+          &lt;label for=&quot;username&quot;&gt;Username&lt;/label&gt;
+          &lt;span class=&quot;ng-input-group-addon&quot;&gt;@&lt;/span&gt;
+          &lt;input id=&quot;username&quot; type=&quot;text&quot; placeholder=&quot;Username&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;div class=&quot;ng-input-group&quot;&gt;
+          &lt;input type=&quot;text&quot; placeholder=&quot;Recipient&#x27;s username&quot;&gt;
+          &lt;span class=&quot;ng-input-group-addon&quot;&gt;@example.com&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-form-row&quot;&gt;
+        &lt;div class=&quot;ng-input-group&quot;&gt;
+          &lt;label for=&quot;amount&quot;&gt;Amount&lt;/label&gt;
+          &lt;span class=&quot;ng-input-group-addon&quot;&gt;$&lt;/span&gt;
+          &lt;input type=&quot;text&quot; aria-label=&quot;Amount (to the nearest dollar)&quot;&gt;
+          &lt;span class=&quot;ng-input-group-addon&quot;&gt;.00&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+
+                    </div> <!-- main ui intro container" -->
+            </article>
+        </div>
+        <footer id="footer" class="kss-footer">
+        <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/highlight.pack.js"></script>
+    <script src="js/ngkit.js"></script>
+    <script src="public/docs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>National Geographic Style Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="generator" content="kss-node">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="public/combined.css">
+    <link rel="stylesheet" type="text/css" href="public/github.css">
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,600i">
+
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('fonts/fontawesome-webfont.eot?v=4.0.3}');
+        src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
+          url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'),
+          url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
+          url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+    <style type="text/css">
+    @font-face {
+        font-family: 'icon-society';
+        src: url('fonts/icon-society.woff') format('woff'),
+          url('fonts/icon-society.ttf') format('truetype'),
+          url('fonts/icon-society.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+        .add-100-margin{
+            margin-left:35px;
+            margin-right:35px;
+        }
+    </style>
+
+    <script src="public/jquery.min.js"></script>
+
+      <script>
+          function toggleRightRail(){
+              if($("#right-nav-rail").is(":visible")){
+                  $("#right-nav-rail").hide();
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+              }else{
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+                  $("#right-nav-rail").show();
+
+              }
+          }
+
+      </script>
+</head>
+<body id="kss-node">
+    <div class="wrapper">
+        <div class="full height">
+            <div class="toc" >
+                <nav class="ui vertical inverted menu">
+                        <div class="item">
+                            <div class="header">Introduction</div>
+                            <div class="menu">
+                                <a href="./index.html" class="item">Overview</a>
+                                    <a href="section-introduction-configuration.html" class="item">Configuration</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Layout</div>
+                            <div class="menu">
+                                    <a href="section-layout-column.html" class="item">Column</a>
+                                    <a href="section-layout-cover.html" class="item">Cover</a>
+                                    <a href="section-layout-flexbox.html" class="item">Flexbox</a>
+                                    <a href="section-layout-grids.html" class="item">Grids</a>
+                                    <a href="section-layout-panel.html" class="item">Panel</a>
+                                    <a href="section-layout-utilities.html" class="item">Layout Utilities</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Typography</div>
+                            <div class="menu">
+                                    <a href="section-typography-base.html" class="item">Base Typography</a>
+                                    <a href="section-typography-colors.html" class="item">Color Classes</a>
+                                    <a href="section-typography-lists.html" class="item">Lists</a>
+                                    <a href="section-typography-print.html" class="item">Print</a>
+                                    <a href="section-typography-tables.html" class="item">Tables</a>
+                                    <a href="section-typography-utilities.html" class="item">Text</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Controls</div>
+                            <div class="menu">
+                                    <a href="section-controls-buttons.html" class="item">Buttons</a>
+                                    <a href="section-controls-close.html" class="item">Close</a>
+                                    <a href="section-controls-contrast.html" class="item">Contrast</a>
+                                    <a href="section-controls-date-picker.html" class="item">Datepicker</a>
+                                    <a href="section-controls-dropdown.html" class="item">Dropdown</a>
+                                    <a href="section-controls-forms.html" class="item">Forms</a>
+                                    <a href="section-controls-progress.html" class="item">Progress</a>
+                                    <a href="section-controls-search.html" class="item">Search</a>
+                                    <a href="section-controls-toolbars.html" class="item">Toolbar</a>
+                                    <a href="section-controls-upload.html" class="item">Upload</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Media</div>
+                            <div class="menu">
+                                    <a href="section-media-icons.html" class="item">Icons</a>
+                                    <a href="section-media-media-object.html" class="item">Media object</a>
+                                    <a href="section-media-overlays.html" class="item">Overlay</a>
+                                    <a href="section-media-slideshow.html" class="item">Slideshow</a>
+                                    <a href="section-media-symbols.html" class="item">Symbols</a>
+                                    <a href="section-media-thumbnails.html" class="item">Images</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Callouts</div>
+                            <div class="menu">
+                                    <a href="section-callouts-alerts.html" class="item">Alert</a>
+                                    <a href="section-callouts-badges.html" class="item">Badge</a>
+                                    <a href="section-callouts-modals.html" class="item">Modal</a>
+                                    <a href="section-callouts-popovers.html" class="item">Popovers</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Navigation</div>
+                            <div class="menu">
+                                    <a href="section-navigation-breadcrumbs.html" class="item">Breadcrumbs</a>
+                                    <a href="section-navigation-dot-nav.html" class="item">Dot Navigation</a>
+                                    <a href="section-navigation-nav.html" class="item">Nav</a>
+                                    <a href="section-navigation-navbar.html" class="item">Navbar</a>
+                                    <a href="section-navigation-pagination.html" class="item">Pagination</a>
+                                    <a href="section-navigation-slide-navigation.html" class="item">Slide Navigation</a>
+                                    <a href="section-navigation-sub-nav.html" class="item">Subnav</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Containers</div>
+                            <div class="menu">
+                                    <a href="section-containers-accordion.html" class="item">Accordion</a>
+                                    <a href="section-containers-drawers.html" class="item">Drawer</a>
+                                    <a href="section-containers-off-canvas.html" class="item">Off-canvas</a>
+                                    <a href="section-containers-tabs.html" class="item">Tab</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Components</div>
+                            <div class="menu">
+                                    <a href="section-components-article.html" class="item">Article Components</a>
+                                    <a href="section-components-articleheading.html" class="item">Article Heading</a>
+                                    <a href="section-components-comments.html" class="item">Comment</a>
+                                    <a href="section-components-contentcarousel.html" class="item">Content Carousel</a>
+                                    <a href="section-components-dynamicleadcarousel.html" class="item">Carousel</a>
+                                    <a href="section-components-featurelist.html" class="item">Feature Lists</a>
+                                    <a href="section-components-filterresults.html" class="item">Filtering Results</a>
+                                    <a href="section-components-groupheading.html" class="item">Group Heading</a>
+                                    <a href="section-components-heading.html" class="item">Heading</a>
+                                    <a href="section-components-instructionalpathways.html" class="item">Instructional Pathways</a>
+                                    <a href="section-components-itemlisting.html" class="item">Item listing</a>
+                                    <a href="section-components-linkslist.html" class="item">Links List</a>
+                                    <a href="section-components-objectlists.html" class="item">Media Object Lists</a>
+                                    <a href="section-components-relatedmaterials.html" class="item">Related Materials</a>
+                                    <a href="section-components-tease.html" class="item">Tease</a>
+                                    <a href="section-components-thumbnailgrid.html" class="item">Thumbnail Grid</a>
+                                    <a href="section-components-tweetthis.html" class="item">Tweet This</a>
+                                    <a href="section-components-vocabulary.html" class="item">Vocabulary</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">JavaScript</div>
+                            <div class="menu">
+                                    <a href="section-javascript-animation.html" class="item">Animation</a>
+                                    <a href="section-javascript-autocomplete.html" class="item">Autocomplete</a>
+                                    <a href="section-javascript-filtering.html" class="item">Filtering</a>
+                                    <a href="section-javascript-scrollspy.html" class="item">Scrollspy</a>
+                                    <a href="section-javascript-smooth-scroll.html" class="item">Smooth Scroll</a>
+                                    <a href="section-javascript-sticky.html" class="item">Sticky</a>
+                                    <a href="section-javascript-switcher.html" class="item">Switcher</a>
+                                    <a href="section-javascript-template.html" class="item">Basic Templating</a>
+                                    <a href="section-javascript-toggle.html" class="item">Toggle</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Layouts</div>
+                            <div class="menu">
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Modules</div>
+                            <div class="menu">
+                                    <a href="section-pagemodules-03.html" class="item">Audience Navigation Tabs</a>
+                                    <a href="section-pagemodules-05.html" class="item">Audience Navbar</a>
+                                    <a href="section-pagemodules-07.html" class="item">Expandable thumbnail</a>
+                                    <a href="section-pagemodules-globalnavigation.html" class="item">Global Navigation</a>
+                                    <a href="section-pagemodules-sharing.html" class="item">Sharing widget</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Structure</div>
+                            <div class="menu">
+                                    <a href="section-pagestructure-configuration.html" class="item">Configuration</a>
+                                    <a href="section-pagestructure-contentmodules.html" class="item">Content Modules</a>
+                                    <a href="section-pagestructure-pagemodules.html" class="item">Page Modules</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                </nav>
+            </div> <!-- class="toc" -->
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger"></label>
+
+            <article class="content-wrapper">
+
+
+                            <div class="masthead">
+                                <div class="container">
+                                    <div class="introduction">
+                <img src="public/ngkitlogo.svg" style="margin-bottom: 1em" width="66" height="32" alt="NGKit" />
+                                        <div class="ui header">
+                                            Panel
+                                                <div class="sub header">
+                                                    <p>Create layout boxes with different styles.</p>
+<p>You can use panels to outline certain sections of your content, which can be
+styled differently. Typically, panels are arranged in grid columns from the
+Grid component.</p>
+
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-top:30px;">
+                                        <button onclick="toggleRightRail()">Toggle Right Rail</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-container-div" class="main ui intro container">
+                                <div id="right-nav-rail" class="ui dividing right rail">
+                                    <div class="ui sticky">
+
+                                        <div class="ui header">Panel</div>
+                                        <div class="ui vertical following fluid accordion text menu">
+
+                                                
+                                                
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#layout-panel-configuration"><strong>Configuration</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#layout-panel-configuration-box">Box Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#layout-panel-configuration-header-title">Header Title Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#layout-panel-configuration-hover">Hover Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#layout-panel-configuration-misc">Misc Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#layout-panel-configuration-primary">Primary Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#layout-panel-configuration-secondary">Secondary Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#layout-panel-configuration-title">Title Configuration</a>
+                                                    </div></div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#layout-panel-usage"><strong>Usage</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#layout-panel-usage-panels-in-a-grid">Panels in a grid</a>
+                                                    </div></div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#layout-panel-modifiers"><strong>Panel Modifiers</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#layout-panel-modifiers-box">Panel Box</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#layout-panel-modifiers-primary">Primary Panel Box</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#layout-panel-modifiers-secondary">Secondary Panel Box</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#layout-panel-modifiers-hover">Panel hover</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#layout-panel-modifiers-tab-content">Tab Content Panel</a>
+                                                    </div></div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#layout-panel-header"><strong>Panel header</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#layout-panel-spacing"><strong>Panel Spacing</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#layout-panel-dividers"><strong>Panel dividers</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#layout-panel-box-with-teaser"><strong>Panel box with teaser</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#layout-panel-box-with-icon"><strong>Panel with icons</strong></a>
+                                                    </div>
+
+                                        </div> <!-- ui vertical following fluid accordion text menu -->
+                                    </div> <!-- ui sticky -->
+                                </div> <!-- ui dividing right rail -->
+                         <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="layout-panel-configuration">
+                                Configuration
+                                <a class="kss-title__permalink" href="#layout-panel-configuration">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="layout-panel-configuration-box">
+                                Box Configuration
+                                <a class="kss-title__permalink" href="#layout-panel-configuration-box">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$panel-box-padding</code></td><td class="ng-panel-box-padding">30px</td></tr>
+<tr><td><code>$panel-box-background</code></td><td class="ng-panel-box-background">#fafafa</td></tr>
+<tr><td><code>$panel-box-color</code></td><td class="ng-panel-box-color">#000</td></tr>
+<tr><td><code>$panel-box-hover-color</code></td><td class="ng-panel-box-hover-color">#000</td></tr>
+<tr><td><code>$panel-box-title-color</code></td><td class="ng-panel-box-title-color">#000</td></tr>
+<tr><td><code>$panel-box-badge-top</code></td><td class="ng-panel-box-badge-top">10px</td></tr>
+<tr><td><code>$panel-box-badge-right</code></td><td class="ng-panel-box-badge-right">10px</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="layout-panel-configuration-header-title">
+                                Header Title Configuration
+                                <a class="kss-title__permalink" href="#layout-panel-configuration-header-title">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$panel-header-title-padding</code></td><td class="ng-panel-header-title-padding">10px</td></tr>
+<tr><td><code>$panel-header-title-border</code></td><td class="ng-panel-header-title-border">#ddd</td></tr>
+<tr><td><code>$panel-header-title-border-width</code></td><td class="ng-panel-header-title-border-width">1px</td></tr>
+<tr><td><code>$panel-header-title-color</code></td><td class="ng-panel-header-title-color">#000</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="layout-panel-configuration-hover">
+                                Hover Configuration
+                                <a class="kss-title__permalink" href="#layout-panel-configuration-hover">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$panel-hover-padding</code></td><td class="ng-panel-hover-padding">15px</td></tr>
+<tr><td><code>$panel-hover-color</code></td><td class="ng-panel-hover-color">#000</td></tr>
+<tr><td><code>$panel-hover-hover-background</code></td><td class="ng-panel-hover-hover-background">#fbfbfb</td></tr>
+<tr><td><code>$panel-hover-hover-color</code></td><td class="ng-panel-hover-hover-color">#444</td></tr>
+<tr><td><code>$panel-hover-badge-top</code></td><td class="ng-panel-hover-badge-top">10px</td></tr>
+<tr><td><code>$panel-hover-badge-right</code></td><td class="ng-panel-hover-badge-right">10px</td></tr>
+<tr><td><code>$panel-hover-teaser-margin</code></td><td class="ng-panel-hover-teaser-margin">-15px</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="layout-panel-configuration-misc">
+                                Misc Configuration
+                                <a class="kss-title__permalink" href="#layout-panel-configuration-misc">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$panel-space-padding</code></td><td class="ng-panel-space-padding">50px</td></tr>
+<tr><td><code>$panel-divider-gutter</code></td><td class="ng-panel-divider-gutter">25px</td></tr>
+<tr><td><code>$panel-divider-gutter-large</code></td><td class="ng-panel-divider-gutter-large">25px</td></tr>
+<tr><td><code>$panel-divider-border</code></td><td class="ng-panel-divider-border">#ddd</td></tr>
+<tr><td><code>$panel-divider-border-width</code></td><td class="ng-panel-divider-border-width">1px</td></tr>
+<tr><td><code>$panel-body-padding</code></td><td class="ng-panel-body-padding">30px</td></tr>
+<tr><td><code>$panel-teaser-margin-bottom</code></td><td class="ng-panel-teaser-margin-bottom">10px</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="layout-panel-configuration-primary">
+                                Primary Configuration
+                                <a class="kss-title__permalink" href="#layout-panel-configuration-primary">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$panel-box-teaser-margin</code></td><td class="ng-panel-box-teaser-margin">-31px</td></tr>
+<tr><td><code>$panel-box-primary-background</code></td><td class="ng-panel-box-primary-background">#ebf7fd</td></tr>
+<tr><td><code>$panel-box-primary-color</code></td><td class="ng-panel-box-primary-color">#2d7091</td></tr>
+<tr><td><code>$panel-box-primary-hover-color</code></td><td class="ng-panel-box-primary-hover-color">#2d7091</td></tr>
+<tr><td><code>$panel-box-primary-title-color</code></td><td class="ng-panel-box-primary-title-color">#2d7091</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="layout-panel-configuration-secondary">
+                                Secondary Configuration
+                                <a class="kss-title__permalink" href="#layout-panel-configuration-secondary">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$panel-box-secondary-background</code></td><td class="ng-panel-box-secondary-background">#fff</td></tr>
+<tr><td><code>$panel-box-secondary-color</code></td><td class="ng-panel-box-secondary-color">#444</td></tr>
+<tr><td><code>$panel-box-secondary-hover-color</code></td><td class="ng-panel-box-secondary-hover-color">#444</td></tr>
+<tr><td><code>$panel-box-secondary-title-color</code></td><td class="ng-panel-box-secondary-title-color">#444</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="layout-panel-configuration-title">
+                                Title Configuration
+                                <a class="kss-title__permalink" href="#layout-panel-configuration-title">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$panel-title-margin-bottom</code></td><td class="ng-panel-title-margin-bottom">10px</td></tr>
+<tr><td><code>$panel-title-font-size</code></td><td class="ng-panel-title-font-size">20px</td></tr>
+<tr><td><code>$panel-title-line-height</code></td><td class="ng-panel-title-line-height">27px</td></tr>
+<tr><td><code>$panel-title-font-weight</code></td><td class="ng-panel-title-font-weight">bold</td></tr>
+<tr><td><code>$panel-title-color</code></td><td class="ng-panel-title-color">#000</td></tr>
+<tr><td><code>$panel-title-text-transform</code></td><td class="ng-panel-title-text-transform">none</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="layout-panel-usage">
+                                Usage
+                                <a class="kss-title__permalink" href="#layout-panel-usage">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p><span class="badge info">NOTE</span> By default, a panel is blank and has no
+styling. That is why it is important to add a modifier class, which gives the
+panel some styling. In our examples we used the <code>.ng-panel-box</code> class.</p>
+<table class="settings">
+    <thead>
+        <tr><th>Class</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.ng-panel</code></td>
+            <td>Add this class to a <code>&lt;div&gt;</code> element to define the Panel component.</td></tr>
+        <tr><td><code>.ng-panel-title</code> </td>
+            <td>Add this class to a heading to create the panel title.</td></tr>
+        <tr><td><code>.ng-panel-badge</code> </td>
+            <td>Add this class to a <code>&lt;div&gt;</code> element to create a panel badge.
+                The easiest way to style your badge, is by adding the modifier
+                classes from the Badge component.</td></tr>
+    </tbody>
+</table>
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-panel ng-panel-box">
+    <div class="ng-panel-badge ng-badge ng-badge-danger">Hot</div>
+    <h3 class="ng-panel-title">I am your title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.</p>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-panel ng-panel-box&quot;&gt;
+    &lt;div class=&quot;ng-panel-badge ng-badge ng-badge-danger&quot;&gt;Hot&lt;/div&gt;
+    &lt;h3 class=&quot;ng-panel-title&quot;&gt;I am your title&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="layout-panel-usage-panels-in-a-grid">
+                                Panels in a grid
+                                <a class="kss-title__permalink" href="#layout-panel-usage-panels-in-a-grid">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>This is a short example of how to use panels with the Grid component. Both panels
+are using the <code>.ng-width-medium-1-2</code> class.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-grid" data-ng-grid-margin="">
+    <div class="ng-width-medium-1-2">
+        <div class="ng-panel ng-panel-box">
+            <h3 class="ng-panel-title">Title</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+        </div>
+    </div>
+    <div class="ng-width-medium-1-2">
+        <div class="ng-panel ng-panel-box">
+            <h3 class="ng-panel-title">Title</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+        </div>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-grid&quot; data-ng-grid-margin=&quot;&quot;&gt;
+    &lt;div class=&quot;ng-width-medium-1-2&quot;&gt;
+        &lt;div class=&quot;ng-panel ng-panel-box&quot;&gt;
+            &lt;h3 class=&quot;ng-panel-title&quot;&gt;Title&lt;/h3&gt;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-width-medium-1-2&quot;&gt;
+        &lt;div class=&quot;ng-panel ng-panel-box&quot;&gt;
+            &lt;h3 class=&quot;ng-panel-title&quot;&gt;Title&lt;/h3&gt;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="layout-panel-modifiers">
+                                Panel Modifiers
+                                <a class="kss-title__permalink" href="#layout-panel-modifiers">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>Modifier classes are necessary to add a specific style to panels. NGkit includes
+a number of panel modifiers and you also have the possibility to create your own.</p>
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="layout-panel-modifiers-box">
+                                Panel Box
+                                <a class="kss-title__permalink" href="#layout-panel-modifiers-box">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Add the <code>.ng-panel-box</code> class to create a visually styled box. This is the
+default panel modifier.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-panel ng-panel-box">
+    <h3 class="ng-panel-title">Title</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>.ng-panel-box</code>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-panel ng-panel-box&quot;&gt;
+    &lt;h3 class=&quot;ng-panel-title&quot;&gt;Title&lt;/h3&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. &lt;code&gt;.ng-panel-box&lt;/code&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="layout-panel-modifiers-primary">
+                                Primary Panel Box
+                                <a class="kss-title__permalink" href="#layout-panel-modifiers-primary">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Add the <code>.ng-panel-box-primary</code> class to modify the box panel and emphasize it
+with a different color.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-panel ng-panel-box-primary">
+    <h3 class="ng-panel-title">Title</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>.ng-panel-box-primary</code>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-panel ng-panel-box-primary&quot;&gt;
+    &lt;h3 class=&quot;ng-panel-title&quot;&gt;Title&lt;/h3&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. &lt;code&gt;.ng-panel-box-primary&lt;/code&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="layout-panel-modifiers-secondary">
+                                Secondary Panel Box
+                                <a class="kss-title__permalink" href="#layout-panel-modifiers-secondary">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Add the <code>.ng-panel-box-secondary</code> class to modify the box panel and give it a white color.</p>
+<p><span class="badge info">NOTE</span> To create a hover effect on the panel, just
+add the <code>.ng-panel-box-secondary-hover</code> class. This comes in handy when working
+with anchors.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-panel ng-panel-box-secondary">
+    <h3 class="ng-panel-title">Title</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>.ng-panel-box-secondary</code>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-panel ng-panel-box-secondary&quot;&gt;
+    &lt;h3 class=&quot;ng-panel-title&quot;&gt;Title&lt;/h3&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. &lt;code&gt;.ng-panel-box-secondary&lt;/code&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="layout-panel-modifiers-hover">
+                                Panel hover
+                                <a class="kss-title__permalink" href="#layout-panel-modifiers-hover">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Add the <code>.ng-panel-hover</code> class to add a hover effect to the panel. This comes
+in handy when using the panel as an anchor.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-grid" data-ng-grid-margin="">
+    <div class="ng-width-medium-1-3">
+        <a class="ng-panel ng-panel-hover" href="">
+            <h3 class="ng-panel-title">Title</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>.ng-panel-hover</code>
+        </a>
+    </div>
+    <div class="ng-width-medium-1-3">
+        <a class="ng-panel ng-panel-hover" href="">
+            <h3 class="ng-panel-title">Title</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>.ng-panel-hover</code>
+        </a>
+    </div>
+    <div class="ng-width-medium-1-3">
+        <a class="ng-panel ng-panel-hover" href="">
+            <h3 class="ng-panel-title">Title</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>.ng-panel-hover</code>
+        </a>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-grid&quot; data-ng-grid-margin=&quot;&quot;&gt;
+    &lt;div class=&quot;ng-width-medium-1-3&quot;&gt;
+        &lt;a class=&quot;ng-panel ng-panel-hover&quot; href=&quot;&quot;&gt;
+            &lt;h3 class=&quot;ng-panel-title&quot;&gt;Title&lt;/h3&gt;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. &lt;code&gt;.ng-panel-hover&lt;/code&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-width-medium-1-3&quot;&gt;
+        &lt;a class=&quot;ng-panel ng-panel-hover&quot; href=&quot;&quot;&gt;
+            &lt;h3 class=&quot;ng-panel-title&quot;&gt;Title&lt;/h3&gt;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. &lt;code&gt;.ng-panel-hover&lt;/code&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-width-medium-1-3&quot;&gt;
+        &lt;a class=&quot;ng-panel ng-panel-hover&quot; href=&quot;&quot;&gt;
+            &lt;h3 class=&quot;ng-panel-title&quot;&gt;Title&lt;/h3&gt;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. &lt;code&gt;.ng-panel-hover&lt;/code&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="layout-panel-modifiers-tab-content">
+                                Tab Content Panel
+                                <a class="kss-title__permalink" href="#layout-panel-modifiers-tab-content">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>For holding the content of a tab.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><ul class="ng-tab" data-ng-tab>
+    <li class="ng-active"><a href="">Active</a></li>
+    <li><a href="">Item</a></li>
+    <li><a href="">Item</a></li>
+    <li class="ng-disabled"><a href="">Disabled</a></li>
+</ul>
+<div class="ng-panel-tab-content">
+    <p>Hello!</p>
+</div>
+<hr />
+<div class="ng-panel-tab-content-bottom">
+    <p>Hello!</p>
+</div>
+<ul class="ng-tab ng-tab-bottom" data-ng-tab>
+    <li class="ng-active"><a href="">Active</a></li>
+    <li><a href="">Item</a></li>
+    <li><a href="">Item</a></li>
+    <li class="ng-disabled"><a href="">Disabled</a></li>
+</ul>
+<hr />
+<div class="ng-grid" data-ng-grid-match>
+    <div class="ng-width-1-3">
+        <ul class="ng-tab ng-tab-left" data-ng-tab>
+            <li class="ng-active"><a href="">Active</a></li>
+            <li><a href="">Item</a></li>
+            <li><a href="">Item</a></li>
+            <li class="ng-disabled"><a href="">Disabled</a></li>
+        </ul>
+    </div>
+    <div class="ng-panel-tab-content-left ng-width-2-3">
+        <p>Hello!</p>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;ul class=&quot;ng-tab&quot; data-ng-tab&gt;
+    &lt;li class=&quot;ng-active&quot;&gt;&lt;a href=&quot;&quot;&gt;Active&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;ng-disabled&quot;&gt;&lt;a href=&quot;&quot;&gt;Disabled&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;ng-panel-tab-content&quot;&gt;
+    &lt;p&gt;Hello!&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;div class=&quot;ng-panel-tab-content-bottom&quot;&gt;
+    &lt;p&gt;Hello!&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;ng-tab ng-tab-bottom&quot; data-ng-tab&gt;
+    &lt;li class=&quot;ng-active&quot;&gt;&lt;a href=&quot;&quot;&gt;Active&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;ng-disabled&quot;&gt;&lt;a href=&quot;&quot;&gt;Disabled&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;div class=&quot;ng-grid&quot; data-ng-grid-match&gt;
+    &lt;div class=&quot;ng-width-1-3&quot;&gt;
+        &lt;ul class=&quot;ng-tab ng-tab-left&quot; data-ng-tab&gt;
+            &lt;li class=&quot;ng-active&quot;&gt;&lt;a href=&quot;&quot;&gt;Active&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;ng-disabled&quot;&gt;&lt;a href=&quot;&quot;&gt;Disabled&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-panel-tab-content-left ng-width-2-3&quot;&gt;
+        &lt;p&gt;Hello!&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="layout-panel-header">
+                                Panel header
+                                <a class="kss-title__permalink" href="#layout-panel-header">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>Add the <code>.ng-panel-header</code> class to the <code>.ng-panel</code> if you want your panel title
+to be separated from the content by a line.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-panel ng-panel-header">
+    <h3 class="ng-panel-title">I am your title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.</p>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-panel ng-panel-header&quot;&gt;
+    &lt;h3 class=&quot;ng-panel-title&quot;&gt;I am your title&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="layout-panel-spacing">
+                                Panel Spacing
+                                <a class="kss-title__permalink" href="#layout-panel-spacing">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>Add the <code>.ng-panel-space</code> class to increase the spacing around the panel content.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-panel ng-panel-box">
+    <h3 class="ng-panel-title">No extra spacing</h3>
+    <p>This is a normal panel, with a <code>.ng-panel-box</code> modifier placed on it.
+    There is no extra spacing.</p>
+</div>
+<br>
+<div class="ng-panel ng-panel-box ng-panel-space">
+    <h3 class="ng-panel-title">Extra spacing</h3>
+    <p>This is a normal panel, with <code>.ng-panel-box</code> and <code>.ng-panel-space</code>
+    modifiers placed on it. There <strong>is</strong> extra spacing.</p>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-panel ng-panel-box&quot;&gt;
+    &lt;h3 class=&quot;ng-panel-title&quot;&gt;No extra spacing&lt;/h3&gt;
+    &lt;p&gt;This is a normal panel, with a &lt;code&gt;.ng-panel-box&lt;/code&gt; modifier placed on it.
+    There is no extra spacing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;ng-panel ng-panel-box ng-panel-space&quot;&gt;
+    &lt;h3 class=&quot;ng-panel-title&quot;&gt;Extra spacing&lt;/h3&gt;
+    &lt;p&gt;This is a normal panel, with &lt;code&gt;.ng-panel-box&lt;/code&gt; and &lt;code&gt;.ng-panel-space&lt;/code&gt;
+    modifiers placed on it. There &lt;strong&gt;is&lt;/strong&gt; extra spacing.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="layout-panel-dividers">
+                                Panel dividers
+                                <a class="kss-title__permalink" href="#layout-panel-dividers">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>Add the <code>.ng-panel-divider</code> class to separate vertically stacked panels with lines.</p>
+<p><span class="badge info">NOTE</span> Use the <code>.ng-grid-divider</code> class from the
+Grid component to separate grid columns.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-panel ng-panel-divider">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<div class="ng-panel ng-panel-divider">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.</p>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-panel ng-panel-divider&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ng-panel ng-panel-divider&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="layout-panel-box-with-teaser">
+                                Panel box with teaser
+                                <a class="kss-title__permalink" href="#layout-panel-box-with-teaser">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To display an image inside a panel box that is attached to the border of the
+panel without any spacing, just add the <code>.ng-panel-teaser</code> class to a <code>&lt;div&gt;</code>
+element inside the panel.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-width-medium-1-3">
+    <div class="ng-panel ng-panel-box">
+        <div class="ng-panel-teaser">
+            <img src="http://lorempixel.com/300/100" alt="">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-width-medium-1-3&quot;&gt;
+    &lt;div class=&quot;ng-panel ng-panel-box&quot;&gt;
+        &lt;div class=&quot;ng-panel-teaser&quot;&gt;
+            &lt;img src=&quot;http://lorempixel.com/300/100&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="layout-panel-box-with-icon">
+                                Panel with icons
+                                <a class="kss-title__permalink" href="#layout-panel-box-with-icon">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>Easily apply an icon from our Icon component to your panel by adding one of the
+<code>.ng-icon-*</code> classes to an <code>&lt;i&gt;</code> or <code>&lt;span&gt;</code> element inside the panel title.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-grid" data-ng-grid-margin="">
+    <div class="ng-width-medium-1-3">
+        <div class="ng-panel ng-panel-box">
+            <h3 class="ng-panel-title"><i class="ng-icon-user"></i> Panel</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+    </div>
+    <div class="ng-width-medium-1-3">
+        <div class="ng-panel ng-panel-box">
+            <h3 class="ng-panel-title"><i class="ng-icon-home"></i> Panel</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+    </div>
+    <div class="ng-width-medium-1-3">
+        <div class="ng-panel ng-panel-box">
+            <h3 class="ng-panel-title"><i class="ng-icon-bookmark"></i> Panel</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-grid&quot; data-ng-grid-margin=&quot;&quot;&gt;
+    &lt;div class=&quot;ng-width-medium-1-3&quot;&gt;
+        &lt;div class=&quot;ng-panel ng-panel-box&quot;&gt;
+            &lt;h3 class=&quot;ng-panel-title&quot;&gt;&lt;i class=&quot;ng-icon-user&quot;&gt;&lt;/i&gt; Panel&lt;/h3&gt;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-width-medium-1-3&quot;&gt;
+        &lt;div class=&quot;ng-panel ng-panel-box&quot;&gt;
+            &lt;h3 class=&quot;ng-panel-title&quot;&gt;&lt;i class=&quot;ng-icon-home&quot;&gt;&lt;/i&gt; Panel&lt;/h3&gt;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ng-width-medium-1-3&quot;&gt;
+        &lt;div class=&quot;ng-panel ng-panel-box&quot;&gt;
+            &lt;h3 class=&quot;ng-panel-title&quot;&gt;&lt;i class=&quot;ng-icon-bookmark&quot;&gt;&lt;/i&gt; Panel&lt;/h3&gt;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+                    </div> <!-- main ui intro container" -->
+            </article>
+        </div>
+        <footer id="footer" class="kss-footer">
+        <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/highlight.pack.js"></script>
+    <script src="js/ngkit.js"></script>
+    <script src="public/docs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>National Geographic Style Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="generator" content="kss-node">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="public/combined.css">
+    <link rel="stylesheet" type="text/css" href="public/github.css">
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,600i">
+
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('fonts/fontawesome-webfont.eot?v=4.0.3}');
+        src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
+          url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'),
+          url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
+          url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+    <style type="text/css">
+    @font-face {
+        font-family: 'icon-society';
+        src: url('fonts/icon-society.woff') format('woff'),
+          url('fonts/icon-society.ttf') format('truetype'),
+          url('fonts/icon-society.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+        .add-100-margin{
+            margin-left:35px;
+            margin-right:35px;
+        }
+    </style>
+
+    <script src="public/jquery.min.js"></script>
+
+      <script>
+          function toggleRightRail(){
+              if($("#right-nav-rail").is(":visible")){
+                  $("#right-nav-rail").hide();
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+              }else{
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+                  $("#right-nav-rail").show();
+
+              }
+          }
+
+      </script>
+</head>
+<body id="kss-node">
+    <div class="wrapper">
+        <div class="full height">
+            <div class="toc" >
+                <nav class="ui vertical inverted menu">
+                        <div class="item">
+                            <div class="header">Introduction</div>
+                            <div class="menu">
+                                <a href="./index.html" class="item">Overview</a>
+                                    <a href="section-introduction-configuration.html" class="item">Configuration</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Layout</div>
+                            <div class="menu">
+                                    <a href="section-layout-column.html" class="item">Column</a>
+                                    <a href="section-layout-cover.html" class="item">Cover</a>
+                                    <a href="section-layout-flexbox.html" class="item">Flexbox</a>
+                                    <a href="section-layout-grids.html" class="item">Grids</a>
+                                    <a href="section-layout-panel.html" class="item">Panel</a>
+                                    <a href="section-layout-utilities.html" class="item">Layout Utilities</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Typography</div>
+                            <div class="menu">
+                                    <a href="section-typography-base.html" class="item">Base Typography</a>
+                                    <a href="section-typography-colors.html" class="item">Color Classes</a>
+                                    <a href="section-typography-lists.html" class="item">Lists</a>
+                                    <a href="section-typography-print.html" class="item">Print</a>
+                                    <a href="section-typography-tables.html" class="item">Tables</a>
+                                    <a href="section-typography-utilities.html" class="item">Text</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Controls</div>
+                            <div class="menu">
+                                    <a href="section-controls-buttons.html" class="item">Buttons</a>
+                                    <a href="section-controls-close.html" class="item">Close</a>
+                                    <a href="section-controls-contrast.html" class="item">Contrast</a>
+                                    <a href="section-controls-date-picker.html" class="item">Datepicker</a>
+                                    <a href="section-controls-dropdown.html" class="item">Dropdown</a>
+                                    <a href="section-controls-forms.html" class="item">Forms</a>
+                                    <a href="section-controls-progress.html" class="item">Progress</a>
+                                    <a href="section-controls-search.html" class="item">Search</a>
+                                    <a href="section-controls-toolbars.html" class="item">Toolbar</a>
+                                    <a href="section-controls-upload.html" class="item">Upload</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Media</div>
+                            <div class="menu">
+                                    <a href="section-media-icons.html" class="item">Icons</a>
+                                    <a href="section-media-media-object.html" class="item">Media object</a>
+                                    <a href="section-media-overlays.html" class="item">Overlay</a>
+                                    <a href="section-media-slideshow.html" class="item">Slideshow</a>
+                                    <a href="section-media-symbols.html" class="item">Symbols</a>
+                                    <a href="section-media-thumbnails.html" class="item">Images</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Callouts</div>
+                            <div class="menu">
+                                    <a href="section-callouts-alerts.html" class="item">Alert</a>
+                                    <a href="section-callouts-badges.html" class="item">Badge</a>
+                                    <a href="section-callouts-modals.html" class="item">Modal</a>
+                                    <a href="section-callouts-popovers.html" class="item">Popovers</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Navigation</div>
+                            <div class="menu">
+                                    <a href="section-navigation-breadcrumbs.html" class="item">Breadcrumbs</a>
+                                    <a href="section-navigation-dot-nav.html" class="item">Dot Navigation</a>
+                                    <a href="section-navigation-nav.html" class="item">Nav</a>
+                                    <a href="section-navigation-navbar.html" class="item">Navbar</a>
+                                    <a href="section-navigation-pagination.html" class="item">Pagination</a>
+                                    <a href="section-navigation-slide-navigation.html" class="item">Slide Navigation</a>
+                                    <a href="section-navigation-sub-nav.html" class="item">Subnav</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Containers</div>
+                            <div class="menu">
+                                    <a href="section-containers-accordion.html" class="item">Accordion</a>
+                                    <a href="section-containers-drawers.html" class="item">Drawer</a>
+                                    <a href="section-containers-off-canvas.html" class="item">Off-canvas</a>
+                                    <a href="section-containers-tabs.html" class="item">Tab</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Components</div>
+                            <div class="menu">
+                                    <a href="section-components-article.html" class="item">Article Components</a>
+                                    <a href="section-components-articleheading.html" class="item">Article Heading</a>
+                                    <a href="section-components-comments.html" class="item">Comment</a>
+                                    <a href="section-components-contentcarousel.html" class="item">Content Carousel</a>
+                                    <a href="section-components-dynamicleadcarousel.html" class="item">Carousel</a>
+                                    <a href="section-components-featurelist.html" class="item">Feature Lists</a>
+                                    <a href="section-components-filterresults.html" class="item">Filtering Results</a>
+                                    <a href="section-components-groupheading.html" class="item">Group Heading</a>
+                                    <a href="section-components-heading.html" class="item">Heading</a>
+                                    <a href="section-components-instructionalpathways.html" class="item">Instructional Pathways</a>
+                                    <a href="section-components-itemlisting.html" class="item">Item listing</a>
+                                    <a href="section-components-linkslist.html" class="item">Links List</a>
+                                    <a href="section-components-objectlists.html" class="item">Media Object Lists</a>
+                                    <a href="section-components-relatedmaterials.html" class="item">Related Materials</a>
+                                    <a href="section-components-tease.html" class="item">Tease</a>
+                                    <a href="section-components-thumbnailgrid.html" class="item">Thumbnail Grid</a>
+                                    <a href="section-components-tweetthis.html" class="item">Tweet This</a>
+                                    <a href="section-components-vocabulary.html" class="item">Vocabulary</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">JavaScript</div>
+                            <div class="menu">
+                                    <a href="section-javascript-animation.html" class="item">Animation</a>
+                                    <a href="section-javascript-autocomplete.html" class="item">Autocomplete</a>
+                                    <a href="section-javascript-filtering.html" class="item">Filtering</a>
+                                    <a href="section-javascript-scrollspy.html" class="item">Scrollspy</a>
+                                    <a href="section-javascript-smooth-scroll.html" class="item">Smooth Scroll</a>
+                                    <a href="section-javascript-sticky.html" class="item">Sticky</a>
+                                    <a href="section-javascript-switcher.html" class="item">Switcher</a>
+                                    <a href="section-javascript-template.html" class="item">Basic Templating</a>
+                                    <a href="section-javascript-toggle.html" class="item">Toggle</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Layouts</div>
+                            <div class="menu">
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Modules</div>
+                            <div class="menu">
+                                    <a href="section-pagemodules-03.html" class="item">Audience Navigation Tabs</a>
+                                    <a href="section-pagemodules-05.html" class="item">Audience Navbar</a>
+                                    <a href="section-pagemodules-07.html" class="item">Expandable thumbnail</a>
+                                    <a href="section-pagemodules-globalnavigation.html" class="item">Global Navigation</a>
+                                    <a href="section-pagemodules-sharing.html" class="item">Sharing widget</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Structure</div>
+                            <div class="menu">
+                                    <a href="section-pagestructure-configuration.html" class="item">Configuration</a>
+                                    <a href="section-pagestructure-contentmodules.html" class="item">Content Modules</a>
+                                    <a href="section-pagestructure-pagemodules.html" class="item">Page Modules</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                </nav>
+            </div> <!-- class="toc" -->
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger"></label>
+
+            <article class="content-wrapper">
+
+
+                            <div class="masthead">
+                                <div class="container">
+                                    <div class="introduction">
+                <img src="public/ngkitlogo.svg" style="margin-bottom: 1em" width="66" height="32" alt="NGKit" />
+                                        <div class="ui header">
+                                            Modal
+                                                <div class="sub header">
+                                                    <p>Create modal dialogs with different styles and transitions.</p>
+<p><span class="badge info">JAVASCRIPT</span> Requires <code>core/modal.js</code></p>
+
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-top:30px;">
+                                        <button onclick="toggleRightRail()">Toggle Right Rail</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-container-div" class="main ui intro container">
+                                <div id="right-nav-rail" class="ui dividing right rail">
+                                    <div class="ui sticky">
+
+                                        <div class="ui header">Modal</div>
+                                        <div class="ui vertical following fluid accordion text menu">
+
+                                                
+                                                
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#callouts-modals-configuration"><strong>Configuration</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#callouts-modals-usage"><strong>Usage</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#callouts-modals-usage-javascript">JavaScript options</a>
+                                                    </div></div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#callouts-modals-header-footer"><strong>Modal Header and Footer</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#callouts-modals-caption"><strong>Modal caption</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#callouts-modals-lightbox"><strong>Lightbox modifier</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#callouts-modals-blank"><strong>Modal blank</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#callouts-modals-spinner"><strong>Modal spinner</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#callouts-modals-large"><strong>Large dialog modifier</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#callouts-modals-overflow"><strong>Overflow container in modal</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#callouts-modals-dialogs"><strong>Dialogs</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#callouts-modals-dialogs-alert">Alert Dialog</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#callouts-modals-dialogs-blockui">Block UI</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#callouts-modals-dialogs-confirm">Confirm Dialog</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#callouts-modals-dialogs-prompt">Prompt Dialog</a>
+                                                    </div></div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#callouts-modals-javascript"><strong>JavaScript</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#callouts-modals-javascript-events">Events</a>
+                                                    </div></div>
+
+                                        </div> <!-- ui vertical following fluid accordion text menu -->
+                                    </div> <!-- ui sticky -->
+                                </div> <!-- ui dividing right rail -->
+                         <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="callouts-modals-configuration">
+                                Configuration
+                                <a class="kss-title__permalink" href="#callouts-modals-configuration">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$modal-z-index</code></td><td class="ng-modal-z-index">1010</td></tr>
+<tr><td><code>$modal-background</code></td><td class="ng-modal-background">rgba(0, 0, 0, 0.6)</td></tr>
+<tr><td><code>$modal-dialog-margin-vertical</code></td><td class="ng-modal-dialog-margin-vertical">50px</td></tr>
+<tr><td><code>$modal-dialog-padding</code></td><td class="ng-modal-dialog-padding">20px</td></tr>
+<tr><td><code>$modal-dialog-width</code></td><td class="ng-modal-dialog-width">600px</td></tr>
+<tr><td><code>$modal-dialog-background</code></td><td class="ng-modal-dialog-background">#fff</td></tr>
+<tr><td><code>$modal-dialog-large-width</code></td><td class="ng-modal-dialog-large-width">930px</td></tr>
+<tr><td><code>$modal-dialog-large-width-large</code></td><td class="ng-modal-dialog-large-width-large">930px</td></tr>
+<tr><td><code>$modal-header-margin-bottom</code></td><td class="ng-modal-header-margin-bottom">0</td></tr>
+<tr><td><code>$modal-footer-margin-top</code></td><td class="ng-modal-footer-margin-top">0</td></tr>
+<tr><td><code>$modal-caption-margin-bottom</code></td><td class="ng-modal-caption-margin-bottom">-10px</td></tr>
+<tr><td><code>$modal-caption-color</code></td><td class="ng-modal-caption-color">#fff</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="callouts-modals-usage">
+                                Usage
+                                <a class="kss-title__permalink" href="#callouts-modals-usage">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>The modal component consists of an overlay, a dialog and a close button.</p>
+<table class="configuration">
+    <thead>
+        <tr><th>Class</th>
+            <th>Description</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.ng-modal</code></td>
+            <td>Add this class to a <code>&lt;div&gt;</code> element to create the dialog container and
+            an overlay that blanks out the page. It is important to add an <code>id</code> to
+            indicate the element for toggling.</td></tr>
+        <tr><td><code>.ng-modal-dialog</code></td>
+            <td>Add this class to a child <code>&lt;div&gt;</code> element to create the dialog box.</td></tr>
+        <tr><td><code>.ng-modal-close</code></td>
+            <td>Add this class to an <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element to create a close button
+            within the dialog box. We recommend adding the <code>.ng-close</code> class from the
+            Close component to give the button a proper styling, though you can also use
+            text or an image.</td></tr>
+    </tbody>
+</table>
+
+<p>You can use any element to toggle a modal dialog. An <code>&lt;a&gt;</code> element needs to be
+linked to the modal&#39;s id. To enable the necessary JavaScript, add the
+<code>data-ng-modal</code> attribute. If you are using another element, like a button,
+just add the <code>data-ng-modal=&quot;{target:&#39;#ID&#39;}&quot;</code> attribute to target the modal&#39;s id.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><!-- This is a button toggling the modal -->
+<button class="ng-button" data-ng-modal="{target:'#modal'}">Open</button>
+<!-- This is an anchor toggling the modal -->
+<a href="#modal" data-ng-modal="">Open</a>
+<!-- This is the modal -->
+<div id="modal" class="ng-modal">
+    <div class="ng-modal-dialog">
+        <a href="" class="ng-modal-close ng-close"></a>
+        <h1>Headline</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;!-- This is a button toggling the modal --&gt;
+&lt;button class=&quot;ng-button&quot; data-ng-modal=&quot;{target:&#x27;#modal&#x27;}&quot;&gt;Open&lt;/button&gt;
+&lt;!-- This is an anchor toggling the modal --&gt;
+&lt;a href=&quot;#modal&quot; data-ng-modal=&quot;&quot;&gt;Open&lt;/a&gt;
+&lt;!-- This is the modal --&gt;
+&lt;div id=&quot;modal&quot; class=&quot;ng-modal&quot;&gt;
+    &lt;div class=&quot;ng-modal-dialog&quot;&gt;
+        &lt;a href=&quot;&quot; class=&quot;ng-modal-close ng-close&quot;&gt;&lt;/a&gt;
+        &lt;h1&gt;Headline&lt;/h1&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="callouts-modals-usage-javascript">
+                                JavaScript options
+                                <a class="kss-title__permalink" href="#callouts-modals-usage-javascript">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>By default, the modal closes automatically when clicking on the modal overlay.
+To prevent this from happening, just add the <code>data-ng-modal=&quot;{target:&#39;#ID&#39;,bgclose:false}&quot;</code> attribute.</p>
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="callouts-modals-header-footer">
+                                Modal Header and Footer
+                                <a class="kss-title__permalink" href="#callouts-modals-header-footer">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>You can create a header and footer for your modal, which are seperated from the
+content. Just add the <code>.ng-modal-header</code> or the
+<code>.ng-modal-footer</code> class to a <code>&lt;div&gt;</code> element inside
+the modal dialog.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><button class="ng-button" data-ng-modal="{target:'#modal6'}">Open</button>
+<div id="modal6" class="ng-modal">
+    <div class="ng-modal-dialog">
+        <button type="button" class="ng-modal-close ng-close"></button>
+        <div class="ng-modal-header">
+            <h2>Headline</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="ng-modal-footer ng-text-right">
+            <button type="button" class="ng-button">Cancel</button>
+            <button type="button" class="ng-button ng-button-primary">Save</button>
+        </div>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;button class=&quot;ng-button&quot; data-ng-modal=&quot;{target:&#x27;#modal6&#x27;}&quot;&gt;Open&lt;/button&gt;
+&lt;div id=&quot;modal6&quot; class=&quot;ng-modal&quot;&gt;
+    &lt;div class=&quot;ng-modal-dialog&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;ng-modal-close ng-close&quot;&gt;&lt;/button&gt;
+        &lt;div class=&quot;ng-modal-header&quot;&gt;
+            &lt;h2&gt;Headline&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+        &lt;div class=&quot;ng-modal-footer ng-text-right&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;ng-button&quot;&gt;Cancel&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;ng-button ng-button-primary&quot;&gt;Save&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="callouts-modals-caption">
+                                Modal caption
+                                <a class="kss-title__permalink" href="#callouts-modals-caption">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>You can also create a caption that will be placed outside the modal. Just add the
+<code>.ng-modal-caption</code> class to a <code>&lt;div&gt;</code> element inside
+the modal dialog.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><button class="ng-button" data-ng-modal="{target:'#modal7'}">Open</button>
+<div id="modal7" class="ng-modal">
+    <div class="ng-modal-dialog">
+        <a href="" class="ng-modal-close ng-close"></a>
+        <h1>Headline</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="ng-modal-caption">Caption</div>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;button class=&quot;ng-button&quot; data-ng-modal=&quot;{target:&#x27;#modal7&#x27;}&quot;&gt;Open&lt;/button&gt;
+&lt;div id=&quot;modal7&quot; class=&quot;ng-modal&quot;&gt;
+    &lt;div class=&quot;ng-modal-dialog&quot;&gt;
+        &lt;a href=&quot;&quot; class=&quot;ng-modal-close ng-close&quot;&gt;&lt;/a&gt;
+        &lt;h1&gt;Headline&lt;/h1&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+        &lt;div class=&quot;ng-modal-caption&quot;&gt;Caption&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="callouts-modals-lightbox">
+                                Lightbox modifier
+                                <a class="kss-title__permalink" href="#callouts-modals-lightbox">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To create a lightbox-like modal dialog, just add the
+<code>.ng-modal-dialog-lightbox class</code>. This can be useful, if you want to use the
+modal as a lightbox for your images. The close button will adjust its position
+automatically to the dialog.</p>
+<p><span class="badge info">NOTE</span> When creating a close button within the lightbox modifier, we also
+recommend adding the <code>.ng-close-alt</code> class from the Close component to give your
+button a styling that fits the lightbox modal.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><button class="ng-button" data-ng-modal="{target:'#modal-3'}">Open</button>
+<div id="modal-3" class="ng-modal">
+    <div class="ng-modal-dialog ng-modal-dialog-lightbox">
+        <a href="" class="ng-modal-close ng-close ng-close-alt"></a>
+        <img src="http://lorempixel.com/600/400" width="600" height="400" alt="">
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;button class=&quot;ng-button&quot; data-ng-modal=&quot;{target:&#x27;#modal-3&#x27;}&quot;&gt;Open&lt;/button&gt;
+&lt;div id=&quot;modal-3&quot; class=&quot;ng-modal&quot;&gt;
+    &lt;div class=&quot;ng-modal-dialog ng-modal-dialog-lightbox&quot;&gt;
+        &lt;a href=&quot;&quot; class=&quot;ng-modal-close ng-close ng-close-alt&quot;&gt;&lt;/a&gt;
+        &lt;img src=&quot;http://lorempixel.com/600/400&quot; width=&quot;600&quot; height=&quot;400&quot; alt=&quot;&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="callouts-modals-blank">
+                                Modal blank
+                                <a class="kss-title__permalink" href="#callouts-modals-blank">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To reset all styling, like padding and margin, add the <code>.ng-modal-dialog-blank</code>
+class. This can be useful, if you want to create a fullscreen modal. In that
+case you also need to add the <code>.ng-height-viewport</code> class from the Utility component
+so that the modal extends to full viewport height.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><a class="ng-button" href="#modal-blank" data-ng-modal="">Open</a>
+<div id="modal-blank" class="ng-modal">
+    <div class="ng-modal-dialog ng-modal-dialog-blank">
+        <button class="ng-modal-close ng-close" type="button"></button>
+        <div class="ng-grid ng-flex-middle" data-ng-grid-margin="">
+            <div class="ng-width-medium-1-2 ng-height-viewport ng-cover-background" style="background-image: url('http://lorempixel.com/120/255');"></div>
+            <div class="ng-width-medium-1-2">
+            <h1>Headline</h1>
+                <div class="ng-width-medium-1-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;a class=&quot;ng-button&quot; href=&quot;#modal-blank&quot; data-ng-modal=&quot;&quot;&gt;Open&lt;/a&gt;
+&lt;div id=&quot;modal-blank&quot; class=&quot;ng-modal&quot;&gt;
+    &lt;div class=&quot;ng-modal-dialog ng-modal-dialog-blank&quot;&gt;
+        &lt;button class=&quot;ng-modal-close ng-close&quot; type=&quot;button&quot;&gt;&lt;/button&gt;
+        &lt;div class=&quot;ng-grid ng-flex-middle&quot; data-ng-grid-margin=&quot;&quot;&gt;
+            &lt;div class=&quot;ng-width-medium-1-2 ng-height-viewport ng-cover-background&quot; style=&quot;background-image: url(&#x27;http://lorempixel.com/120/255&#x27;);&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;ng-width-medium-1-2&quot;&gt;
+            &lt;h1&gt;Headline&lt;/h1&gt;
+                &lt;div class=&quot;ng-width-medium-1-3&quot;&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="callouts-modals-spinner">
+                                Modal spinner
+                                <a class="kss-title__permalink" href="#callouts-modals-spinner">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To place a spinning icon inside your modal, add the <code>.ng-modal-spinner</code>
+class to a <code>&lt;div&gt;</code> element inside the modal dialog.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><a class="ng-button" href="#modal-spinner" data-ng-modal="">Open</a>
+<div id="modal-spinner" class="ng-modal">
+    <div class="ng-modal-dialog">
+        <div class="ng-modal-spinner"></div>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;a class=&quot;ng-button&quot; href=&quot;#modal-spinner&quot; data-ng-modal=&quot;&quot;&gt;Open&lt;/a&gt;
+&lt;div id=&quot;modal-spinner&quot; class=&quot;ng-modal&quot;&gt;
+    &lt;div class=&quot;ng-modal-dialog&quot;&gt;
+        &lt;div class=&quot;ng-modal-spinner&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="callouts-modals-large">
+                                Large dialog modifier
+                                <a class="kss-title__permalink" href="#callouts-modals-large">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To apply the site&#39;s container width to the modal dialog, just add the
+<code>.ng-modal-dialog-large</code> class.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><a href="#modal-4" class="ng-button" data-ng-modal="">Open</a>
+<div id="modal-4" class="ng-modal">
+    <div class="ng-modal-dialog ng-modal-dialog-large">
+        <button type="button" class="ng-modal-close ng-close"></button>
+        <h1>Headline</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;a href=&quot;#modal-4&quot; class=&quot;ng-button&quot; data-ng-modal=&quot;&quot;&gt;Open&lt;/a&gt;
+&lt;div id=&quot;modal-4&quot; class=&quot;ng-modal&quot;&gt;
+    &lt;div class=&quot;ng-modal-dialog ng-modal-dialog-large&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;ng-modal-close ng-close&quot;&gt;&lt;/button&gt;
+        &lt;h1&gt;Headline&lt;/h1&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="callouts-modals-overflow">
+                                Overflow container in modal
+                                <a class="kss-title__permalink" href="#callouts-modals-overflow">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>You can also display the modal&#39;s content in a scrollable container. Just add the
+<code>.ng-overflow-container</code> class to a <code>&lt;div&gt;</code> element inside the modal dialog.
+The modal will automatically expand and fill the site&#39;s height.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><a href="#modal-5" class="ng-button" data-ng-modal="">Open</a>
+<div id="modal-5" class="ng-modal">
+    <div class="ng-modal-dialog ng-modal-dialog-large">
+        <button type="button" class="ng-modal-close ng-close"></button>
+        <h1>Headline</h1>
+        <h2>Some text above the scrollable box</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="ng-overflow-container">
+            <h2>Overflow container</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <h2>Some text below the overflow container</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;a href=&quot;#modal-5&quot; class=&quot;ng-button&quot; data-ng-modal=&quot;&quot;&gt;Open&lt;/a&gt;
+&lt;div id=&quot;modal-5&quot; class=&quot;ng-modal&quot;&gt;
+    &lt;div class=&quot;ng-modal-dialog ng-modal-dialog-large&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;ng-modal-close ng-close&quot;&gt;&lt;/button&gt;
+        &lt;h1&gt;Headline&lt;/h1&gt;
+        &lt;h2&gt;Some text above the scrollable box&lt;/h2&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+        &lt;div class=&quot;ng-overflow-container&quot;&gt;
+            &lt;h2&gt;Overflow container&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;h2&gt;Some text below the overflow container&lt;/h2&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="callouts-modals-dialogs">
+                                Dialogs
+                                <a class="kss-title__permalink" href="#callouts-modals-dialogs">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>The modal component also provides alternatives to the native dialogs: <code>window.alert</code>,
+<code>window.confirm</code> and <code>window.prompt</code>.</p>
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="callouts-modals-dialogs-alert">
+                                Alert Dialog
+                                <a class="kss-title__permalink" href="#callouts-modals-dialogs-alert">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <pre><code class="code js hljs">NGkit.modal.alert('Attention!')</code></pre>
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><button type="button" class="ng-button" onclick="NGkit.modal.alert('Attention!')">Alert</button></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;button type=&quot;button&quot; class=&quot;ng-button&quot; onclick=&quot;NGkit.modal.alert(&#x27;Attention!&#x27;)&quot;&gt;Alert&lt;/button&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="callouts-modals-dialogs-blockui">
+                                Block UI
+                                <a class="kss-title__permalink" href="#callouts-modals-dialogs-blockui">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <pre><code class="code hljs js">(
+    function(modal){
+        modal = NGkit.modal.blockUI('Wait 5 sec...');
+        setTimeout(function(){ modal.hide() }, 5000)
+    }
+)();</code></pre>
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><button type="button" class="ng-button" onclick="(function(modal){ modal = NGkit.modal.blockUI('Wait 5 sec...'); setTimeout(function(){ modal.hide() }, 5000) })();">Block UI</button></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;button type=&quot;button&quot; class=&quot;ng-button&quot; onclick=&quot;(function(modal){ modal = NGkit.modal.blockUI(&#x27;Wait 5 sec...&#x27;); setTimeout(function(){ modal.hide() }, 5000) })();&quot;&gt;Block UI&lt;/button&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="callouts-modals-dialogs-confirm">
+                                Confirm Dialog
+                                <a class="kss-title__permalink" href="#callouts-modals-dialogs-confirm">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <pre><code class="code js hljs">NGkit.modal.confirm('Are you sure?', function(){
+    NGkit.modal.alert('Confirmed!');
+});</code></pre>
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><button type="button" class="ng-button" onclick="NGkit.modal.confirm('Are you sure?', function(){ NGkit.modal.alert('Confirmed!'); });">Confirm</button></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;button type=&quot;button&quot; class=&quot;ng-button&quot; onclick=&quot;NGkit.modal.confirm(&#x27;Are you sure?&#x27;, function(){ NGkit.modal.alert(&#x27;Confirmed!&#x27;); });&quot;&gt;Confirm&lt;/button&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="callouts-modals-dialogs-prompt">
+                                Prompt Dialog
+                                <a class="kss-title__permalink" href="#callouts-modals-dialogs-prompt">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <pre><code class="code hljs js">NGkit.modal.prompt('Name:', '', function(val){
+    NGkit.modal.alert('Hello '+(val || 'Mr noname')+'!');
+});</code></pre>
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><button type="button" class="ng-button" onclick="NGkit.modal.prompt('Name:', '', function(val){ NGkit.modal.alert('Hello '+(val || 'Mr noname')+'!'); });">Prompt</button></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;button type=&quot;button&quot; class=&quot;ng-button&quot; onclick=&quot;NGkit.modal.prompt(&#x27;Name:&#x27;, &#x27;&#x27;, function(val){ NGkit.modal.alert(&#x27;Hello &#x27;+(val || &#x27;Mr noname&#x27;)+&#x27;!&#x27;); });&quot;&gt;Prompt&lt;/button&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="callouts-modals-javascript">
+                                JavaScript
+                                <a class="kss-title__permalink" href="#callouts-modals-javascript">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>You can handle modal dialogs via raw javascript.</p>
+<p>###Example</p>
+<pre><code class="code hljs js">var modal = new $.NGkit.modal.Modal(".modalSelector");
+
+if ( modal.isActive() ) {
+    modal.hide();
+} else {
+    modal.show();
+}
+</code></pre>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="callouts-modals-javascript-events">
+                                Events
+                                <a class="kss-title__permalink" href="#callouts-modals-javascript-events">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>The modal component triggers an <code>ng.modal.show</code> event every time a modal is
+opened and <code>ng.modal.hide</code> when a modal is closed.</p>
+<table class="configuration">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Parameter</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>show.ng.modal</code></td>
+            <td>event</td>
+            <td>On modal show</td>
+        </tr>
+        <tr>
+            <td><code>hide.ng.modal</code></td>
+            <td>event</td>
+            <td>On modal hide</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="example">Example</h3>
+<pre><code class="code hljs js">$('.modalSelector').on({
+
+    'show.ng.modal': function(){
+        console.log("Modal is visible.");
+    },
+
+    'hide.ng.modal': function(){
+        console.log("Element is not visible.");
+    }
+});
+</code></pre>
+                        
+
+
+                    </div> <!-- main ui intro container" -->
+            </article>
+        </div>
+        <footer id="footer" class="kss-footer">
+        <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/highlight.pack.js"></script>
+    <script src="js/ngkit.js"></script>
+    <script src="public/docs.js"></script>
+  </body>
+</html>

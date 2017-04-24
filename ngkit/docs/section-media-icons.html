@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>National Geographic Style Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="generator" content="kss-node">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="public/combined.css">
+    <link rel="stylesheet" type="text/css" href="public/github.css">
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,600i">
+
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('fonts/fontawesome-webfont.eot?v=4.0.3}');
+        src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
+          url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'),
+          url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
+          url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+    <style type="text/css">
+    @font-face {
+        font-family: 'icon-society';
+        src: url('fonts/icon-society.woff') format('woff'),
+          url('fonts/icon-society.ttf') format('truetype'),
+          url('fonts/icon-society.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+        .add-100-margin{
+            margin-left:35px;
+            margin-right:35px;
+        }
+    </style>
+
+    <script src="public/jquery.min.js"></script>
+
+      <script>
+          function toggleRightRail(){
+              if($("#right-nav-rail").is(":visible")){
+                  $("#right-nav-rail").hide();
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+              }else{
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+                  $("#right-nav-rail").show();
+
+              }
+          }
+
+      </script>
+</head>
+<body id="kss-node">
+    <div class="wrapper">
+        <div class="full height">
+            <div class="toc" >
+                <nav class="ui vertical inverted menu">
+                        <div class="item">
+                            <div class="header">Introduction</div>
+                            <div class="menu">
+                                <a href="./index.html" class="item">Overview</a>
+                                    <a href="section-introduction-configuration.html" class="item">Configuration</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Layout</div>
+                            <div class="menu">
+                                    <a href="section-layout-column.html" class="item">Column</a>
+                                    <a href="section-layout-cover.html" class="item">Cover</a>
+                                    <a href="section-layout-flexbox.html" class="item">Flexbox</a>
+                                    <a href="section-layout-grids.html" class="item">Grids</a>
+                                    <a href="section-layout-panel.html" class="item">Panel</a>
+                                    <a href="section-layout-utilities.html" class="item">Layout Utilities</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Typography</div>
+                            <div class="menu">
+                                    <a href="section-typography-base.html" class="item">Base Typography</a>
+                                    <a href="section-typography-colors.html" class="item">Color Classes</a>
+                                    <a href="section-typography-lists.html" class="item">Lists</a>
+                                    <a href="section-typography-print.html" class="item">Print</a>
+                                    <a href="section-typography-tables.html" class="item">Tables</a>
+                                    <a href="section-typography-utilities.html" class="item">Text</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Controls</div>
+                            <div class="menu">
+                                    <a href="section-controls-buttons.html" class="item">Buttons</a>
+                                    <a href="section-controls-close.html" class="item">Close</a>
+                                    <a href="section-controls-contrast.html" class="item">Contrast</a>
+                                    <a href="section-controls-date-picker.html" class="item">Datepicker</a>
+                                    <a href="section-controls-dropdown.html" class="item">Dropdown</a>
+                                    <a href="section-controls-forms.html" class="item">Forms</a>
+                                    <a href="section-controls-progress.html" class="item">Progress</a>
+                                    <a href="section-controls-search.html" class="item">Search</a>
+                                    <a href="section-controls-toolbars.html" class="item">Toolbar</a>
+                                    <a href="section-controls-upload.html" class="item">Upload</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Media</div>
+                            <div class="menu">
+                                    <a href="section-media-icons.html" class="item">Icons</a>
+                                    <a href="section-media-media-object.html" class="item">Media object</a>
+                                    <a href="section-media-overlays.html" class="item">Overlay</a>
+                                    <a href="section-media-slideshow.html" class="item">Slideshow</a>
+                                    <a href="section-media-symbols.html" class="item">Symbols</a>
+                                    <a href="section-media-thumbnails.html" class="item">Images</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Callouts</div>
+                            <div class="menu">
+                                    <a href="section-callouts-alerts.html" class="item">Alert</a>
+                                    <a href="section-callouts-badges.html" class="item">Badge</a>
+                                    <a href="section-callouts-modals.html" class="item">Modal</a>
+                                    <a href="section-callouts-popovers.html" class="item">Popovers</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Navigation</div>
+                            <div class="menu">
+                                    <a href="section-navigation-breadcrumbs.html" class="item">Breadcrumbs</a>
+                                    <a href="section-navigation-dot-nav.html" class="item">Dot Navigation</a>
+                                    <a href="section-navigation-nav.html" class="item">Nav</a>
+                                    <a href="section-navigation-navbar.html" class="item">Navbar</a>
+                                    <a href="section-navigation-pagination.html" class="item">Pagination</a>
+                                    <a href="section-navigation-slide-navigation.html" class="item">Slide Navigation</a>
+                                    <a href="section-navigation-sub-nav.html" class="item">Subnav</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Containers</div>
+                            <div class="menu">
+                                    <a href="section-containers-accordion.html" class="item">Accordion</a>
+                                    <a href="section-containers-drawers.html" class="item">Drawer</a>
+                                    <a href="section-containers-off-canvas.html" class="item">Off-canvas</a>
+                                    <a href="section-containers-tabs.html" class="item">Tab</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Components</div>
+                            <div class="menu">
+                                    <a href="section-components-article.html" class="item">Article Components</a>
+                                    <a href="section-components-articleheading.html" class="item">Article Heading</a>
+                                    <a href="section-components-comments.html" class="item">Comment</a>
+                                    <a href="section-components-contentcarousel.html" class="item">Content Carousel</a>
+                                    <a href="section-components-dynamicleadcarousel.html" class="item">Carousel</a>
+                                    <a href="section-components-featurelist.html" class="item">Feature Lists</a>
+                                    <a href="section-components-filterresults.html" class="item">Filtering Results</a>
+                                    <a href="section-components-groupheading.html" class="item">Group Heading</a>
+                                    <a href="section-components-heading.html" class="item">Heading</a>
+                                    <a href="section-components-instructionalpathways.html" class="item">Instructional Pathways</a>
+                                    <a href="section-components-itemlisting.html" class="item">Item listing</a>
+                                    <a href="section-components-linkslist.html" class="item">Links List</a>
+                                    <a href="section-components-objectlists.html" class="item">Media Object Lists</a>
+                                    <a href="section-components-relatedmaterials.html" class="item">Related Materials</a>
+                                    <a href="section-components-tease.html" class="item">Tease</a>
+                                    <a href="section-components-thumbnailgrid.html" class="item">Thumbnail Grid</a>
+                                    <a href="section-components-tweetthis.html" class="item">Tweet This</a>
+                                    <a href="section-components-vocabulary.html" class="item">Vocabulary</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">JavaScript</div>
+                            <div class="menu">
+                                    <a href="section-javascript-animation.html" class="item">Animation</a>
+                                    <a href="section-javascript-autocomplete.html" class="item">Autocomplete</a>
+                                    <a href="section-javascript-filtering.html" class="item">Filtering</a>
+                                    <a href="section-javascript-scrollspy.html" class="item">Scrollspy</a>
+                                    <a href="section-javascript-smooth-scroll.html" class="item">Smooth Scroll</a>
+                                    <a href="section-javascript-sticky.html" class="item">Sticky</a>
+                                    <a href="section-javascript-switcher.html" class="item">Switcher</a>
+                                    <a href="section-javascript-template.html" class="item">Basic Templating</a>
+                                    <a href="section-javascript-toggle.html" class="item">Toggle</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Layouts</div>
+                            <div class="menu">
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Modules</div>
+                            <div class="menu">
+                                    <a href="section-pagemodules-03.html" class="item">Audience Navigation Tabs</a>
+                                    <a href="section-pagemodules-05.html" class="item">Audience Navbar</a>
+                                    <a href="section-pagemodules-07.html" class="item">Expandable thumbnail</a>
+                                    <a href="section-pagemodules-globalnavigation.html" class="item">Global Navigation</a>
+                                    <a href="section-pagemodules-sharing.html" class="item">Sharing widget</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Structure</div>
+                            <div class="menu">
+                                    <a href="section-pagestructure-configuration.html" class="item">Configuration</a>
+                                    <a href="section-pagestructure-contentmodules.html" class="item">Content Modules</a>
+                                    <a href="section-pagestructure-pagemodules.html" class="item">Page Modules</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                </nav>
+            </div> <!-- class="toc" -->
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger"></label>
+
+            <article class="content-wrapper">
+
+
+                            <div class="masthead">
+                                <div class="container">
+                                    <div class="introduction">
+                <img src="public/ngkitlogo.svg" style="margin-bottom: 1em" width="66" height="32" alt="NGKit" />
+                                        <div class="ui header">
+                                            Icons
+                                                <div class="sub header">
+                                                    <p>Place vector icons anywhere using an icon font.</p>
+<p>This component uses a custom <a href="https://github.com/Natgeoed/icon-society">Icon Society</a>
+icon font. Icon fonts are great, because they enable you to easily change color,
+size and more via CSS. They are scalable vector graphics, which means that they
+look great on high-resolution displays.</p>
+
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-top:30px;">
+                                        <button onclick="toggleRightRail()">Toggle Right Rail</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-container-div" class="main ui intro container">
+                                <div id="right-nav-rail" class="ui dividing right rail">
+                                    <div class="ui sticky">
+
+                                        <div class="ui header">Icons</div>
+                                        <div class="ui vertical following fluid accordion text menu">
+
+                                                
+                                                
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-icons-configuration"><strong>Configuration</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-icons-usage"><strong>Basic Usage</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-icons-more-examples"><strong>More Examples</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#media-icons-more-examples-blockquotes">Blockquotes</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#media-icons-more-examples-button-dropdown">Button dropdown</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#media-icons-more-examples-button-group">Button Group</a>
+                                                    </div></div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-icons-sizing"><strong>Size Modifiers</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-icons-spinning"><strong>Spin Modifier</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-icons-hover"><strong>Icon hover</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-icons-button"><strong>Icon button</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#media-icons-button-large">Icon Button Large modifier</a>
+                                                    </div></div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-icons-fixed-width"><strong>Justify icon</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#media-icons-icon-list"><strong>Icons listing</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#media-icons-icon-list-web-application">Web Application Icons</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#media-icons-icon-list-directional">Directional Icons</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#media-icons-icon-list-media-player">Media Player Icons</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#media-icons-icon-list-file-type">Brand Icons</a>
+                                                    </div></div>
+
+                                        </div> <!-- ui vertical following fluid accordion text menu -->
+                                    </div> <!-- ui sticky -->
+                                </div> <!-- ui dividing right rail -->
+                         <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-icons-configuration">
+                                Configuration
+                                <a class="kss-title__permalink" href="#media-icons-configuration">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <table class="settings">
+    <tr><td><code>$icon-font-path</code></td>
+        <td>../fonts</td>
+    </tr>
+    <tr><td><code>$icon-small-font-size</code></td>
+        <td>150%</td>
+    </tr>
+    <tr><td><code>$icon-medium-font-size</code></td>
+        <td>200%</td>
+    </tr>
+    <tr><td><code>$icon-large-font-size</code></td>
+        <td>250%</td>
+    </tr>
+    <tr><td><code>$icon-small-vertical-align</code></td>
+        <td>-10%</td>
+    </tr>
+    <tr><td><code>$icon-medium-vertical-align</code></td>
+        <td>-16%</td>
+    </tr>
+    <tr><td><code>$icon-large-vertical-align</code></td>
+        <td>-22%</td>
+    </tr>
+    <tr><td><code>$icon-hover-color</code></td>
+        <td class="ng--icon-hover-color">#999</td>
+    </tr>
+    <tr><td><code>$icon-hover-hover-color</code></td>
+        <td class="ng--icon-hover-hover-color">#000</td>
+    </tr>
+    <tr><td><code>$icon-button-width</code></td>
+        <td>40px</td>
+    </tr>
+    <tr><td><code>$icon-button-height</code></td>
+        <td>40px</td>
+    </tr>
+    <tr><td><code>$icon-button-border-radius</code></td>
+        <td>100%</td>
+    </tr>
+    <tr><td><code>$icon-button-background</code></td>
+        <td class="ng--icon-button-background">#fff</td>
+    </tr>
+    <tr><td><code>$icon-button-font-size</code></td>
+        <td class="ng--icon-button-font-size">20px</td>
+    </tr>
+    <tr><td><code>$icon-button-color</code></td>
+        <td class="ng--icon-button-color">#000</td>
+    </tr>
+    <tr><td><code>$icon-button-hover-background</code></td>
+        <td class="ng--icon-button-hover-background">#fafafa</td>
+    </tr>
+    <tr><td><code>$icon-button-hover-color</code></td>
+        <td class="ng--icon-button-hover-color">#000</td>
+    </tr>
+    <tr><td><code>$icon-button-active-background</code></td>
+        <td class="ng--icon-button-active-background">#eee</td>
+    </tr>
+    <tr><td><code>$icon-button-active-color</code></td>
+        <td class="ng--icon-button-active-color">#000</td>
+    </tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-icons-usage">
+                                Basic Usage
+                                <a class="kss-title__permalink" href="#media-icons-usage">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To apply an icon, add any <code>.ng-icon-*</code> class to an <code>&lt;i&gt;</code> or <code>&lt;span&gt;</code> element.
+Et voilà, you have a vector icon, which inherits size and color just like your
+text does.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><ul class="ng-list ng-list-line">
+    <li><i class="ng-icon-download"></i> Uses the <code>.ng-icon-download</code> class</li>
+    <li><i class="ng-icon-user"></i> Uses the <code>.ng-icon-user</code> class</li>
+    <li><i class="ng-icon-sort"></i> Uses the <code>.ng-icon-sort</code> class</li>
+    <li><a href="#"><i class="ng-icon-external-link"></i> An icon in a link</a></li>
+</ul>
+<a href="#" class="ng-button"><i class="ng-icon-envelope"></i> A button with an icon</a></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;ul class=&quot;ng-list ng-list-line&quot;&gt;
+    &lt;li&gt;&lt;i class=&quot;ng-icon-download&quot;&gt;&lt;/i&gt; Uses the &lt;code&gt;.ng-icon-download&lt;/code&gt; class&lt;/li&gt;
+    &lt;li&gt;&lt;i class=&quot;ng-icon-user&quot;&gt;&lt;/i&gt; Uses the &lt;code&gt;.ng-icon-user&lt;/code&gt; class&lt;/li&gt;
+    &lt;li&gt;&lt;i class=&quot;ng-icon-sort&quot;&gt;&lt;/i&gt; Uses the &lt;code&gt;.ng-icon-sort&lt;/code&gt; class&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;ng-icon-external-link&quot;&gt;&lt;/i&gt; An icon in a link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a href=&quot;#&quot; class=&quot;ng-button&quot;&gt;&lt;i class=&quot;ng-icon-envelope&quot;&gt;&lt;/i&gt; A button with an icon&lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-icons-more-examples">
+                                More Examples
+                                <a class="kss-title__permalink" href="#media-icons-more-examples">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="media-icons-more-examples-blockquotes">
+                                Blockquotes
+                                <a class="kss-title__permalink" href="#media-icons-more-examples-blockquotes">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>This example shows a blockquote from the Base component with a large quote icon.
+It also uses the <code>.ng-align-left</code> class from the Utility component.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><blockquote>
+    <p>
+        <i class="ng-icon-quote-left ng-icon-large ng-align-left"></i>
+        The &lt;blockquote&gt; element defines a long quotation which also
+        creates a new block by inserting white space before and after the
+        blockquote element.
+    </p>
+</blockquote></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;blockquote&gt;
+    &lt;p&gt;
+        &lt;i class=&quot;ng-icon-quote-left ng-icon-large ng-align-left&quot;&gt;&lt;/i&gt;
+        The &amp;lt;blockquote&amp;gt; element defines a long quotation which also
+        creates a new block by inserting white space before and after the
+        blockquote element.
+    &lt;/p&gt;
+&lt;/blockquote&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="media-icons-more-examples-button-dropdown">
+                                Button dropdown
+                                <a class="kss-title__permalink" href="#media-icons-more-examples-button-dropdown">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>This example shows a button which is split into a standard action to the left
+and a dropdown toggle on the right, using the Dropdown component.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-button-group">
+    <button class="ng-button ng-button-primary"><i class="ng-icon-folder-open"></i> Post</button>
+    <div data-ng-dropdown="{mode:'click'}">
+        <button class="ng-button ng-button-primary"><i class="ng-icon-caret-down"></i></button>
+        <div class="ng-dropdown ng-dropdown-small">
+            <ul class="ng-nav ng-nav-dropdown">
+                <li><a href="#"><i class="ng-icon-edit"></i> Edit</a></li>
+                <li><a href="#"><i class="ng-icon-eye"></i> View</a></li>
+                <li><a href="#"><i class="ng-icon-check-square-o"></i> Enable</a></li>
+                <li class="ng-nav-divider"></li>
+                <li><a href="#"><i class="ng-icon-trash-o"></i> Trash</a></li>
+            </ul>
+        </div>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-button-group&quot;&gt;
+    &lt;button class=&quot;ng-button ng-button-primary&quot;&gt;&lt;i class=&quot;ng-icon-folder-open&quot;&gt;&lt;/i&gt; Post&lt;/button&gt;
+    &lt;div data-ng-dropdown=&quot;{mode:&#x27;click&#x27;}&quot;&gt;
+        &lt;button class=&quot;ng-button ng-button-primary&quot;&gt;&lt;i class=&quot;ng-icon-caret-down&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;div class=&quot;ng-dropdown ng-dropdown-small&quot;&gt;
+            &lt;ul class=&quot;ng-nav ng-nav-dropdown&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;ng-icon-edit&quot;&gt;&lt;/i&gt; Edit&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;ng-icon-eye&quot;&gt;&lt;/i&gt; View&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;ng-icon-check-square-o&quot;&gt;&lt;/i&gt; Enable&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;ng-nav-divider&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;ng-icon-trash-o&quot;&gt;&lt;/i&gt; Trash&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="media-icons-more-examples-button-group">
+                                Button Group
+                                <a class="kss-title__permalink" href="#media-icons-more-examples-button-group">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>This example shows a group of buttons from the Button component with icons inside each button.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-button-group">
+    <a href="#" class="ng-button"><i class="ng-icon-audio-mute"></i></a>
+    <a href="#" class="ng-button"><i class="ng-icon-audio-loud"></i></a>
+    <a href="#" class="ng-button"><i class="ng-icon-play"></i></a>
+    <a href="#" class="ng-button"><i class="ng-icon-expand"></i></a>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-button-group&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-button&quot;&gt;&lt;i class=&quot;ng-icon-audio-mute&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-button&quot;&gt;&lt;i class=&quot;ng-icon-audio-loud&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-button&quot;&gt;&lt;i class=&quot;ng-icon-play&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;ng-button&quot;&gt;&lt;i class=&quot;ng-icon-expand&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-icons-sizing">
+                                Size Modifiers
+                                <a class="kss-title__permalink" href="#media-icons-sizing">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>Add the <code>.ng-icon-small</code>, <code>.ng-icon-medium</code> or <code>.ng-icon-large</code> class to an
+icon to make the it larger.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><p><i class="ng-icon-ngs"></i> the default icon is the same size as the text</p>
+<p><i class="ng-icon-ngs ng-icon-small"></i> <code>.ng-icon-small</code> is 150% of the text size</p>
+<p><i class="ng-icon-ngs ng-icon-medium"></i> <code>.ng-icon-medium</code> is 200% of the text size</p>
+<p><i class="ng-icon-ngs ng-icon-large"></i> <code>.ng-icon-large</code> is 250% of the text size</p></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;p&gt;&lt;i class=&quot;ng-icon-ngs&quot;&gt;&lt;/i&gt; the default icon is the same size as the text&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;ng-icon-ngs ng-icon-small&quot;&gt;&lt;/i&gt; &lt;code&gt;.ng-icon-small&lt;/code&gt; is 150% of the text size&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;ng-icon-ngs ng-icon-medium&quot;&gt;&lt;/i&gt; &lt;code&gt;.ng-icon-medium&lt;/code&gt; is 200% of the text size&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;ng-icon-ngs ng-icon-large&quot;&gt;&lt;/i&gt; &lt;code&gt;.ng-icon-large&lt;/code&gt; is 250% of the text size&lt;/p&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-icons-spinning">
+                                Spin Modifier
+                                <a class="kss-title__permalink" href="#media-icons-spinning">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>Use the <code>ng-icon-spin</code> class to get any icon to rotate.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><i class="ng-icon-clock-o ng-icon-spin"></i>
+<i class="ng-icon-close ng-icon-spin"></i>
+<i class="ng-icon-share ng-icon-spin"></i></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;i class=&quot;ng-icon-clock-o ng-icon-spin&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;ng-icon-close ng-icon-spin&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;ng-icon-share ng-icon-spin&quot;&gt;&lt;/i&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-icons-hover">
+                                Icon hover
+                                <a class="kss-title__permalink" href="#media-icons-hover">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>Use the modifier <code>.ng-icon-hover</code> class to use an anchor as an icon, applying a
+hover effect and removing the link underline.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><a href="#" class="ng-icon-small ng-icon-hover ng-icon-facebook"></a>
+<a href="#" class="ng-icon-small ng-icon-hover ng-icon-twitter"></a>
+<a href="#" class="ng-icon-small ng-icon-hover ng-icon-google-plus"></a>
+<a href="#" class="ng-icon-small ng-icon-hover ng-icon-instagram"></a></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;a href=&quot;#&quot; class=&quot;ng-icon-small ng-icon-hover ng-icon-facebook&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;ng-icon-small ng-icon-hover ng-icon-twitter&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;ng-icon-small ng-icon-hover ng-icon-google-plus&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;ng-icon-small ng-icon-hover ng-icon-instagram&quot;&gt;&lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-icons-button">
+                                Icon button
+                                <a class="kss-title__permalink" href="#media-icons-button">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>Use the modifier <code>.ng-icon-button</code> class to create an icon button, which can be
+used perfectly for social icons.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><a href="#" class="ng-icon-button ng-icon-facebook"></a>
+<a href="#" class="ng-icon-button ng-icon-twitter"></a>
+<a href="#" class="ng-icon-button ng-icon-google-plus"></a>
+<a href="#" class="ng-icon-button ng-icon-instagram"></a></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;a href=&quot;#&quot; class=&quot;ng-icon-button ng-icon-facebook&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;ng-icon-button ng-icon-twitter&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;ng-icon-button ng-icon-google-plus&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;ng-icon-button ng-icon-instagram&quot;&gt;&lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="media-icons-button-large">
+                                Icon Button Large modifier
+                                <a class="kss-title__permalink" href="#media-icons-button-large">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <p>Add the modifier <code>.ng-icon-button-large</code> class to create a large icon button.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><a href="#" class="ng-icon-button ng-icon-button-large ng-icon-facebook"></a>
+<a href="#" class="ng-icon-button ng-icon-button-large ng-icon-twitter"></a>
+<a href="#" class="ng-icon-button ng-icon-button-large ng-icon-google-plus"></a>
+<a href="#" class="ng-icon-button ng-icon-button-large ng-icon-instagram"></a></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;a href=&quot;#&quot; class=&quot;ng-icon-button ng-icon-button-large ng-icon-facebook&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;ng-icon-button ng-icon-button-large ng-icon-twitter&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;ng-icon-button ng-icon-button-large ng-icon-google-plus&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;ng-icon-button ng-icon-button-large ng-icon-instagram&quot;&gt;&lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-icons-fixed-width">
+                                Justify icon
+                                <a class="kss-title__permalink" href="#media-icons-fixed-width">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To add a fixed width to the icon and center it, add the <code>.ng-icon-justify</code> class.
+This is useful when using different icons in a list.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><ul class="ng-list">
+  <li><a href="#"><i class="ng-icon-download ng-icon-justify"></i> Downloads</a></li>
+  <li><a href="#"><i class="ng-icon-book ng-icon-justify"></i> Library</a></li>
+  <li><a href="#"><i class="ng-icon-user ng-icon-justify"></i> Users</a></li>
+  <li><a href="#"><i class="ng-icon-heart ng-icon-justify"></i> Favorites</a></li>
+</ul></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;ul class=&quot;ng-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;ng-icon-download ng-icon-justify&quot;&gt;&lt;/i&gt; Downloads&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;ng-icon-book ng-icon-justify&quot;&gt;&lt;/i&gt; Library&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;ng-icon-user ng-icon-justify&quot;&gt;&lt;/i&gt; Users&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;ng-icon-heart ng-icon-justify&quot;&gt;&lt;/i&gt; Favorites&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                            </div>
+                        </div>
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="media-icons-icon-list">
+                                Icons listing
+                                <a class="kss-title__permalink" href="#media-icons-icon-list">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>The complete set of icons in <a href="https://github.com/Natgeoed/icon-society/">Icon Society</a></p>
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="media-icons-icon-list-web-application">
+                                Web Application Icons
+                                <a class="kss-title__permalink" href="#media-icons-icon-list-web-application">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <ul class="ng-grid ng-grid-width-1-2 ng-grid-width-medium-1-4">
+    <li><i class="ng-icon-add ng-icon-justify"></i>&emsp;add</li>
+    <li><i class="ng-icon-book ng-icon-justify"></i>&emsp;book</li>
+    <li><i class="ng-icon-box-arrow-ne ng-icon-justify"></i>&emsp;box-arrow-ne</li>
+    <li><i class="ng-icon-box-arrow-ne-light ng-icon-justify"></i>&emsp;box-arrow-ne-light</li>
+    <li><i class="ng-icon-clock-o ng-icon-justify"></i>&emsp;clock-o</li>
+    <li><i class="ng-icon-close ng-icon-justify"></i>&emsp;close</li>
+    <li><i class="ng-icon-close-light ng-icon-justify"></i>&emsp;close-light</li>
+    <li><i class="ng-icon-comment ng-icon-justify"></i>&emsp;comment</li>
+    <li><i class="ng-icon-download ng-icon-justify"></i>&emsp;download</li>
+    <li><i class="ng-icon-envelope ng-icon-justify"></i>&emsp;envelope</li>
+    <li><i class="ng-icon-eraser ng-icon-justify"></i>&emsp;eraser</li>
+    <li><i class="ng-icon-external-link ng-icon-justify"></i>&emsp;external-link (alias)</li>
+    <li><i class="ng-icon-external-link-light ng-icon-justify"></i>&emsp;external-link-light (alias)</li>
+    <li><i class="ng-icon-external-link-square ng-icon-justify"></i>&emsp;external-link-square (alias)</li>
+    <li><i class="ng-icon-external-link-square-light ng-icon-justify"></i>&emsp;external-link-square-light (alias)</li>
+    <li><i class="ng-icon-geolocate ng-icon-justify"></i>&emsp;geolocate</li>
+    <li><i class="ng-icon-heart ng-icon-justify"></i>&emsp;heart</li>
+    <li><i class="ng-icon-heart-hollow ng-icon-justify"></i>&emsp;heart-hollow</li>
+    <li><i class="ng-icon-info-circle ng-icon-justify"></i>&emsp;info-circle</li>
+    <li><i class="ng-icon-list-ul ng-icon-justify"></i>&emsp;list-ul</li>
+    <li><i class="ng-icon-map-marker ng-icon-justify"></i>&emsp;map-marker</li>
+    <li><i class="ng-icon-minus ng-icon-justify"></i>&emsp;minus</li>
+    <li><i class="ng-icon-minus-square-o ng-icon-justify"></i>&emsp;minus-square-o</li>
+    <li><i class="ng-icon-plus ng-icon-justify"></i>&emsp;plus (alias)</li>
+    <li><i class="ng-icon-plus-square-o ng-icon-justify"></i>&emsp;plus-square-o</li>
+    <li><i class="ng-icon-print ng-icon-justify"></i>&emsp;print</li>
+    <li><i class="ng-icon-question-circle ng-icon-justify"></i>&emsp;question-circle</li>
+    <li><i class="ng-icon-remove ng-icon-justify"></i>&emsp;remove (alias)</li>
+    <li><i class="ng-icon-remove-light ng-icon-justify"></i>&emsp;remove-light (alias)</li>
+    <li><i class="ng-icon-search ng-icon-justify"></i>&emsp;search</li>
+    <li><i class="ng-icon-search-minus ng-icon-justify"></i>&emsp;search-minus (alias)</li>
+    <li><i class="ng-icon-search-plus ng-icon-justify"></i>&emsp;search-plus (alias)</li>
+    <li><i class="ng-icon-share ng-icon-justify"></i>&emsp;share</li>
+    <li><i class="ng-icon-sort ng-icon-justify"></i>&emsp;sort</li>
+    <li><i class="ng-icon-times ng-icon-justify"></i>&emsp;times (alias)</li>
+    <li><i class="ng-icon-times-light ng-icon-justify"></i>&emsp;times-light (alias)</li>
+    <li><i class="ng-icon-toggle-off ng-icon-justify"></i>&emsp;toggle-off</li>
+    <li><i class="ng-icon-toggle-on ng-icon-justify"></i>&emsp;toggle-on</li>
+    <li><i class="ng-icon-unlock ng-icon-justify"></i>&emsp;unlock</li>
+    <li><i class="ng-icon-user ng-icon-justify"></i>&emsp;user</li>
+    <li><i class="ng-icon-walker ng-icon-justify"></i>&emsp;walker</li>
+    <li><i class="ng-icon-warning ng-icon-justify"></i>&emsp;warning</li>
+    <li><i class="ng-icon-zoom-in ng-icon-justify"></i>&emsp;zoom-in</li>
+    <li><i class="ng-icon-zoom-out ng-icon-justify"></i>&emsp;zoom-out</li>
+</ul>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="media-icons-icon-list-directional">
+                                Directional Icons
+                                <a class="kss-title__permalink" href="#media-icons-icon-list-directional">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <ul class="ng-grid ng-grid-width-1-2 ng-grid-width-medium-1-4">
+    <li><i class="ng-icon-angle-double-left ng-icon-justify"></i>&emsp;angle-double-left</li>
+    <li><i class="ng-icon-angle-double-right ng-icon-justify"></i>&emsp;angle-double-right</li>
+    <li><i class="ng-icon-angle-down ng-icon-justify"></i>&emsp;angle-down (alias)</li>
+    <li><i class="ng-icon-angle-down-light ng-icon-justify"></i>&emsp;angle-down-light (alias)</li>
+    <li><i class="ng-icon-angle-left ng-icon-justify"></i>&emsp;angle-left (alias)</li>
+    <li><i class="ng-icon-angle-left-light ng-icon-justify"></i>&emsp;angle-left-light (alias)</li>
+    <li><i class="ng-icon-angle-right ng-icon-justify"></i>&emsp;angle-right (alias)</li>
+    <li><i class="ng-icon-angle-right-light ng-icon-justify"></i>&emsp;angle-right-light (alias)</li>
+    <li><i class="ng-icon-angle-up ng-icon-justify"></i>&emsp;angle-up (alias)</li>
+    <li><i class="ng-icon-angle-up-light ng-icon-justify"></i>&emsp;angle-up-light (alias)</li>
+    <li><i class="ng-icon-arrow-down ng-icon-justify"></i>&emsp;arrow-down</li>
+    <li><i class="ng-icon-arrow-down ng-icon-justify"></i>&emsp;arrow-down</li>
+    <li><i class="ng-icon-arrow-left ng-icon-justify"></i>&emsp;arrow-left</li>
+    <li><i class="ng-icon-arrow-left-light ng-icon-justify"></i>&emsp;arrow-left-light</li>
+    <li><i class="ng-icon-arrow-ne ng-icon-justify"></i>&emsp;arrow-ne</li>
+    <li><i class="ng-icon-arrow-ne-light ng-icon-justify"></i>&emsp;arrow-ne-light</li>
+    <li><i class="ng-icon-arrow-right ng-icon-justify"></i>&emsp;arrow-right</li>
+    <li><i class="ng-icon-arrow-right-light ng-icon-justify"></i>&emsp;arrow-right-light</li>
+    <li><i class="ng-icon-arrow-up ng-icon-justify"></i>&emsp;arrow-up</li>
+    <li><i class="ng-icon-arrow-up-light ng-icon-justify"></i>&emsp;arrow-up-light</li>
+    <li><i class="ng-icon-caret-down ng-icon-justify"></i>&emsp;caret-down</li>
+    <li><i class="ng-icon-caret-right ng-icon-justify"></i>&emsp;caret-right</li>
+    <li><i class="ng-icon-caret-up ng-icon-justify"></i>&emsp;caret-up</li>
+    <li><i class="ng-icon-direction-down ng-icon-justify"></i>&emsp;direction-down</li>
+    <li><i class="ng-icon-direction-down-light ng-icon-justify"></i>&emsp;direction-down-light</li>
+    <li><i class="ng-icon-direction-left ng-icon-justify"></i>&emsp;direction-left</li>
+    <li><i class="ng-icon-direction-left-light ng-icon-justify"></i>&emsp;direction-left-light</li>
+    <li><i class="ng-icon-direction-right ng-icon-justify"></i>&emsp;direction-right</li>
+    <li><i class="ng-icon-direction-right-light ng-icon-justify"></i>&emsp;direction-right-light</li>
+    <li><i class="ng-icon-direction-up ng-icon-justify"></i>&emsp;direction-up</li>
+    <li><i class="ng-icon-direction-up-light ng-icon-justify"></i>&emsp;direction-up-light</li>
+</ul>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="media-icons-icon-list-media-player">
+                                Media Player Icons
+                                <a class="kss-title__permalink" href="#media-icons-icon-list-media-player">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <ul class="ng-grid ng-grid-width-1-2 ng-grid-width-medium-1-4">
+    <li><i class="ng-icon-audio ng-icon-justify"></i>&emsp;audio</li>
+    <li><i class="ng-icon-audio-loud ng-icon-justify"></i>&emsp;audio-loud</li>
+    <li><i class="ng-icon-audio-mute ng-icon-justify"></i>&emsp;audio-mute</li>
+    <li><i class="ng-icon-contract ng-icon-justify"></i>&emsp;contract</li>
+    <li><i class="ng-icon-expand ng-icon-justify"></i>&emsp;expand</li>
+    <li><i class="ng-icon-play ng-icon-justify"></i>&emsp;play</li>
+</ul>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="media-icons-icon-list-file-type">
+                                Brand Icons
+                                <a class="kss-title__permalink" href="#media-icons-icon-list-file-type">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <ul class="ng-grid ng-grid-width-1-2 ng-grid-width-medium-1-4">
+    <li><i class="ng-icon-facebook ng-icon-justify"></i>&emsp;facebook</li>
+    <li><i class="ng-icon-google-plus ng-icon-justify"></i>&emsp;google-plus</li>
+    <li><i class="ng-icon-instagram ng-icon-justify"></i>&emsp;instagram</li>
+    <li><i class="ng-icon-linkedin ng-icon-justify"></i>&emsp;linkedin</li>
+    <li><i class="ng-icon-ngs ng-icon-justify"></i>&emsp;ngs</li>
+    <li><i class="ng-icon-pinterest ng-icon-justify"></i>&emsp;pinterest</li>
+    <li><i class="ng-icon-twitter ng-icon-justify"></i>&emsp;twitter</li>
+    <li><i class="ng-icon-whats-app ng-icon-justify"></i>&emsp;whats-app</li>
+    <li><i class="ng-icon-youtube ng-icon-justify"></i>&emsp;youtube</li>
+</ul>
+                        
+
+
+                    </div> <!-- main ui intro container" -->
+            </article>
+        </div>
+        <footer id="footer" class="kss-footer">
+        <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/highlight.pack.js"></script>
+    <script src="js/ngkit.js"></script>
+    <script src="public/docs.js"></script>
+  </body>
+</html>

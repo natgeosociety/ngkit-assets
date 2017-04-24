@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>National Geographic Style Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="generator" content="kss-node">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="public/combined.css">
+    <link rel="stylesheet" type="text/css" href="public/github.css">
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,600i">
+
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('fonts/fontawesome-webfont.eot?v=4.0.3}');
+        src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
+          url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'),
+          url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
+          url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+    <style type="text/css">
+    @font-face {
+        font-family: 'icon-society';
+        src: url('fonts/icon-society.woff') format('woff'),
+          url('fonts/icon-society.ttf') format('truetype'),
+          url('fonts/icon-society.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+        .add-100-margin{
+            margin-left:35px;
+            margin-right:35px;
+        }
+    </style>
+
+    <script src="public/jquery.min.js"></script>
+
+      <script>
+          function toggleRightRail(){
+              if($("#right-nav-rail").is(":visible")){
+                  $("#right-nav-rail").hide();
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+              }else{
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+                  $("#right-nav-rail").show();
+
+              }
+          }
+
+      </script>
+</head>
+<body id="kss-node">
+    <div class="wrapper">
+        <div class="full height">
+            <div class="toc" >
+                <nav class="ui vertical inverted menu">
+                        <div class="item">
+                            <div class="header">Introduction</div>
+                            <div class="menu">
+                                <a href="./index.html" class="item">Overview</a>
+                                    <a href="section-introduction-configuration.html" class="item">Configuration</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Layout</div>
+                            <div class="menu">
+                                    <a href="section-layout-column.html" class="item">Column</a>
+                                    <a href="section-layout-cover.html" class="item">Cover</a>
+                                    <a href="section-layout-flexbox.html" class="item">Flexbox</a>
+                                    <a href="section-layout-grids.html" class="item">Grids</a>
+                                    <a href="section-layout-panel.html" class="item">Panel</a>
+                                    <a href="section-layout-utilities.html" class="item">Layout Utilities</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Typography</div>
+                            <div class="menu">
+                                    <a href="section-typography-base.html" class="item">Base Typography</a>
+                                    <a href="section-typography-colors.html" class="item">Color Classes</a>
+                                    <a href="section-typography-lists.html" class="item">Lists</a>
+                                    <a href="section-typography-print.html" class="item">Print</a>
+                                    <a href="section-typography-tables.html" class="item">Tables</a>
+                                    <a href="section-typography-utilities.html" class="item">Text</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Controls</div>
+                            <div class="menu">
+                                    <a href="section-controls-buttons.html" class="item">Buttons</a>
+                                    <a href="section-controls-close.html" class="item">Close</a>
+                                    <a href="section-controls-contrast.html" class="item">Contrast</a>
+                                    <a href="section-controls-date-picker.html" class="item">Datepicker</a>
+                                    <a href="section-controls-dropdown.html" class="item">Dropdown</a>
+                                    <a href="section-controls-forms.html" class="item">Forms</a>
+                                    <a href="section-controls-progress.html" class="item">Progress</a>
+                                    <a href="section-controls-search.html" class="item">Search</a>
+                                    <a href="section-controls-toolbars.html" class="item">Toolbar</a>
+                                    <a href="section-controls-upload.html" class="item">Upload</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Media</div>
+                            <div class="menu">
+                                    <a href="section-media-icons.html" class="item">Icons</a>
+                                    <a href="section-media-media-object.html" class="item">Media object</a>
+                                    <a href="section-media-overlays.html" class="item">Overlay</a>
+                                    <a href="section-media-slideshow.html" class="item">Slideshow</a>
+                                    <a href="section-media-symbols.html" class="item">Symbols</a>
+                                    <a href="section-media-thumbnails.html" class="item">Images</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Callouts</div>
+                            <div class="menu">
+                                    <a href="section-callouts-alerts.html" class="item">Alert</a>
+                                    <a href="section-callouts-badges.html" class="item">Badge</a>
+                                    <a href="section-callouts-modals.html" class="item">Modal</a>
+                                    <a href="section-callouts-popovers.html" class="item">Popovers</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Navigation</div>
+                            <div class="menu">
+                                    <a href="section-navigation-breadcrumbs.html" class="item">Breadcrumbs</a>
+                                    <a href="section-navigation-dot-nav.html" class="item">Dot Navigation</a>
+                                    <a href="section-navigation-nav.html" class="item">Nav</a>
+                                    <a href="section-navigation-navbar.html" class="item">Navbar</a>
+                                    <a href="section-navigation-pagination.html" class="item">Pagination</a>
+                                    <a href="section-navigation-slide-navigation.html" class="item">Slide Navigation</a>
+                                    <a href="section-navigation-sub-nav.html" class="item">Subnav</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Containers</div>
+                            <div class="menu">
+                                    <a href="section-containers-accordion.html" class="item">Accordion</a>
+                                    <a href="section-containers-drawers.html" class="item">Drawer</a>
+                                    <a href="section-containers-off-canvas.html" class="item">Off-canvas</a>
+                                    <a href="section-containers-tabs.html" class="item">Tab</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Components</div>
+                            <div class="menu">
+                                    <a href="section-components-article.html" class="item">Article Components</a>
+                                    <a href="section-components-articleheading.html" class="item">Article Heading</a>
+                                    <a href="section-components-comments.html" class="item">Comment</a>
+                                    <a href="section-components-contentcarousel.html" class="item">Content Carousel</a>
+                                    <a href="section-components-dynamicleadcarousel.html" class="item">Carousel</a>
+                                    <a href="section-components-featurelist.html" class="item">Feature Lists</a>
+                                    <a href="section-components-filterresults.html" class="item">Filtering Results</a>
+                                    <a href="section-components-groupheading.html" class="item">Group Heading</a>
+                                    <a href="section-components-heading.html" class="item">Heading</a>
+                                    <a href="section-components-instructionalpathways.html" class="item">Instructional Pathways</a>
+                                    <a href="section-components-itemlisting.html" class="item">Item listing</a>
+                                    <a href="section-components-linkslist.html" class="item">Links List</a>
+                                    <a href="section-components-objectlists.html" class="item">Media Object Lists</a>
+                                    <a href="section-components-relatedmaterials.html" class="item">Related Materials</a>
+                                    <a href="section-components-tease.html" class="item">Tease</a>
+                                    <a href="section-components-thumbnailgrid.html" class="item">Thumbnail Grid</a>
+                                    <a href="section-components-tweetthis.html" class="item">Tweet This</a>
+                                    <a href="section-components-vocabulary.html" class="item">Vocabulary</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">JavaScript</div>
+                            <div class="menu">
+                                    <a href="section-javascript-animation.html" class="item">Animation</a>
+                                    <a href="section-javascript-autocomplete.html" class="item">Autocomplete</a>
+                                    <a href="section-javascript-filtering.html" class="item">Filtering</a>
+                                    <a href="section-javascript-scrollspy.html" class="item">Scrollspy</a>
+                                    <a href="section-javascript-smooth-scroll.html" class="item">Smooth Scroll</a>
+                                    <a href="section-javascript-sticky.html" class="item">Sticky</a>
+                                    <a href="section-javascript-switcher.html" class="item">Switcher</a>
+                                    <a href="section-javascript-template.html" class="item">Basic Templating</a>
+                                    <a href="section-javascript-toggle.html" class="item">Toggle</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Layouts</div>
+                            <div class="menu">
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Modules</div>
+                            <div class="menu">
+                                    <a href="section-pagemodules-03.html" class="item">Audience Navigation Tabs</a>
+                                    <a href="section-pagemodules-05.html" class="item">Audience Navbar</a>
+                                    <a href="section-pagemodules-07.html" class="item">Expandable thumbnail</a>
+                                    <a href="section-pagemodules-globalnavigation.html" class="item">Global Navigation</a>
+                                    <a href="section-pagemodules-sharing.html" class="item">Sharing widget</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Structure</div>
+                            <div class="menu">
+                                    <a href="section-pagestructure-configuration.html" class="item">Configuration</a>
+                                    <a href="section-pagestructure-contentmodules.html" class="item">Content Modules</a>
+                                    <a href="section-pagestructure-pagemodules.html" class="item">Page Modules</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                </nav>
+            </div> <!-- class="toc" -->
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger"></label>
+
+            <article class="content-wrapper">
+
+
+                            <div class="masthead">
+                                <div class="container">
+                                    <div class="introduction">
+                <img src="public/ngkitlogo.svg" style="margin-bottom: 1em" width="66" height="32" alt="NGKit" />
+                                        <div class="ui header">
+                                            Overview
+                                                <div class="sub header">
+                                                    <div class="ng-grid">
+    <div class="ng-width-1-1">
+        <nav class="ng-navbar">
+            <a class="ng-navbar-brand ng-hidden-small" href="">Brand</a>
+            <ul class="ng-navbar-nav ng-hidden-small">
+                <li class="ng-parent" data-ng-dropdown>
+                    <a href="">Parent</a>
+                    <div class="ng-dropdown ng-dropdown-navbar">
+                        <ul class="ng-nav ng-nav-navbar">
+                            <li class="ng-nav-header">Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="ng-nav-divider"></li>
+                            <li><a href="#">Separated item</a></li>
+                            <li class="ng-parent">
+                                <a href="#">Parent</a>
+                                <ul class="ng-nav-sub">
+                                    <li><a href="#">Sub item</a>
+                                        <ul>
+                                            <li><a href="#">Sub item</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="ng-parent ng-active" data-ng-dropdown>
+                    <a href="">Active</a>
+                    <div class="ng-dropdown ng-dropdown-navbar">
+                        <div class="ng-panel">Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="ng-navbar-toggle ng-visible-small" data-ng-offcanvas="{target:'#offcanvas-1'}"></a>
+        </nav>
+    </div>
+</div>
+<hr class="ng-grid-divider">
+<div class="ng-grid">
+    <div class="ng-width-1-1" data-ng-margin>
+        <div class="ng-button-group">
+            <button class="ng-button">Button</button>
+            <div data-ng-dropdown="{mode:'click'}">
+                <button class="ng-button"><i class="ng-icon-caret-down"></i></button>
+                <div class="ng-dropdown ng-dropdown-width-2">
+                    <div class="ng-grid ng-dropdown-grid">
+                        <div class="ng-width-1-2">
+                            <ul class="ng-nav ng-nav-dropdown ng-panel">
+                                <li class="ng-nav-header">Header</li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="ng-nav-divider"></li>
+                                <li><a href="#">Separated item</a></li>
+                                <li class="ng-parent">
+                                    <a href="#">Parent</a>
+                                    <ul class="ng-nav-sub">
+                                        <li><a href="#">Sub item</a>
+                                            <ul>
+                                                <li><a href="#">Sub item</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ng-width-1-2">
+                            <ul class="ng-nav ng-nav-dropdown ng-panel">
+                                <li class="ng-nav-header">Header</li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="ng-nav-divider"></li>
+                                <li><a href="#">Separated item</a></li>
+                                <li class="ng-parent">
+                                    <a href="#">Parent</a>
+                                    <ul class="ng-nav-sub">
+                                        <li><a href="#">Sub item</a>
+                                            <ul>
+                                                <li><a href="#">Sub item</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ng-button-group">
+            <button class="ng-button ng-button-primary">Primary</button>
+            <div data-ng-dropdown="{mode:'click'}">
+                <button class="ng-button ng-button-primary"><i class="ng-icon-caret-down"></i></button>
+                <div class="ng-dropdown ng-dropdown-small">
+                    <ul class="ng-nav ng-nav-dropdown">
+                        <li class="ng-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="ng-nav-divider"></li>
+                        <li><a href="#">Separated item</a></li>
+                        <li class="ng-parent">
+                            <a href="#">Parent</a>
+                            <ul class="ng-nav-sub">
+                                <li><a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ng-button-group">
+            <button class="ng-button ng-button-success">Success</button>
+            <div data-ng-dropdown="{mode:'click'}">
+                <button class="ng-button ng-button-success"><i class="ng-icon-caret-down"></i></button>
+                <div class="ng-dropdown">
+                    <ul class="ng-nav ng-nav-dropdown">
+                        <li class="ng-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="ng-nav-divider"></li>
+                        <li><a href="#">Separated item</a></li>
+                        <li class="ng-parent">
+                            <a href="#">Parent</a>
+                            <ul class="ng-nav-sub">
+                                <li><a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ng-button-group">
+            <button class="ng-button ng-button-danger">Danger</button>
+            <div data-ng-dropdown="{mode:'click'}">
+                <button class="ng-button ng-button-danger"><i class="ng-icon-caret-down"></i></button>
+                <div class="ng-dropdown">
+                    <ul class="ng-nav ng-nav-dropdown">
+                        <li class="ng-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="ng-nav-divider"></li>
+                        <li><a href="#">Separated item</a></li>
+                        <li class="ng-parent">
+                            <a href="#">Parent</a>
+                            <ul class="ng-nav-sub">
+                                <li><a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="ng-button" disabled>Disabled</button>
+        <button class="ng-button" data-ng-tooltip title="Bazinga!">Tooltip</button>
+        <button class="ng-button" data-ng-modal="{target:'#modal-1'}">Modal</button>
+        <button class="ng-button" data-ng-offcanvas="{target:'#offcanvas-1'}">Off-canvas</button>
+        <button class="ng-button ng-button-link">Button link</button>
+    </div>
+</div>
+<hr class="ng-grid-divider">
+<div class="ng-grid" data-ng-grid-margin>
+    <div class="ng-width-medium-1-2">
+        <div class="ng-grid" data-ng-grid-margin>
+            <div class="ng-width-1-1">
+                <ul class="ng-breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><span>Category</span></li>
+                    <li class="ng-active"><span>Post</span></li>
+                </ul>
+            </div>
+            <div class="ng-width-1-1">
+                <article class="ng-article">
+                    <h1 class="ng-article-title">Article title</h1>
+                    <p class="ng-article-meta">Written by Super User on 12 April. Posted in Blog</p>
+                    <div class="ng-grid" data-ng-grid-margin>
+                        <div class="ng-width-medium-1-2">
+                            <a class="ng-thumbnail ng-overlay-toggle" href="#">
+                                <div class="ng-overlay">
+                                    <img src="http://lorempixel.com/300/90" alt="">
+                                    <div class="ng-overlay-area"></div>
+                                </div>
+                                <div class="ng-thumbnail-caption">Caption</div>
+                            </a>
+                        </div>
+                        <div class="ng-width-medium-1-2">
+                            <a class="ng-thumbnail ng-overlay-toggle" href="#">
+                                <div class="ng-overlay">
+                                    <img src="http://lorempixel.com/300/90" alt="">
+                                    <div class="ng-overlay-caption">Caption</div>
+                                </div>
+                            <div class="ng-thumbnail-caption">Caption</div>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="ng-article-lead">Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <pre><code>&lt;div class=&quot;myclass&quot;&gt;...&lt;/div&gt;</code></pre>
+                    <hr class="ng-article-divider">
+                    <div class="ng-grid" data-ng-grid-margin>
+                        <div class="ng-width-medium-1-5">
+                            <span class="ng-text-muted">text-muted</span><br>
+                            <span class="ng-text-primary">text-primary</span><br>
+                            <span class="ng-text-success">text-success</span><br>
+                            <span class="ng-text-warning">text-warning</span><br>
+                            <span class="ng-text-danger">text-danger</span>
+                        </div>
+                        <div class="ng-width-medium-3-10">
+                            <a href="#">a element</a><br>
+                            <em>em element</em><br>
+                            <strong>strong</strong><br>
+                            <code>code element</code><br>
+                            <del>del element</del>
+                        </div>
+                        <div class="ng-width-medium-2-5">
+                            <ins>ins element</ins><br>
+                            <mark>mark element</mark><br>
+                            <q>q <q>inside</q> a q element </q><br>
+                            <abbr title="Abbreviation Element">abbr element</abbr><br>
+                            <dfn title="Defines a definition term">dfn element</dfn>
+                        </div>
+                        <div class="ng-width-1-1">
+                            <p class="ng-text-center">
+                                <span class="ng-badge">Badge</span>
+                                <span class="ng-badge ng-badge-notification">1</span>
+                                <span class="ng-badge ng-badge-success">Success</span>
+                                <span class="ng-badge ng-badge-success ng-badge-notification">4</span>
+                                <span class="ng-badge ng-badge-warning">Warning</span>
+                                <span class="ng-badge ng-badge-warning ng-badge-notification">3</span>
+                                <span class="ng-badge ng-badge-danger">Danger</span>
+                                <span class="ng-badge ng-badge-danger ng-badge-notification">4</span>
+                            </p>
+                        </div>
+                        <div class="ng-width-medium-1-2">
+                            <h1 class="ng-display-inline">h1</h1>
+                            <h2 class="ng-display-inline">h2</h2>
+                            <h3 class="ng-display-inline">h3</h3>
+                            <h4 class="ng-display-inline">h4</h4>
+                            <h5 class="ng-display-inline">h5</h5>
+                            <h6 class="ng-display-inline">h6</h6>
+                        </div>
+                        <div class="ng-width-medium-1-2">
+                            <blockquote>
+                                <p> Lorem ipsum dolor.</p>
+                                <small>Someone famous</small>
+                            </blockquote>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="ng-width-1-1">
+                <ul class="ng-comment-list">
+                    <li>
+                        <article class="ng-comment">
+                            <header class="ng-comment-header">
+                                <img class="ng-comment-avatar" src="http://lorempixel.com/50/50" alt="">
+                                <h4 class="ng-comment-title">Author</h4>
+                                <p class="ng-comment-meta">May 2, 2090 at 1:55 pm</p>
+                            </header>
+                            <div class="ng-comment-body">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="ng-width-1-1">
+                <ul class="ng-pagination">
+                    <li class="ng-disabled"><span><i class="ng-icon-angle-double-left"></i></span></li>
+                    <li class="ng-active"><span>1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">20</a></li>
+                    <li><a href="#"><i class="ng-icon-angle-double-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ng-width-medium-1-2">
+        <div class="ng-grid" data-ng-grid-margin>
+            <div class="ng-width-medium-1-2">
+                <div class="ng-panel">
+                    <ul class="ng-nav ng-nav-side ng-nav-parent-icon" data-ng-nav>
+                        <li class="ng-nav-header">Header</li>
+                        <li class="ng-nav-divider"></li>
+                        <li class="ng-active"><a href="#">Active</a></li>
+                        <li class="ng-parent">
+                            <a href="#">Parent</a>
+                            <ul class="ng-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+                <div class="ng-panel ng-panel-divider">
+                    <h3 class="ng-panel-title">Divider</h3>
+                    Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="ng-panel ng-panel-header">
+                    <h3 class="ng-panel-title">Header</h3>
+                    Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.
+                </div>
+            </div>
+            <div class="ng-width-medium-1-2">
+                <div class="ng-panel ng-panel-box">
+                    <h3 class="ng-panel-title">Box</h3>
+                    Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="ng-panel ng-panel-box ng-panel-box-primary">
+                    <h3 class="ng-panel-title">Box primary</h3>
+                    Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="ng-panel ng-panel-box ng-panel-box-secondary">
+                    <h3 class="ng-panel-title">Box secondary</h3>
+                    Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+        <div class="ng-grid" data-ng-grid-margin>
+            <div class="ng-width-1-2">
+                <div class="ng-alert" data-ng-alert>
+                    <a class="ng-alert-close ng-close"></a>
+                    <p>Info message</p>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-alert ng-alert-success" data-ng-alert>
+                    <a class="ng-alert-close ng-close"></a>
+                    <p>Success message</p>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-alert ng-alert-warning" data-ng-alert>
+                    <a class="ng-alert-close ng-close"></a>
+                    <p>Warning message</p>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-alert ng-alert-danger" data-ng-alert>
+                    <a class="ng-alert-close ng-close"></a>
+                    <p>Danger message</p>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-progress">
+                    <div class="ng-progress-bar" style="width: 55%;">55%</div>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-progress ng-progress-success">
+                    <div class="ng-progress-bar" style="width: 55%;">55%</div>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-progress ng-progress-warning">
+                    <div class="ng-progress-bar" style="width: 55%;">55%</div>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-progress ng-progress-danger">
+                    <div class="ng-progress-bar" style="width: 55%;">55%</div>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <fieldset class="ng-form">
+                    <legend>Form states</legend>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="Text Input" class="ng-width-1-1">
+                    </div>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="form-success" value="form-success" class="ng-width-1-1 ng-form-success">
+                    </div>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="form-danger" value="form-danger" class="ng-width-1-1 ng-form-danger">
+                    </div>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="form disabled" class="ng-width-1-1" disabled>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="ng-width-1-2">
+                <fieldset class="ng-form">
+                    <legend>Form styles</legend>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="form-large" class="ng-form-large ng-form-width-small">
+                        <button class="ng-button ng-button-large" type="reset">Large</button>
+                    </div>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="form-small" class="ng-form-small ng-form-width-small">
+                        <button class="ng-button ng-button-small" type="reset">Small</button>
+                    </div>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="form-blank" class="ng-form-width-small ng-form-blank">
+                        <button class="ng-button ng-button-mini" type="reset">Mini</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="ng-grid-divider">
+<div class="ng-grid" data-ng-grid-margin>
+    <div class="ng-width-medium-1-4">
+        <ul class="ng-subnav ng-subnav-line">
+            <li class="ng-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li><span>Disabled</span></li>
+        </ul>
+    </div>
+    <div class="ng-width-medium-1-4">
+        <ul class="ng-subnav ng-subnav-pill">
+            <li class="ng-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li><span>Disabled</span></li>
+        </ul>
+    </div>
+    <div class="ng-width-medium-1-4">
+        <ul class="ng-tab" data-ng-tab>
+            <li class="ng-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="ng-disabled"><a href="#">Disabled</a></li>
+        </ul>
+    </div>
+    <div class="ng-width-medium-1-4">
+        <a href="#" class="ng-icon-button ng-icon-github"></a>
+        <a href="#" class="ng-icon-button ng-icon-twitter"></a>
+        <a href="#" class="ng-icon-button ng-icon-dribbble"></a>
+        <a href="#" class="ng-icon-button ng-icon-html5"></a>
+    </div>
+</div>
+<hr class="ng-grid-divider">
+<div class="ng-grid ng-grid-divider" data-ng-grid-margin>
+    <div class="ng-width-medium-1-4">
+        <ul class="ng-list ng-list-line">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+    </div>
+    <div class="ng-width-medium-1-4">
+        <ul class="ng-list ng-list-striped">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+    </div>
+    <div class="ng-width-medium-1-4">
+        <table class="ng-table ng-table-striped ng-table-condensed ng-table-hover">
+            <caption>Table caption</caption>
+            <thead>
+                <tr>
+                    <th>Table</th>
+                    <th>Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Table</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Table</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="ng-width-medium-1-4">
+        <dl class="ng-description-list ng-description-list-line">
+            <dt>Description lists</dt>
+            <dd>Description text.</dd>
+            <dt>Description lists</dt>
+            <dd>Description text.</dd>
+        </dl>
+    </div>
+</div>
+<div id="offcanvas-1" class="ng-offcanvas">
+    <div class="ng-offcanvas-bar">
+        <ul class="ng-nav ng-nav-offcanvas ng-nav-parent-icon" data-ng-nav>
+            <li><a href="#">Item</a></li>
+            <li class="ng-active"><a href="#">Active</a></li>
+            <li class="ng-parent">
+                <a href="#">Parent</a>
+                <ul class="ng-nav-sub">
+                    <li><a href="#">Sub item</a></li>
+                    <li><a href="#">Sub item</a>
+                        <ul>
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="ng-parent">
+                <a href="#">Parent</a>
+                <ul class="ng-nav-sub">
+                    <li><a href="#">Sub item</a></li>
+                    <li><a href="#">Sub item</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Item</a></li>
+            <li class="ng-nav-header">Header</li>
+            <li><a href="#"><i class="ng-icon-star"></i> Item</a></li>
+            <li><a href="#"><i class="ng-icon-twitter"></i> Item</a></li>
+            <li class="ng-nav-divider"></li>
+            <li><a href="#"><i class="ng-icon-rss"></i> Item</a></li>
+        </ul>
+        <div class="ng-panel">
+            <h3 class="ng-panel-title">Title</h3>
+            Lorem ipsum dolor sit amet, <a href="#">consetetur</a> sadipscing elitr.
+        </div>
+        <div class="ng-panel">
+            <h3 class="ng-panel-title">Title</h3>
+            Lorem ipsum dolor sit amet, <a href="#">consetetur</a> sadipscing elitr.
+        </div>
+    </div>
+</div>
+<div id="modal-1" class="ng-modal">
+    <div class="ng-modal-dialog">
+        <button type="button" class="ng-modal-close ng-close"></button>
+        <h1>Headline</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-top:30px;">
+                                        <button onclick="toggleRightRail()">Toggle Right Rail</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-container-div" class="main ui intro container">
+                                <div id="right-nav-rail" class="ui dividing right rail">
+                                    <div class="ui sticky">
+
+                                        <div class="ui header">Overview</div>
+                                        <div class="ui vertical following fluid accordion text menu">
+
+                                                
+                                                
+
+                                                
+                                                
+                                        </div> <!-- ui vertical following fluid accordion text menu -->
+                                    </div> <!-- ui sticky -->
+                                </div> <!-- ui dividing right rail -->
+                         <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+
+                            <div class="masthead">
+                                <div class="container">
+                                    <div class="introduction">
+                <img src="public/ngkitlogo.svg" style="margin-bottom: 1em" width="66" height="32" alt="NGKit" />
+                                        <div class="ui header">
+                                            Overview
+                                                <div class="sub header">
+                                                    <div class="ng-grid">
+    <div class="ng-width-1-1">
+        <nav class="ng-navbar">
+            <a class="ng-navbar-brand ng-hidden-small" href="">Brand</a>
+            <ul class="ng-navbar-nav ng-hidden-small">
+                <li class="ng-parent" data-ng-dropdown>
+                    <a href="">Parent</a>
+                    <div class="ng-dropdown ng-dropdown-navbar">
+                        <ul class="ng-nav ng-nav-navbar">
+                            <li class="ng-nav-header">Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="ng-nav-divider"></li>
+                            <li><a href="#">Separated item</a></li>
+                            <li class="ng-parent">
+                                <a href="#">Parent</a>
+                                <ul class="ng-nav-sub">
+                                    <li><a href="#">Sub item</a>
+                                        <ul>
+                                            <li><a href="#">Sub item</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="ng-parent ng-active" data-ng-dropdown>
+                    <a href="">Active</a>
+                    <div class="ng-dropdown ng-dropdown-navbar">
+                        <div class="ng-panel">Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="ng-navbar-toggle ng-visible-small" data-ng-offcanvas="{target:'#offcanvas-1'}"></a>
+        </nav>
+    </div>
+</div>
+<hr class="ng-grid-divider">
+<div class="ng-grid">
+    <div class="ng-width-1-1" data-ng-margin>
+        <div class="ng-button-group">
+            <button class="ng-button">Button</button>
+            <div data-ng-dropdown="{mode:'click'}">
+                <button class="ng-button"><i class="ng-icon-caret-down"></i></button>
+                <div class="ng-dropdown ng-dropdown-width-2">
+                    <div class="ng-grid ng-dropdown-grid">
+                        <div class="ng-width-1-2">
+                            <ul class="ng-nav ng-nav-dropdown ng-panel">
+                                <li class="ng-nav-header">Header</li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="ng-nav-divider"></li>
+                                <li><a href="#">Separated item</a></li>
+                                <li class="ng-parent">
+                                    <a href="#">Parent</a>
+                                    <ul class="ng-nav-sub">
+                                        <li><a href="#">Sub item</a>
+                                            <ul>
+                                                <li><a href="#">Sub item</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ng-width-1-2">
+                            <ul class="ng-nav ng-nav-dropdown ng-panel">
+                                <li class="ng-nav-header">Header</li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="ng-nav-divider"></li>
+                                <li><a href="#">Separated item</a></li>
+                                <li class="ng-parent">
+                                    <a href="#">Parent</a>
+                                    <ul class="ng-nav-sub">
+                                        <li><a href="#">Sub item</a>
+                                            <ul>
+                                                <li><a href="#">Sub item</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ng-button-group">
+            <button class="ng-button ng-button-primary">Primary</button>
+            <div data-ng-dropdown="{mode:'click'}">
+                <button class="ng-button ng-button-primary"><i class="ng-icon-caret-down"></i></button>
+                <div class="ng-dropdown ng-dropdown-small">
+                    <ul class="ng-nav ng-nav-dropdown">
+                        <li class="ng-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="ng-nav-divider"></li>
+                        <li><a href="#">Separated item</a></li>
+                        <li class="ng-parent">
+                            <a href="#">Parent</a>
+                            <ul class="ng-nav-sub">
+                                <li><a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ng-button-group">
+            <button class="ng-button ng-button-success">Success</button>
+            <div data-ng-dropdown="{mode:'click'}">
+                <button class="ng-button ng-button-success"><i class="ng-icon-caret-down"></i></button>
+                <div class="ng-dropdown">
+                    <ul class="ng-nav ng-nav-dropdown">
+                        <li class="ng-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="ng-nav-divider"></li>
+                        <li><a href="#">Separated item</a></li>
+                        <li class="ng-parent">
+                            <a href="#">Parent</a>
+                            <ul class="ng-nav-sub">
+                                <li><a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ng-button-group">
+            <button class="ng-button ng-button-danger">Danger</button>
+            <div data-ng-dropdown="{mode:'click'}">
+                <button class="ng-button ng-button-danger"><i class="ng-icon-caret-down"></i></button>
+                <div class="ng-dropdown">
+                    <ul class="ng-nav ng-nav-dropdown">
+                        <li class="ng-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="ng-nav-divider"></li>
+                        <li><a href="#">Separated item</a></li>
+                        <li class="ng-parent">
+                            <a href="#">Parent</a>
+                            <ul class="ng-nav-sub">
+                                <li><a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="ng-button" disabled>Disabled</button>
+        <button class="ng-button" data-ng-tooltip title="Bazinga!">Tooltip</button>
+        <button class="ng-button" data-ng-modal="{target:'#modal-1'}">Modal</button>
+        <button class="ng-button" data-ng-offcanvas="{target:'#offcanvas-1'}">Off-canvas</button>
+        <button class="ng-button ng-button-link">Button link</button>
+    </div>
+</div>
+<hr class="ng-grid-divider">
+<div class="ng-grid" data-ng-grid-margin>
+    <div class="ng-width-medium-1-2">
+        <div class="ng-grid" data-ng-grid-margin>
+            <div class="ng-width-1-1">
+                <ul class="ng-breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><span>Category</span></li>
+                    <li class="ng-active"><span>Post</span></li>
+                </ul>
+            </div>
+            <div class="ng-width-1-1">
+                <article class="ng-article">
+                    <h1 class="ng-article-title">Article title</h1>
+                    <p class="ng-article-meta">Written by Super User on 12 April. Posted in Blog</p>
+                    <div class="ng-grid" data-ng-grid-margin>
+                        <div class="ng-width-medium-1-2">
+                            <a class="ng-thumbnail ng-overlay-toggle" href="#">
+                                <div class="ng-overlay">
+                                    <img src="http://lorempixel.com/300/90" alt="">
+                                    <div class="ng-overlay-area"></div>
+                                </div>
+                                <div class="ng-thumbnail-caption">Caption</div>
+                            </a>
+                        </div>
+                        <div class="ng-width-medium-1-2">
+                            <a class="ng-thumbnail ng-overlay-toggle" href="#">
+                                <div class="ng-overlay">
+                                    <img src="http://lorempixel.com/300/90" alt="">
+                                    <div class="ng-overlay-caption">Caption</div>
+                                </div>
+                            <div class="ng-thumbnail-caption">Caption</div>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="ng-article-lead">Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <pre><code>&lt;div class=&quot;myclass&quot;&gt;...&lt;/div&gt;</code></pre>
+                    <hr class="ng-article-divider">
+                    <div class="ng-grid" data-ng-grid-margin>
+                        <div class="ng-width-medium-1-5">
+                            <span class="ng-text-muted">text-muted</span><br>
+                            <span class="ng-text-primary">text-primary</span><br>
+                            <span class="ng-text-success">text-success</span><br>
+                            <span class="ng-text-warning">text-warning</span><br>
+                            <span class="ng-text-danger">text-danger</span>
+                        </div>
+                        <div class="ng-width-medium-3-10">
+                            <a href="#">a element</a><br>
+                            <em>em element</em><br>
+                            <strong>strong</strong><br>
+                            <code>code element</code><br>
+                            <del>del element</del>
+                        </div>
+                        <div class="ng-width-medium-2-5">
+                            <ins>ins element</ins><br>
+                            <mark>mark element</mark><br>
+                            <q>q <q>inside</q> a q element </q><br>
+                            <abbr title="Abbreviation Element">abbr element</abbr><br>
+                            <dfn title="Defines a definition term">dfn element</dfn>
+                        </div>
+                        <div class="ng-width-1-1">
+                            <p class="ng-text-center">
+                                <span class="ng-badge">Badge</span>
+                                <span class="ng-badge ng-badge-notification">1</span>
+                                <span class="ng-badge ng-badge-success">Success</span>
+                                <span class="ng-badge ng-badge-success ng-badge-notification">4</span>
+                                <span class="ng-badge ng-badge-warning">Warning</span>
+                                <span class="ng-badge ng-badge-warning ng-badge-notification">3</span>
+                                <span class="ng-badge ng-badge-danger">Danger</span>
+                                <span class="ng-badge ng-badge-danger ng-badge-notification">4</span>
+                            </p>
+                        </div>
+                        <div class="ng-width-medium-1-2">
+                            <h1 class="ng-display-inline">h1</h1>
+                            <h2 class="ng-display-inline">h2</h2>
+                            <h3 class="ng-display-inline">h3</h3>
+                            <h4 class="ng-display-inline">h4</h4>
+                            <h5 class="ng-display-inline">h5</h5>
+                            <h6 class="ng-display-inline">h6</h6>
+                        </div>
+                        <div class="ng-width-medium-1-2">
+                            <blockquote>
+                                <p> Lorem ipsum dolor.</p>
+                                <small>Someone famous</small>
+                            </blockquote>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="ng-width-1-1">
+                <ul class="ng-comment-list">
+                    <li>
+                        <article class="ng-comment">
+                            <header class="ng-comment-header">
+                                <img class="ng-comment-avatar" src="http://lorempixel.com/50/50" alt="">
+                                <h4 class="ng-comment-title">Author</h4>
+                                <p class="ng-comment-meta">May 2, 2090 at 1:55 pm</p>
+                            </header>
+                            <div class="ng-comment-body">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="ng-width-1-1">
+                <ul class="ng-pagination">
+                    <li class="ng-disabled"><span><i class="ng-icon-angle-double-left"></i></span></li>
+                    <li class="ng-active"><span>1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">20</a></li>
+                    <li><a href="#"><i class="ng-icon-angle-double-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ng-width-medium-1-2">
+        <div class="ng-grid" data-ng-grid-margin>
+            <div class="ng-width-medium-1-2">
+                <div class="ng-panel">
+                    <ul class="ng-nav ng-nav-side ng-nav-parent-icon" data-ng-nav>
+                        <li class="ng-nav-header">Header</li>
+                        <li class="ng-nav-divider"></li>
+                        <li class="ng-active"><a href="#">Active</a></li>
+                        <li class="ng-parent">
+                            <a href="#">Parent</a>
+                            <ul class="ng-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a>
+                                    <ul>
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+                <div class="ng-panel ng-panel-divider">
+                    <h3 class="ng-panel-title">Divider</h3>
+                    Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="ng-panel ng-panel-header">
+                    <h3 class="ng-panel-title">Header</h3>
+                    Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.
+                </div>
+            </div>
+            <div class="ng-width-medium-1-2">
+                <div class="ng-panel ng-panel-box">
+                    <h3 class="ng-panel-title">Box</h3>
+                    Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="ng-panel ng-panel-box ng-panel-box-primary">
+                    <h3 class="ng-panel-title">Box primary</h3>
+                    Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="ng-panel ng-panel-box ng-panel-box-secondary">
+                    <h3 class="ng-panel-title">Box secondary</h3>
+                    Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+        <div class="ng-grid" data-ng-grid-margin>
+            <div class="ng-width-1-2">
+                <div class="ng-alert" data-ng-alert>
+                    <a class="ng-alert-close ng-close"></a>
+                    <p>Info message</p>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-alert ng-alert-success" data-ng-alert>
+                    <a class="ng-alert-close ng-close"></a>
+                    <p>Success message</p>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-alert ng-alert-warning" data-ng-alert>
+                    <a class="ng-alert-close ng-close"></a>
+                    <p>Warning message</p>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-alert ng-alert-danger" data-ng-alert>
+                    <a class="ng-alert-close ng-close"></a>
+                    <p>Danger message</p>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-progress">
+                    <div class="ng-progress-bar" style="width: 55%;">55%</div>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-progress ng-progress-success">
+                    <div class="ng-progress-bar" style="width: 55%;">55%</div>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-progress ng-progress-warning">
+                    <div class="ng-progress-bar" style="width: 55%;">55%</div>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <div class="ng-progress ng-progress-danger">
+                    <div class="ng-progress-bar" style="width: 55%;">55%</div>
+                </div>
+            </div>
+            <div class="ng-width-1-2">
+                <fieldset class="ng-form">
+                    <legend>Form states</legend>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="Text Input" class="ng-width-1-1">
+                    </div>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="form-success" value="form-success" class="ng-width-1-1 ng-form-success">
+                    </div>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="form-danger" value="form-danger" class="ng-width-1-1 ng-form-danger">
+                    </div>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="form disabled" class="ng-width-1-1" disabled>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="ng-width-1-2">
+                <fieldset class="ng-form">
+                    <legend>Form styles</legend>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="form-large" class="ng-form-large ng-form-width-small">
+                        <button class="ng-button ng-button-large" type="reset">Large</button>
+                    </div>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="form-small" class="ng-form-small ng-form-width-small">
+                        <button class="ng-button ng-button-small" type="reset">Small</button>
+                    </div>
+                    <div class="ng-form-row">
+                        <input type="text" placeholder="form-blank" class="ng-form-width-small ng-form-blank">
+                        <button class="ng-button ng-button-mini" type="reset">Mini</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="ng-grid-divider">
+<div class="ng-grid" data-ng-grid-margin>
+    <div class="ng-width-medium-1-4">
+        <ul class="ng-subnav ng-subnav-line">
+            <li class="ng-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li><span>Disabled</span></li>
+        </ul>
+    </div>
+    <div class="ng-width-medium-1-4">
+        <ul class="ng-subnav ng-subnav-pill">
+            <li class="ng-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li><span>Disabled</span></li>
+        </ul>
+    </div>
+    <div class="ng-width-medium-1-4">
+        <ul class="ng-tab" data-ng-tab>
+            <li class="ng-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="ng-disabled"><a href="#">Disabled</a></li>
+        </ul>
+    </div>
+    <div class="ng-width-medium-1-4">
+        <a href="#" class="ng-icon-button ng-icon-github"></a>
+        <a href="#" class="ng-icon-button ng-icon-twitter"></a>
+        <a href="#" class="ng-icon-button ng-icon-dribbble"></a>
+        <a href="#" class="ng-icon-button ng-icon-html5"></a>
+    </div>
+</div>
+<hr class="ng-grid-divider">
+<div class="ng-grid ng-grid-divider" data-ng-grid-margin>
+    <div class="ng-width-medium-1-4">
+        <ul class="ng-list ng-list-line">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+    </div>
+    <div class="ng-width-medium-1-4">
+        <ul class="ng-list ng-list-striped">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+    </div>
+    <div class="ng-width-medium-1-4">
+        <table class="ng-table ng-table-striped ng-table-condensed ng-table-hover">
+            <caption>Table caption</caption>
+            <thead>
+                <tr>
+                    <th>Table</th>
+                    <th>Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Table</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Table</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="ng-width-medium-1-4">
+        <dl class="ng-description-list ng-description-list-line">
+            <dt>Description lists</dt>
+            <dd>Description text.</dd>
+            <dt>Description lists</dt>
+            <dd>Description text.</dd>
+        </dl>
+    </div>
+</div>
+<div id="offcanvas-1" class="ng-offcanvas">
+    <div class="ng-offcanvas-bar">
+        <ul class="ng-nav ng-nav-offcanvas ng-nav-parent-icon" data-ng-nav>
+            <li><a href="#">Item</a></li>
+            <li class="ng-active"><a href="#">Active</a></li>
+            <li class="ng-parent">
+                <a href="#">Parent</a>
+                <ul class="ng-nav-sub">
+                    <li><a href="#">Sub item</a></li>
+                    <li><a href="#">Sub item</a>
+                        <ul>
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="ng-parent">
+                <a href="#">Parent</a>
+                <ul class="ng-nav-sub">
+                    <li><a href="#">Sub item</a></li>
+                    <li><a href="#">Sub item</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Item</a></li>
+            <li class="ng-nav-header">Header</li>
+            <li><a href="#"><i class="ng-icon-star"></i> Item</a></li>
+            <li><a href="#"><i class="ng-icon-twitter"></i> Item</a></li>
+            <li class="ng-nav-divider"></li>
+            <li><a href="#"><i class="ng-icon-rss"></i> Item</a></li>
+        </ul>
+        <div class="ng-panel">
+            <h3 class="ng-panel-title">Title</h3>
+            Lorem ipsum dolor sit amet, <a href="#">consetetur</a> sadipscing elitr.
+        </div>
+        <div class="ng-panel">
+            <h3 class="ng-panel-title">Title</h3>
+            Lorem ipsum dolor sit amet, <a href="#">consetetur</a> sadipscing elitr.
+        </div>
+    </div>
+</div>
+<div id="modal-1" class="ng-modal">
+    <div class="ng-modal-dialog">
+        <button type="button" class="ng-modal-close ng-close"></button>
+        <h1>Headline</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-top:30px;">
+                                        <button onclick="toggleRightRail()">Toggle Right Rail</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-container-div" class="main ui intro container">
+                                <div id="right-nav-rail" class="ui dividing right rail">
+                                    <div class="ui sticky">
+
+                                        <div class="ui header">Overview</div>
+                                        <div class="ui vertical following fluid accordion text menu">
+
+                                                
+                                                
+
+                                                
+                                                
+                                        </div> <!-- ui vertical following fluid accordion text menu -->
+                                    </div> <!-- ui sticky -->
+                                </div> <!-- ui dividing right rail -->
+                         <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+                    </div> <!-- main ui intro container" -->
+            </article>
+        </div>
+        <footer id="footer" class="kss-footer">
+        <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/highlight.pack.js"></script>
+    <script src="js/ngkit.js"></script>
+    <script src="public/docs.js"></script>
+  </body>
+</html>

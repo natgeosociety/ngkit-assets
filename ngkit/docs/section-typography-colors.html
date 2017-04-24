@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>National Geographic Style Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="generator" content="kss-node">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="public/combined.css">
+    <link rel="stylesheet" type="text/css" href="public/github.css">
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,600i">
+
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('fonts/fontawesome-webfont.eot?v=4.0.3}');
+        src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
+          url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'),
+          url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
+          url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+    <style type="text/css">
+    @font-face {
+        font-family: 'icon-society';
+        src: url('fonts/icon-society.woff') format('woff'),
+          url('fonts/icon-society.ttf') format('truetype'),
+          url('fonts/icon-society.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+        .add-100-margin{
+            margin-left:35px;
+            margin-right:35px;
+        }
+    </style>
+
+    <script src="public/jquery.min.js"></script>
+
+      <script>
+          function toggleRightRail(){
+              if($("#right-nav-rail").is(":visible")){
+                  $("#right-nav-rail").hide();
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+              }else{
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+                  $("#right-nav-rail").show();
+
+              }
+          }
+
+      </script>
+</head>
+<body id="kss-node">
+    <div class="wrapper">
+        <div class="full height">
+            <div class="toc" >
+                <nav class="ui vertical inverted menu">
+                        <div class="item">
+                            <div class="header">Introduction</div>
+                            <div class="menu">
+                                <a href="./index.html" class="item">Overview</a>
+                                    <a href="section-introduction-configuration.html" class="item">Configuration</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Layout</div>
+                            <div class="menu">
+                                    <a href="section-layout-column.html" class="item">Column</a>
+                                    <a href="section-layout-cover.html" class="item">Cover</a>
+                                    <a href="section-layout-flexbox.html" class="item">Flexbox</a>
+                                    <a href="section-layout-grids.html" class="item">Grids</a>
+                                    <a href="section-layout-panel.html" class="item">Panel</a>
+                                    <a href="section-layout-utilities.html" class="item">Layout Utilities</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Typography</div>
+                            <div class="menu">
+                                    <a href="section-typography-base.html" class="item">Base Typography</a>
+                                    <a href="section-typography-colors.html" class="item">Color Classes</a>
+                                    <a href="section-typography-lists.html" class="item">Lists</a>
+                                    <a href="section-typography-print.html" class="item">Print</a>
+                                    <a href="section-typography-tables.html" class="item">Tables</a>
+                                    <a href="section-typography-utilities.html" class="item">Text</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Controls</div>
+                            <div class="menu">
+                                    <a href="section-controls-buttons.html" class="item">Buttons</a>
+                                    <a href="section-controls-close.html" class="item">Close</a>
+                                    <a href="section-controls-contrast.html" class="item">Contrast</a>
+                                    <a href="section-controls-date-picker.html" class="item">Datepicker</a>
+                                    <a href="section-controls-dropdown.html" class="item">Dropdown</a>
+                                    <a href="section-controls-forms.html" class="item">Forms</a>
+                                    <a href="section-controls-progress.html" class="item">Progress</a>
+                                    <a href="section-controls-search.html" class="item">Search</a>
+                                    <a href="section-controls-toolbars.html" class="item">Toolbar</a>
+                                    <a href="section-controls-upload.html" class="item">Upload</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Media</div>
+                            <div class="menu">
+                                    <a href="section-media-icons.html" class="item">Icons</a>
+                                    <a href="section-media-media-object.html" class="item">Media object</a>
+                                    <a href="section-media-overlays.html" class="item">Overlay</a>
+                                    <a href="section-media-slideshow.html" class="item">Slideshow</a>
+                                    <a href="section-media-symbols.html" class="item">Symbols</a>
+                                    <a href="section-media-thumbnails.html" class="item">Images</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Callouts</div>
+                            <div class="menu">
+                                    <a href="section-callouts-alerts.html" class="item">Alert</a>
+                                    <a href="section-callouts-badges.html" class="item">Badge</a>
+                                    <a href="section-callouts-modals.html" class="item">Modal</a>
+                                    <a href="section-callouts-popovers.html" class="item">Popovers</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Navigation</div>
+                            <div class="menu">
+                                    <a href="section-navigation-breadcrumbs.html" class="item">Breadcrumbs</a>
+                                    <a href="section-navigation-dot-nav.html" class="item">Dot Navigation</a>
+                                    <a href="section-navigation-nav.html" class="item">Nav</a>
+                                    <a href="section-navigation-navbar.html" class="item">Navbar</a>
+                                    <a href="section-navigation-pagination.html" class="item">Pagination</a>
+                                    <a href="section-navigation-slide-navigation.html" class="item">Slide Navigation</a>
+                                    <a href="section-navigation-sub-nav.html" class="item">Subnav</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Containers</div>
+                            <div class="menu">
+                                    <a href="section-containers-accordion.html" class="item">Accordion</a>
+                                    <a href="section-containers-drawers.html" class="item">Drawer</a>
+                                    <a href="section-containers-off-canvas.html" class="item">Off-canvas</a>
+                                    <a href="section-containers-tabs.html" class="item">Tab</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Components</div>
+                            <div class="menu">
+                                    <a href="section-components-article.html" class="item">Article Components</a>
+                                    <a href="section-components-articleheading.html" class="item">Article Heading</a>
+                                    <a href="section-components-comments.html" class="item">Comment</a>
+                                    <a href="section-components-contentcarousel.html" class="item">Content Carousel</a>
+                                    <a href="section-components-dynamicleadcarousel.html" class="item">Carousel</a>
+                                    <a href="section-components-featurelist.html" class="item">Feature Lists</a>
+                                    <a href="section-components-filterresults.html" class="item">Filtering Results</a>
+                                    <a href="section-components-groupheading.html" class="item">Group Heading</a>
+                                    <a href="section-components-heading.html" class="item">Heading</a>
+                                    <a href="section-components-instructionalpathways.html" class="item">Instructional Pathways</a>
+                                    <a href="section-components-itemlisting.html" class="item">Item listing</a>
+                                    <a href="section-components-linkslist.html" class="item">Links List</a>
+                                    <a href="section-components-objectlists.html" class="item">Media Object Lists</a>
+                                    <a href="section-components-relatedmaterials.html" class="item">Related Materials</a>
+                                    <a href="section-components-tease.html" class="item">Tease</a>
+                                    <a href="section-components-thumbnailgrid.html" class="item">Thumbnail Grid</a>
+                                    <a href="section-components-tweetthis.html" class="item">Tweet This</a>
+                                    <a href="section-components-vocabulary.html" class="item">Vocabulary</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">JavaScript</div>
+                            <div class="menu">
+                                    <a href="section-javascript-animation.html" class="item">Animation</a>
+                                    <a href="section-javascript-autocomplete.html" class="item">Autocomplete</a>
+                                    <a href="section-javascript-filtering.html" class="item">Filtering</a>
+                                    <a href="section-javascript-scrollspy.html" class="item">Scrollspy</a>
+                                    <a href="section-javascript-smooth-scroll.html" class="item">Smooth Scroll</a>
+                                    <a href="section-javascript-sticky.html" class="item">Sticky</a>
+                                    <a href="section-javascript-switcher.html" class="item">Switcher</a>
+                                    <a href="section-javascript-template.html" class="item">Basic Templating</a>
+                                    <a href="section-javascript-toggle.html" class="item">Toggle</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Layouts</div>
+                            <div class="menu">
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Modules</div>
+                            <div class="menu">
+                                    <a href="section-pagemodules-03.html" class="item">Audience Navigation Tabs</a>
+                                    <a href="section-pagemodules-05.html" class="item">Audience Navbar</a>
+                                    <a href="section-pagemodules-07.html" class="item">Expandable thumbnail</a>
+                                    <a href="section-pagemodules-globalnavigation.html" class="item">Global Navigation</a>
+                                    <a href="section-pagemodules-sharing.html" class="item">Sharing widget</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Structure</div>
+                            <div class="menu">
+                                    <a href="section-pagestructure-configuration.html" class="item">Configuration</a>
+                                    <a href="section-pagestructure-contentmodules.html" class="item">Content Modules</a>
+                                    <a href="section-pagestructure-pagemodules.html" class="item">Page Modules</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                </nav>
+            </div> <!-- class="toc" -->
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger"></label>
+
+            <article class="content-wrapper">
+
+
+                            <div class="masthead">
+                                <div class="container">
+                                    <div class="introduction">
+                <img src="public/ngkitlogo.svg" style="margin-bottom: 1em" width="66" height="32" alt="NGKit" />
+                                        <div class="ui header">
+                                            Color Classes
+                                                <div class="sub header">
+                                                    <p>These classes allow you to set foreground and background colors on your elements.</p>
+<p>The <code>.ng-color-*</code> classes set the foreground color only. The <code>.ng-background-*</code>
+classes set the background color only.</p>
+
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-top:30px;">
+                                        <button onclick="toggleRightRail()">Toggle Right Rail</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-container-div" class="main ui intro container">
+                                <div id="right-nav-rail" class="ui dividing right rail">
+                                    <div class="ui sticky">
+
+                                        <div class="ui header">Color Classes</div>
+                                        <div class="ui vertical following fluid accordion text menu">
+
+                                                
+                                                
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#typography-colors-basic"><strong>Theme Colors</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#typography-colors-other"><strong>Other Theme Colors</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#typography-colors-social"><strong>Social Colors</strong></a>
+                                                    </div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#typography-colors-theme"><strong>Theme Colors</strong></a>
+                                                    </div>
+
+                                        </div> <!-- ui vertical following fluid accordion text menu -->
+                                    </div> <!-- ui sticky -->
+                                </div> <!-- ui dividing right rail -->
+                         <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="typography-colors-basic">
+                                Theme Colors
+                                <a class="kss-title__permalink" href="#typography-colors-basic">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>These colors define most of the colors used throughout the framework.</p>
+<table class="settings">
+<tr><td><code>$theme-color</code></td><td class="theme-color">#000</td></tr>
+<tr><td><code>$theme-muted-color</code></td><td class="theme-muted-color">#999</td></tr>
+<tr><td><code>$theme-text-shadow</code></td><td class="theme-text-shadow">#fff</td></tr>
+<tr><td><code>$theme-link-color</code></td><td class="theme-link-color">#000</td></tr>
+<tr><td><code>$theme-link-hover-color</code></td><td class="theme-link-hover-color">#999</td></tr>
+<tr><td><code>$theme-contrast-color</code></td><td class="theme-contrast-color">#fff</td></tr>
+<tr><td><code>$theme-contrast-text-shadow</code></td><td class="theme-contrast-text-shadow">rgba(0, 0, 0, 0.1)</td></tr>
+<tr><td><code>$theme-background</code></td><td class="theme-background">#fff</td></tr>
+<tr><td><code>$theme-border</code></td><td class="theme-border">#ddd</td></tr>
+<tr><td><code>$theme-default-background</code></td><td class="theme-default-background">#f5f5f5</td></tr>
+<tr><td><code>$theme-default-muted-background</code></td><td class="theme-default-muted-background">#fafafa</td></tr>
+<tr><td><code>$theme-default-hover-background</code></td><td class="theme-default-hover-background">#fafafa</td></tr>
+<tr><td><code>$theme-default-active-background</code></td><td class="theme-default-active-background">#eee</td></tr>
+<tr><td><code>$theme-primary-muted-background</code></td><td class="theme-primary-muted-background">#FFE066</td></tr>
+<tr><td><code>$theme-primary-background</code></td><td class="theme-primary-background">#fc0</td></tr>
+<tr><td><code>$theme-primary-color</code></td><td class="theme-primary-color">#fc0</td></tr>
+<tr><td><code>$theme-primary-border</code></td><td class="theme-primary-border">rgba(255, 204, 0, 0.3)</td></tr>
+<tr><td><code>$theme-success-muted-background</code></td><td class="theme-success-muted-background">#56ce5e</td></tr>
+<tr><td><code>$theme-success-background</code></td><td class="theme-success-background">#1EBE28</td></tr>
+<tr><td><code>$theme-success-color</code></td><td class="theme-success-color">#1EBE28</td></tr>
+<tr><td><code>$theme-success-border</code></td><td class="theme-success-border">rgba(30, 190, 40, 0.3)</td></tr>
+<tr><td><code>$theme-warning-muted-background</code></td><td class="theme-warning-muted-background">#fffceb</td></tr>
+<tr><td><code>$theme-warning-background</code></td><td class="theme-warning-background">#faa732</td></tr>
+<tr><td><code>$theme-warning-color</code></td><td class="theme-warning-color">#e28327</td></tr>
+<tr><td><code>$theme-warning-border</code></td><td class="theme-warning-border">rgba(226, 131, 39, 0.3)</td></tr>
+<tr><td><code>$theme-danger-muted-background</code></td><td class="theme-danger-muted-background">#f45840</td></tr>
+<tr><td><code>$theme-danger-background</code></td><td class="theme-danger-background">#f02000</td></tr>
+<tr><td><code>$theme-danger-color</code></td><td class="theme-danger-color">#f02000</td></tr>
+<tr><td><code>$theme-danger-border</code></td><td class="theme-danger-border">rgba(240, 32, 0, 0.3)</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="typography-colors-other">
+                                Other Theme Colors
+                                <a class="kss-title__permalink" href="#typography-colors-other">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <table class="configuration">
+<thead>
+    <tr><th>Variable</th><th>Color Class</th><th>Background Class</th><th>Color</th></tr>
+</thead>
+<tbody>
+    <tr><td><code>$gray-1</code></td><td><code>.ng-color-gray-1</code></td><td><code>.ng-background-gray-1</code></td><td class="ng-background-gray-1">#DBE0E3</td></tr>
+    <tr><td><code>$gray-2</code></td><td><code>.ng-color-gray-2</code></td><td><code>.ng-background-gray-2</code></td><td class="ng-background-gray-2">#E0E4E8</td></tr>
+    <tr><td><code>$gray-3</code></td><td><code>.ng-color-gray-3</code></td><td><code>.ng-background-gray-3</code></td><td class="ng-background-gray-3">#C4CBCF</td></tr>
+    <tr><td><code>$gray-4</code></td><td><code>.ng-color-gray-4</code></td><td><code>.ng-background-gray-4</code></td><td class="ng-background-gray-4">#606A71</td></tr>
+    <tr><td><code>$black</code></td><td><code>.ng-color-black</code></td><td><code>.ng-background-black</code></td><td class="ng-background-black">#000000</td></tr>
+    <tr><td><code>$dkgray</code></td><td><code>.ng-color-dkgray</code></td><td><code>.ng-background-dkgray</code></td><td class="ng-background-dkgray">#333333</td></tr>
+    <tr><td><code>$mddkgray</code></td><td><code>.ng-color-mddkgray</code></td><td><code>.ng-background-mddkgray</code></td><td class="ng-background-mddkgray">#666666</td></tr>
+    <tr><td><code>$mdgray</code></td><td><code>.ng-color-mdgray</code></td><td><code>.ng-background-mdgray</code></td><td class="ng-background-mdgray">#999999</td></tr>
+    <tr><td><code>$mdltgray</code></td><td><code>.ng-color-mdltgray</code></td><td><code>.ng-background-mdltgray</code></td><td class="ng-background-mdltgray">#cccccc</td></tr>
+    <tr><td><code>$ltgray</code></td><td><code>.ng-color-ltgray</code></td><td><code>.ng-background-ltgray</code></td><td class="ng-background-ltgray">#dddddd</td></tr>
+    <tr><td><code>$ltltgray</code></td><td><code>.ng-color-ltltgray</code></td><td><code>.ng-background-ltltgray</code></td><td class="ng-background-ltltgray">#e6e6e6</td></tr>
+    <tr><td><code>$ultraltgray</code></td><td><code>.ng-color-ultraltgray</code></td><td><code>.ng-background-ultraltgray</code></td><td class="ng-background-ultraltgray">#f5f5f5</td></tr>
+    <tr><td><code>$white</code></td><td><code>.ng-color-white</code></td><td><code>.ng-background-white</code></td><td class="ng-background-white">#ffffff</td></tr>
+    <tr><td><code>$sand-1</code></td><td><code>.ng-color-sand-1</code></td><td><code>.ng-background-sand-1</code></td><td class="ng-background-sand-1">#F1F1E5</td></tr>
+    <tr><td><code>$sand-2</code></td><td><code>.ng-color-sand-2</code></td><td><code>.ng-background-sand-2</code></td><td class="ng-background-sand-2">#E4E5CF</td></tr>
+    <tr><td><code>$sand-3</code></td><td><code>.ng-color-sand-3</code></td><td><code>.ng-background-sand-3</code></td><td class="ng-background-sand-3">#D0D3BE</td></tr>
+    <tr><td><code>$blue-purple-1</code></td><td><code>.ng-color-blue-purple-1</code></td><td><code>.ng-background-blue-purple-1</code></td><td class="ng-background-blue-purple-1">#946CAF</td></tr>
+    <tr><td><code>$blue-purple-2</code></td><td><code>.ng-color-blue-purple-2</code></td><td><code>.ng-background-blue-purple-2</code></td><td class="ng-background-blue-purple-2">#845BA6</td></tr>
+    <tr><td><code>$blue-purple-3</code></td><td><code>.ng-color-blue-purple-3</code></td><td><code>.ng-background-blue-purple-3</code></td><td class="ng-background-blue-purple-3">#744E91</td></tr>
+    <tr><td><code>$blue-green-1</code></td><td><code>.ng-color-blue-green-1</code></td><td><code>.ng-background-blue-green-1</code></td><td class="ng-background-blue-green-1">#71B254</td></tr>
+    <tr><td><code>$blue-green-2</code></td><td><code>.ng-color-blue-green-2</code></td><td><code>.ng-background-blue-green-2</code></td><td class="ng-background-blue-green-2">#419639</td></tr>
+    <tr><td><code>$blue-green-3</code></td><td><code>.ng-color-blue-green-3</code></td><td><code>.ng-background-blue-green-3</code></td><td class="ng-background-blue-green-3">#1E8234</td></tr>
+    <tr><td><code>$blue-1</code></td><td><code>.ng-color-blue-1</code></td><td><code>.ng-background-blue-1</code></td><td class="ng-background-blue-1">#90CFF1</td></tr>
+    <tr><td><code>$blue-2</code></td><td><code>.ng-color-blue-2</code></td><td><code>.ng-background-blue-2</code></td><td class="ng-background-blue-2">#1BB1E7</td></tr>
+    <tr><td><code>$blue-3</code></td><td><code>.ng-color-blue-3</code></td><td><code>.ng-background-blue-3</code></td><td class="ng-background-blue-3">#00B2EB</td></tr>
+    <tr><td><code>$blue-4</code></td><td><code>.ng-color-blue-4</code></td><td><code>.ng-background-blue-4</code></td><td class="ng-background-blue-4">#0092C8</td></tr>
+    <tr><td><code>$blue-5</code></td><td><code>.ng-color-blue-5</code></td><td><code>.ng-background-blue-5</code></td><td class="ng-background-blue-5">#058CC1</td></tr>
+    <tr><td><code>$blue-6</code></td><td><code>.ng-color-blue-6</code></td><td><code>.ng-background-blue-6</code></td><td class="ng-background-blue-6">#007DC3</td></tr>
+    <tr><td><code>$blue-7</code></td><td><code>.ng-color-blue-7</code></td><td><code>.ng-background-blue-7</code></td><td class="ng-background-blue-7">#0B63A7</td></tr>
+    <tr><td><code>$blue-8</code></td><td><code>.ng-color-blue-8</code></td><td><code>.ng-background-blue-8</code></td><td class="ng-background-blue-8">#08518B</td></tr>
+    <tr><td><code>$ng-gold</code></td><td><code>.ng-color-ng-gold</code></td><td><code>.ng-background-ng-gold</code></td><td class="ng-background-ng-gold">#FFCC00</td></tr>
+    <tr><td><code>$yellow</code></td><td><code>.ng-color-yellow</code></td><td><code>.ng-background-yellow</code></td><td class="ng-background-yellow">#FFCC00</td></tr>
+    <tr><td><code>$ltyellow</code></td><td><code>.ng-color-ltyellow</code></td><td><code>.ng-background-ltyellow</code></td><td class="ng-background-ltyellow">#ffe066</td></tr>
+    <tr><td><code>$gold-2</code></td><td><code>.ng-color-gold-2</code></td><td><code>.ng-background-gold-2</code></td><td class="ng-background-gold-2">#FFCB08</td></tr>
+    <tr><td><code>$gold-3</code></td><td><code>.ng-color-gold-3</code></td><td><code>.ng-background-gold-3</code></td><td class="ng-background-gold-3">#FDB813</td></tr>
+    <tr><td><code>$orange-4</code></td><td><code>.ng-color-orange-4</code></td><td><code>.ng-background-orange-4</code></td><td class="ng-background-orange-4">#C36F15</td></tr>
+    <tr><td><code>$orange-5</code></td><td><code>.ng-color-orange-5</code></td><td><code>.ng-background-orange-5</code></td><td class="ng-background-orange-5">#F36F2B</td></tr>
+    <tr><td><code>$orange-6</code></td><td><code>.ng-color-orange-6</code></td><td><code>.ng-background-orange-6</code></td><td class="ng-background-orange-6">#C95D1A</td></tr>
+    <tr><td><code>$red-1</code></td><td><code>.ng-color-red-1</code></td><td><code>.ng-background-red-1</code></td><td class="ng-background-red-1">#F15B47</td></tr>
+    <tr><td><code>$red-2</code></td><td><code>.ng-color-red-2</code></td><td><code>.ng-background-red-2</code></td><td class="ng-background-red-2">#C4161C</td></tr>
+    <tr><td><code>$red-3</code></td><td><code>.ng-color-red-3</code></td><td><code>.ng-background-red-3</code></td><td class="ng-background-red-3">#9D071C</td></tr>
+    <tr><td><code>$red-4</code></td><td><code>.ng-color-red-4</code></td><td><code>.ng-background-red-4</code></td><td class="ng-background-red-4">#8B0304</td></tr>
+</tbody>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="typography-colors-social">
+                                Social Colors
+                                <a class="kss-title__permalink" href="#typography-colors-social">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <table class="settings">
+<tr><td><code>.ng-color-facebook</code></td><td class="ng-color-facebook">#3b5998</td></tr>
+<tr><td><code>.ng-background-facebook</code></td><td class="ng-background-facebook">#3b5998</td></tr>
+<tr><td><code>.ng-color-googleplus</code></td><td class="ng-color-googleplus">#dc4e41</td></tr>
+<tr><td><code>.ng-background-googleplus</code></td><td class="ng-background-googleplus">#dc4e41</td></tr>
+<tr><td><code>.ng-color-twitter</code></td><td class="ng-color-twitter">#55acee</td></tr>
+<tr><td><code>.ng-background-twitter</code></td><td class="ng-background-twitter">#55acee</td></tr>
+<tr><td><code>.ng-color-github</code></td><td class="ng-color-github">#4183c4</td></tr>
+<tr><td><code>.ng-background-github</code></td><td class="ng-background-github">#4183c4</td></tr>
+<tr><td><code>.ng-color-atlassian</code></td><td class="ng-color-atlassian">#003366</td></tr>
+<tr><td><code>.ng-background-atlassian</code></td><td class="ng-background-atlassian ">#003366</td></tr>
+<tr><td><code>.ng-color-yahoo</code></td><td class="ng-color-yahoo">#410093</td></tr>
+<tr><td><code>.ng-background-yahoo</code></td><td class="ng-background-yahoo">#410093</td></tr>
+<tr><td><code>.ng-color-linkedin</code></td><td class="ng-color-linkedin">#0077b5</td></tr>
+<tr><td><code>.ng-background-linkedin</code></td><td class="ng-background-linkedin">#0077b5</td></tr>
+<tr><td><code>.ng-color-pinterest</code></td><td class="ng-color-pinterest">#bd081c</td></tr>
+<tr><td><code>.ng-background-pinterest</code></td><td class="ng-background-pinterest ">#bd081c</td></tr>
+<tr><td><code>.ng-color-whatsapp</code></td><td class="ng-color-whatsapp">#43d854</td></tr>
+<tr><td><code>.ng-background-whatsapp</code></td><td class="ng-background-whatsapp">#43d854</td></tr>
+<tr><td><code>.ng-color-tumblr</code></td><td class="ng-color-tumblr">#35465c</td></tr>
+<tr><td><code>.ng-background-tumblr</code></td><td class="ng-background-tumblr">#35465c</td></tr>
+<tr><td><code>.ng-color-instagram</code></td><td class="ng-color-instagram">#3F729b</td></tr>
+<tr><td><code>.ng-background-instagram</code></td><td class="ng-background-instagram">#3F729b</td></tr>
+<tr><td><code>.ng-color-youtube</code></td><td class="ng-color-youtube">#cd201f</td></tr>
+<tr><td><code>.ng-background-youtube</code></td><td class="ng-background-youtube">#cd201f</td></tr>
+<tr><td><code>.ng-color-vine</code></td><td class="ng-color-vine">#00bf8f</td></tr>
+<tr><td><code>.ng-background-vine</code></td><td class="ng-background-vine">#00bf8f</td></tr>
+<tr><td><code>.ng-color-snapchat</code></td><td class="ng-color-snapchat">#fffc00</td></tr>
+<tr><td><code>.ng-background-snapchat</code></td><td class="ng-background-snapchat">#fffc00</td></tr>
+<tr><td><code>.ng-color-flickr</code></td><td class="ng-color-flickr">#ff0084</td></tr>
+<tr><td><code>.ng-background-flickr</code></td><td class="ng-background-flickr">#ff0084</td></tr>
+<tr><td><code>.ng-color-vimeo</code></td><td class="ng-color-vimeo">#1ab7ea</td></tr>
+<tr><td><code>.ng-background-vimeo</code></td><td class="ng-background-vimeo">#1ab7ea</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="typography-colors-theme">
+                                Theme Colors
+                                <a class="kss-title__permalink" href="#typography-colors-theme">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <table class="settings">
+<tr><td><code>.ng-color-default</code></td><td class="ng-color-default">#000</td></tr>
+<tr><td><code>.ng-background-default</code></td><td class="ng-background-default">#000</td></tr>
+<tr><td><code>.ng-color-contrast</code></td><td class="ng-color-contrast">#fff</td></tr>
+<tr><td><code>.ng-background-contrast</code></td><td class="ng-background-contrast">#fff</td></tr>
+<tr><td><code>.ng-color-border</code></td><td class="ng-color-border">#ddd</td></tr>
+<tr><td><code>.ng-background-border</code></td><td class="ng-background-border">#ddd</td></tr>
+</table>
+                        
+
+
+                    </div> <!-- main ui intro container" -->
+            </article>
+        </div>
+        <footer id="footer" class="kss-footer">
+        <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/highlight.pack.js"></script>
+    <script src="js/ngkit.js"></script>
+    <script src="public/docs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>National Geographic Style Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="generator" content="kss-node">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="public/combined.css">
+    <link rel="stylesheet" type="text/css" href="public/github.css">
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,600i">
+
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('fonts/fontawesome-webfont.eot?v=4.0.3}');
+        src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
+          url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'),
+          url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
+          url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+    <style type="text/css">
+    @font-face {
+        font-family: 'icon-society';
+        src: url('fonts/icon-society.woff') format('woff'),
+          url('fonts/icon-society.ttf') format('truetype'),
+          url('fonts/icon-society.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+        .add-100-margin{
+            margin-left:35px;
+            margin-right:35px;
+        }
+    </style>
+
+    <script src="public/jquery.min.js"></script>
+
+      <script>
+          function toggleRightRail(){
+              if($("#right-nav-rail").is(":visible")){
+                  $("#right-nav-rail").hide();
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+              }else{
+                  $("#main-container-div").toggleClass("container");
+                  $("#main-container-div").toggleClass("add-100-margin");
+                  $("#right-nav-rail").show();
+
+              }
+          }
+
+      </script>
+</head>
+<body id="kss-node">
+    <div class="wrapper">
+        <div class="full height">
+            <div class="toc" >
+                <nav class="ui vertical inverted menu">
+                        <div class="item">
+                            <div class="header">Introduction</div>
+                            <div class="menu">
+                                <a href="./index.html" class="item">Overview</a>
+                                    <a href="section-introduction-configuration.html" class="item">Configuration</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Layout</div>
+                            <div class="menu">
+                                    <a href="section-layout-column.html" class="item">Column</a>
+                                    <a href="section-layout-cover.html" class="item">Cover</a>
+                                    <a href="section-layout-flexbox.html" class="item">Flexbox</a>
+                                    <a href="section-layout-grids.html" class="item">Grids</a>
+                                    <a href="section-layout-panel.html" class="item">Panel</a>
+                                    <a href="section-layout-utilities.html" class="item">Layout Utilities</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Typography</div>
+                            <div class="menu">
+                                    <a href="section-typography-base.html" class="item">Base Typography</a>
+                                    <a href="section-typography-colors.html" class="item">Color Classes</a>
+                                    <a href="section-typography-lists.html" class="item">Lists</a>
+                                    <a href="section-typography-print.html" class="item">Print</a>
+                                    <a href="section-typography-tables.html" class="item">Tables</a>
+                                    <a href="section-typography-utilities.html" class="item">Text</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Controls</div>
+                            <div class="menu">
+                                    <a href="section-controls-buttons.html" class="item">Buttons</a>
+                                    <a href="section-controls-close.html" class="item">Close</a>
+                                    <a href="section-controls-contrast.html" class="item">Contrast</a>
+                                    <a href="section-controls-date-picker.html" class="item">Datepicker</a>
+                                    <a href="section-controls-dropdown.html" class="item">Dropdown</a>
+                                    <a href="section-controls-forms.html" class="item">Forms</a>
+                                    <a href="section-controls-progress.html" class="item">Progress</a>
+                                    <a href="section-controls-search.html" class="item">Search</a>
+                                    <a href="section-controls-toolbars.html" class="item">Toolbar</a>
+                                    <a href="section-controls-upload.html" class="item">Upload</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Media</div>
+                            <div class="menu">
+                                    <a href="section-media-icons.html" class="item">Icons</a>
+                                    <a href="section-media-media-object.html" class="item">Media object</a>
+                                    <a href="section-media-overlays.html" class="item">Overlay</a>
+                                    <a href="section-media-slideshow.html" class="item">Slideshow</a>
+                                    <a href="section-media-symbols.html" class="item">Symbols</a>
+                                    <a href="section-media-thumbnails.html" class="item">Images</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Callouts</div>
+                            <div class="menu">
+                                    <a href="section-callouts-alerts.html" class="item">Alert</a>
+                                    <a href="section-callouts-badges.html" class="item">Badge</a>
+                                    <a href="section-callouts-modals.html" class="item">Modal</a>
+                                    <a href="section-callouts-popovers.html" class="item">Popovers</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Navigation</div>
+                            <div class="menu">
+                                    <a href="section-navigation-breadcrumbs.html" class="item">Breadcrumbs</a>
+                                    <a href="section-navigation-dot-nav.html" class="item">Dot Navigation</a>
+                                    <a href="section-navigation-nav.html" class="item">Nav</a>
+                                    <a href="section-navigation-navbar.html" class="item">Navbar</a>
+                                    <a href="section-navigation-pagination.html" class="item">Pagination</a>
+                                    <a href="section-navigation-slide-navigation.html" class="item">Slide Navigation</a>
+                                    <a href="section-navigation-sub-nav.html" class="item">Subnav</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Containers</div>
+                            <div class="menu">
+                                    <a href="section-containers-accordion.html" class="item">Accordion</a>
+                                    <a href="section-containers-drawers.html" class="item">Drawer</a>
+                                    <a href="section-containers-off-canvas.html" class="item">Off-canvas</a>
+                                    <a href="section-containers-tabs.html" class="item">Tab</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Components</div>
+                            <div class="menu">
+                                    <a href="section-components-article.html" class="item">Article Components</a>
+                                    <a href="section-components-articleheading.html" class="item">Article Heading</a>
+                                    <a href="section-components-comments.html" class="item">Comment</a>
+                                    <a href="section-components-contentcarousel.html" class="item">Content Carousel</a>
+                                    <a href="section-components-dynamicleadcarousel.html" class="item">Carousel</a>
+                                    <a href="section-components-featurelist.html" class="item">Feature Lists</a>
+                                    <a href="section-components-filterresults.html" class="item">Filtering Results</a>
+                                    <a href="section-components-groupheading.html" class="item">Group Heading</a>
+                                    <a href="section-components-heading.html" class="item">Heading</a>
+                                    <a href="section-components-instructionalpathways.html" class="item">Instructional Pathways</a>
+                                    <a href="section-components-itemlisting.html" class="item">Item listing</a>
+                                    <a href="section-components-linkslist.html" class="item">Links List</a>
+                                    <a href="section-components-objectlists.html" class="item">Media Object Lists</a>
+                                    <a href="section-components-relatedmaterials.html" class="item">Related Materials</a>
+                                    <a href="section-components-tease.html" class="item">Tease</a>
+                                    <a href="section-components-thumbnailgrid.html" class="item">Thumbnail Grid</a>
+                                    <a href="section-components-tweetthis.html" class="item">Tweet This</a>
+                                    <a href="section-components-vocabulary.html" class="item">Vocabulary</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                                    <a href="section-components-herocarousel.html" class="item">Hero Carousel</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">JavaScript</div>
+                            <div class="menu">
+                                    <a href="section-javascript-animation.html" class="item">Animation</a>
+                                    <a href="section-javascript-autocomplete.html" class="item">Autocomplete</a>
+                                    <a href="section-javascript-filtering.html" class="item">Filtering</a>
+                                    <a href="section-javascript-scrollspy.html" class="item">Scrollspy</a>
+                                    <a href="section-javascript-smooth-scroll.html" class="item">Smooth Scroll</a>
+                                    <a href="section-javascript-sticky.html" class="item">Sticky</a>
+                                    <a href="section-javascript-switcher.html" class="item">Switcher</a>
+                                    <a href="section-javascript-template.html" class="item">Basic Templating</a>
+                                    <a href="section-javascript-toggle.html" class="item">Toggle</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Tests</div>
+                            <div class="menu">
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                                    <a href="section-200-01.html" class="item">Overview</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Layouts</div>
+                            <div class="menu">
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Modules</div>
+                            <div class="menu">
+                                    <a href="section-pagemodules-03.html" class="item">Audience Navigation Tabs</a>
+                                    <a href="section-pagemodules-05.html" class="item">Audience Navbar</a>
+                                    <a href="section-pagemodules-07.html" class="item">Expandable thumbnail</a>
+                                    <a href="section-pagemodules-globalnavigation.html" class="item">Global Navigation</a>
+                                    <a href="section-pagemodules-sharing.html" class="item">Sharing widget</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                        <div class="item">
+                            <div class="header">Page Structure</div>
+                            <div class="menu">
+                                    <a href="section-pagestructure-configuration.html" class="item">Configuration</a>
+                                    <a href="section-pagestructure-contentmodules.html" class="item">Content Modules</a>
+                                    <a href="section-pagestructure-pagemodules.html" class="item">Page Modules</a>
+                            </div> <!-- menu -->
+                        </div> <!-- item -->
+                </nav>
+            </div> <!-- class="toc" -->
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger"></label>
+
+            <article class="content-wrapper">
+
+
+                            <div class="masthead">
+                                <div class="container">
+                                    <div class="introduction">
+                <img src="public/ngkitlogo.svg" style="margin-bottom: 1em" width="66" height="32" alt="NGKit" />
+                                        <div class="ui header">
+                                            Contrast
+                                                <div class="sub header">
+                                                    <p>Improve the appearance of elements when placing them on colored backgrounds or images.</p>
+
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-top:30px;">
+                                        <button onclick="toggleRightRail()">Toggle Right Rail</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-container-div" class="main ui intro container">
+                                <div id="right-nav-rail" class="ui dividing right rail">
+                                    <div class="ui sticky">
+
+                                        <div class="ui header">Contrast</div>
+                                        <div class="ui vertical following fluid accordion text menu">
+
+                                                
+                                                
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#controls-contrast-configuration"><strong>Configuration</strong></a>
+                                                    <div class="content menu active">
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-contrast-configuration-base-component">Base Component Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-contrast-configuration-button">Button Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-contrast-configuration-form">Form Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-contrast-configuration-icon">Icon Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-contrast-configuration-list">List Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-contrast-configuration-nav-side">Nav Side Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-contrast-configuration-subnav">Sub Nav Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-contrast-configuration-tabs">Tabs Configuration</a>
+                                                    
+
+
+                                                
+                                                                                                    <a class="item" href="#controls-contrast-configuration-text">Text Configuration</a>
+                                                    </div></div>
+
+
+                                                
+                                                <div class="item">
+                                                    <a class="title" href="#controls-contrast-usage"><strong>Usage</strong></a>
+                                                    </div>
+
+                                        </div> <!-- ui vertical following fluid accordion text menu -->
+                                    </div> <!-- ui sticky -->
+                                </div> <!-- ui dividing right rail -->
+                         <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+
+
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="controls-contrast-configuration">
+                                Configuration
+                                <a class="kss-title__permalink" href="#controls-contrast-configuration">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$contrast-color</code></td><td class="ng-contrast-color">#F5F5F5</td></tr>
+<tr><td><code>$contrast-inverted-color</code></td><td class="ng-contrast-inverted-color">#444</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-contrast-configuration-base-component">
+                                Base Component Configuration
+                                <a class="kss-title__permalink" href="#controls-contrast-configuration-base-component">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$contrast-base-color</code></td><td class="ng-contrast-base-color">#F5F5F5</td></tr>
+<tr><td><code>$contrast-base-link-color</code></td><td class="ng-contrast-base-link-color">rgba(245, 245, 245, 0.7)</td></tr>
+<tr><td><code>$contrast-base-link-text-decoration</code></td><td class="ng-contrast-base-link-text-decoration">none</td></tr>
+<tr><td><code>$contrast-base-link-hover-color</code></td><td class="ng-contrast-base-link-hover-color">#F5F5F5</td></tr>
+<tr><td><code>$contrast-base-link-hover-text-decoration</code></td><td class="ng-contrast-base-link-hover-text-decoration">none</td></tr>
+<tr><td><code>$contrast-base-code-color</code></td><td class="ng-contrast-base-code-color">#F5F5F5</td></tr>
+<tr><td><code>$contrast-base-em-color</code></td><td class="ng-contrast-base-em-color">#F5F5F5</td></tr>
+<tr><td><code>$contrast-base-heading-color</code></td><td class="ng-contrast-base-heading-color">#F5F5F5</td></tr>
+<tr><td><code>$contrast-base-hr-border</code></td><td class="ng-contrast-base-hr-border">rgba(245, 245, 245, 0.2)</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-contrast-configuration-button">
+                                Button Configuration
+                                <a class="kss-title__permalink" href="#controls-contrast-configuration-button">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$contrast-button-background</code></td><td class="ng-contrast-button-background">#F5F5F5</td></tr>
+<tr><td><code>$contrast-button-color</code></td><td class="ng-contrast-button-color">#444</td></tr>
+<tr><td><code>$contrast-button-hover-background</code></td><td class="ng-contrast-button-hover-background">rgba(245, 245, 245, 0.8)</td></tr>
+<tr><td><code>$contrast-button-hover-color</code></td><td class="ng-contrast-button-hover-color">#444</td></tr>
+<tr><td><code>$contrast-button-active-background</code></td><td class="ng-contrast-button-active-background">rgba(245, 245, 245, 0.7)</td></tr>
+<tr><td><code>$contrast-button-active-color</code></td><td class="ng-contrast-button-active-color">#444</td></tr>
+<tr><td><code>$contrast-button-primary-background</code></td><td class="ng-contrast-button-primary-background">#fc0</td></tr>
+<tr><td><code>$contrast-button-primary-color</code></td><td class="ng-contrast-button-primary-color">#000</td></tr>
+<tr><td><code>$contrast-button-primary-hover-background</code></td><td class="ng-contrast-button-primary-hover-background">#FFE066</td></tr>
+<tr><td><code>$contrast-button-primary-hover-color</code></td><td class="ng-contrast-button-primary-hover-color">#000</td></tr>
+<tr><td><code>$contrast-button-primary-active-background</code></td><td class="ng-contrast-button-primary-active-background">#e6b800</td></tr>
+<tr><td><code>$contrast-button-primary-active-color</code></td><td class="ng-contrast-button-primary-active-color">#000</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-contrast-configuration-form">
+                                Form Configuration
+                                <a class="kss-title__permalink" href="#controls-contrast-configuration-form">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$contrast-form-border</code></td><td class="ng-contrast-form-border">rgba(245, 245, 245, 0.8)</td></tr>
+<tr><td><code>$contrast-form-background</code></td><td class="ng-contrast-form-background">rgba(245, 245, 245, 0.8)</td></tr>
+<tr><td><code>$contrast-form-color</code></td><td class="ng-contrast-form-color">#444</td></tr>
+<tr><td><code>$contrast-form-focus-border</code></td><td class="ng-contrast-form-focus-border">#F5F5F5</td></tr>
+<tr><td><code>$contrast-form-focus-background</code></td><td class="ng-contrast-form-focus-background">#F5F5F5</td></tr>
+<tr><td><code>$contrast-form-focus-color</code></td><td class="ng-contrast-form-focus-color">#444</td></tr>
+<tr><td><code>$contrast-form-placeholder-color</code></td><td class="ng-contrast-form-placeholder-color">rgba(68, 68, 68, 0.7)</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-contrast-configuration-icon">
+                                Icon Configuration
+                                <a class="kss-title__permalink" href="#controls-contrast-configuration-icon">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$contrast-icon-hover-color</code></td><td class="ng-contrast-icon-hover-color">rgba(245, 245, 245, 0.7)</td></tr>
+<tr><td><code>$contrast-icon-hover-hover-color</code></td><td class="ng-contrast-icon-hover-hover-color">#F5F5F5</td></tr>
+<tr><td><code>$contrast-icon-button-background</code></td><td class="ng-contrast-icon-button-background">#F5F5F5</td></tr>
+<tr><td><code>$contrast-icon-button-color</code></td><td class="ng-contrast-icon-button-color">#444</td></tr>
+<tr><td><code>$contrast-icon-button-hover-background</code></td><td class="ng-contrast-icon-button-hover-background">rgba(245, 245, 245, 0.8)</td></tr>
+<tr><td><code>$contrast-icon-button-hover-color</code></td><td class="ng-contrast-icon-button-hover-color">#444</td></tr>
+<tr><td><code>$contrast-icon-button-active-background</code></td><td class="ng-contrast-icon-button-active-background">rgba(245, 245, 245, 0.7)</td></tr>
+<tr><td><code>$contrast-icon-button-active-color</code></td><td class="ng-contrast-icon-button-active-color">#444</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-contrast-configuration-list">
+                                List Configuration
+                                <a class="kss-title__permalink" href="#controls-contrast-configuration-list">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$contrast-list-line-border</code></td><td class="ng-contrast-list-line-border">rgba(245, 245, 245, 0.2)</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-contrast-configuration-nav-side">
+                                Nav Side Configuration
+                                <a class="kss-title__permalink" href="#controls-contrast-configuration-nav-side">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$contrast-nav-side-color</code></td><td class="ng-contrast-nav-side-color">#F5F5F5</td></tr>
+<tr><td><code>$contrast-nav-side-hover-background</code></td><td class="ng-contrast-nav-side-hover-background">rgba(245, 245, 245, 0.1)</td></tr>
+<tr><td><code>$contrast-nav-side-hover-color</code></td><td class="ng-contrast-nav-side-hover-color">#F5F5F5</td></tr>
+<tr><td><code>$contrast-nav-side-active-background</code></td><td class="ng-contrast-nav-side-active-background">#F5F5F5</td></tr>
+<tr><td><code>$contrast-nav-side-active-color</code></td><td class="ng-contrast-nav-side-active-color">#444</td></tr>
+<tr><td><code>$contrast-nav-side-header-color</code></td><td class="ng-contrast-nav-side-header-color">#F5F5F5</td></tr>
+<tr><td><code>$contrast-nav-side-divider-border</code></td><td class="ng-contrast-nav-side-divider-border">rgba(245, 245, 245, 0.2)</td></tr>
+<tr><td><code>$contrast-nav-side-nested-color</code></td><td class="ng-contrast-nav-side-nested-color">rgba(245, 245, 245, 0.7)</td></tr>
+<tr><td><code>$contrast-nav-side-nested-hover-color</code></td><td class="ng-contrast-nav-side-nested-hover-color">#F5F5F5</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-contrast-configuration-subnav">
+                                Sub Nav Configuration
+                                <a class="kss-title__permalink" href="#controls-contrast-configuration-subnav">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$contrast-subnav-color</code></td><td class="ng-contrast-subnav-color">rgba(245, 245, 245, 0.7)</td></tr>
+<tr><td><code>$contrast-subnav-hover-color</code></td><td class="ng-contrast-subnav-hover-color">#F5F5F5</td></tr>
+<tr><td><code>$contrast-subnav-hover-text-decoration</code></td><td class="ng-contrast-subnav-hover-text-decoration">none</td></tr>
+<tr><td><code>$contrast-subnav-active-color</code></td><td class="ng-contrast-subnav-active-color">#F5F5F5</td></tr>
+<tr><td><code>$contrast-subnav-line-border</code></td><td class="ng-contrast-subnav-line-border">rgba(245, 245, 245, 0.2)</td></tr>
+<tr><td><code>$contrast-subnav-pill-hover-background</code></td><td class="ng-contrast-subnav-pill-hover-background">rgba(245, 245, 245, 0.7)</td></tr>
+<tr><td><code>$contrast-subnav-pill-hover-color</code></td><td class="ng-contrast-subnav-pill-hover-color">#444</td></tr>
+<tr><td><code>$contrast-subnav-pill-active-background</code></td><td class="ng-contrast-subnav-pill-active-background">#F5F5F5</td></tr>
+<tr><td><code>$contrast-subnav-pill-active-color</code></td><td class="ng-contrast-subnav-pill-active-color">#444</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-contrast-configuration-tabs">
+                                Tabs Configuration
+                                <a class="kss-title__permalink" href="#controls-contrast-configuration-tabs">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$contrast-tab-border</code></td><td class="ng-contrast-tab-border">rgba(245, 245, 245, 0.2)</td></tr>
+<tr><td><code>$contrast-tab-color</code></td><td class="ng-contrast-tab-color">rgba(245, 245, 245, 0.7)</td></tr>
+<tr><td><code>$contrast-tab-hover-border</code></td><td class="ng-contrast-tab-hover-border">rgba(245, 245, 245, 0.7)</td></tr>
+<tr><td><code>$contrast-tab-hover-background</code></td><td class="ng-contrast-tab-hover-background">rgba(245, 245, 245, 0.7)</td></tr>
+<tr><td><code>$contrast-tab-hover-color</code></td><td class="ng-contrast-tab-hover-color">#444</td></tr>
+<tr><td><code>$contrast-tab-active-border</code></td><td class="ng-contrast-tab-active-border">rgba(245, 245, 245, 0.2)</td></tr>
+<tr><td><code>$contrast-tab-active-background</code></td><td class="ng-contrast-tab-active-background">#F5F5F5</td></tr>
+<tr><td><code>$contrast-tab-active-color</code></td><td class="ng-contrast-tab-active-color">#444</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+ <!-- ifDepth 2 -->
+
+                            <div class="ui header" id="controls-contrast-configuration-text">
+                                Text Configuration
+                                <a class="kss-title__permalink" href="#controls-contrast-configuration-text">
+
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+
+                                </a>
+                            </div>
+
+
+                        
+                            <table class="settings">
+<tr><td><code>$contrast-text-muted-color</code></td><td class="ng-contrast-text-muted-color">rgba(245, 245, 245, 0.6)</td></tr>
+<tr><td><code>$contrast-text-primary-color</code></td><td class="ng-contrast-text-primary-color">#2d7091</td></tr>
+</table>
+                        
+
+
+
+ <!-- ifDepth 1 -->
+
+                            <div class="ui dividing header" id="controls-contrast-usage">
+                                Usage
+                                <a class="kss-title__permalink" href="#controls-contrast-usage">
+                                    <img src="public/link.svg" height="12" width="12" alt="permalink" title="permalink" />
+                                </a>
+                            </div>
+                         <!-- ifDepth 2 -->
+
+
+
+                        
+                            <p>To apply this component, just add the <code>.ng-contrast</code> class to a container or the
+element whose color you would like to adjust. Text, Buttons, the nav side from
+the Nav component, the subnav line and subnav pill from the Subnav component,
+Icons, default forms from the Form component as well as the list line from the
+List component will automatically change their appearence.</p>
+<p>This comes in really handy when placing content inside differently colored blocks
+from the Block component or on top of images.</p>
+
+                        
+
+                        <div class="example">
+                            <div class="html ui top attached segment">
+                                <div class="ui top attached label">Example <img data-content="Copy code" class="copy-icon" src="public/copy.svg" height="12" width="12" alt="copy" /></div> <!-- ui top attached label -->
+                                <div class="example-wrapper attached"><div class="ng-block ng-block-secondary ng-contrast">
+    <div class="ng-container">
+        <div class="ng-grid ng-grid-match" data-ng-grid-margin="">
+            <div class="ng-width-medium-1-3 ng-row-first">
+                <div class="ng-panel">
+                    <h3>Text</h3>
+                    <p>Lorem ipsum <a href="#">dolor sit</a> amet, consectetur adipisicing elit.</p>
+                    <h3>Form</h3>
+                    <form class="ng-form">
+                        <div class="ng-form-row">
+                            <input type="text" placeholder=":focus">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="ng-width-medium-1-3">
+                <div class="ng-panel">
+                    <h3>Button</h3>
+                    <p><button class="ng-button">Button</button> <button class="ng-button ng-button-primary">Button</button></p>
+                    <h3>Icon</h3>
+                    <p>
+                        <a href="#" class="ng-icon-hover ng-icon-medium ng-icon-github"></a>
+                        <a href="#" class="ng-icon-hover ng-icon-medium ng-icon-twitter"></a>
+                        <a href="#" class="ng-icon-button ng-icon-dribbble"></a>
+                        <a href="#" class="ng-icon-button ng-icon-html5"></a>
+                    </p>
+                </div>
+            </div>
+            <div class="ng-width-medium-1-3">
+                <div class="ng-panel">
+                    <h3>Subnav</h3>
+                    <ul class="ng-subnav ng-subnav-pill">
+                        <li class="ng-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="ng-disabled"><a href="#">Disabled</a></li>
+                    </ul>
+                    <ul class="ng-nav ng-nav-side">
+                        <li class="ng-nav-header">Nav Side</li>
+                        <li class="ng-nav-divider"></li>
+                        <li class="ng-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+                            </div>
+                            <div class="ui instructive bottom attached segment">
+                                <pre><code class="code html">&lt;div class=&quot;ng-block ng-block-secondary ng-contrast&quot;&gt;
+    &lt;div class=&quot;ng-container&quot;&gt;
+        &lt;div class=&quot;ng-grid ng-grid-match&quot; data-ng-grid-margin=&quot;&quot;&gt;
+            &lt;div class=&quot;ng-width-medium-1-3 ng-row-first&quot;&gt;
+                &lt;div class=&quot;ng-panel&quot;&gt;
+                    &lt;h3&gt;Text&lt;/h3&gt;
+                    &lt;p&gt;Lorem ipsum &lt;a href=&quot;#&quot;&gt;dolor sit&lt;/a&gt; amet, consectetur adipisicing elit.&lt;/p&gt;
+                    &lt;h3&gt;Form&lt;/h3&gt;
+                    &lt;form class=&quot;ng-form&quot;&gt;
+                        &lt;div class=&quot;ng-form-row&quot;&gt;
+                            &lt;input type=&quot;text&quot; placeholder=&quot;:focus&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ng-width-medium-1-3&quot;&gt;
+                &lt;div class=&quot;ng-panel&quot;&gt;
+                    &lt;h3&gt;Button&lt;/h3&gt;
+                    &lt;p&gt;&lt;button class=&quot;ng-button&quot;&gt;Button&lt;/button&gt; &lt;button class=&quot;ng-button ng-button-primary&quot;&gt;Button&lt;/button&gt;&lt;/p&gt;
+                    &lt;h3&gt;Icon&lt;/h3&gt;
+                    &lt;p&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;ng-icon-hover ng-icon-medium ng-icon-github&quot;&gt;&lt;/a&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;ng-icon-hover ng-icon-medium ng-icon-twitter&quot;&gt;&lt;/a&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;ng-icon-button ng-icon-dribbble&quot;&gt;&lt;/a&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;ng-icon-button ng-icon-html5&quot;&gt;&lt;/a&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;ng-width-medium-1-3&quot;&gt;
+                &lt;div class=&quot;ng-panel&quot;&gt;
+                    &lt;h3&gt;Subnav&lt;/h3&gt;
+                    &lt;ul class=&quot;ng-subnav ng-subnav-pill&quot;&gt;
+                        &lt;li class=&quot;ng-active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Active&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;ng-disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;Disabled&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class=&quot;ng-nav ng-nav-side&quot;&gt;
+                        &lt;li class=&quot;ng-nav-header&quot;&gt;Nav Side&lt;/li&gt;
+                        &lt;li class=&quot;ng-nav-divider&quot;&gt;&lt;/li&gt;
+                        &lt;li class=&quot;ng-active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Active&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+
+                    </div> <!-- main ui intro container" -->
+            </article>
+        </div>
+        <footer id="footer" class="kss-footer">
+        <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/highlight.pack.js"></script>
+    <script src="js/ngkit.js"></script>
+    <script src="public/docs.js"></script>
+  </body>
+</html>
