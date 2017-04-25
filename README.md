@@ -24,7 +24,7 @@ $ bower install git@github.com:natgeosociety/ngkit-assets.git#X-X -S
 ```
 You can use fuzzy tags (e.g. `2.x`, `0.2.x`) or a specific version (e.g. `0.2.0`).
 
-## bower include stracture
+## bower include structure
 
 ``` json
 {
