@@ -1,11 +1,11 @@
 # NGKIT ASSETS [![NPM version](https://badge.fury.io/js/education.svg)](https://npmjs.org/package/education) [![Build Status](https://travis-ci.org/NGFieldScope/education.svg?branch=master)](https://travis-ci.org/NGFieldScope/education)
 
-> ngkit-assets web site
+
 
 ###  project dependencies
 This Project has dependencies, that are included with the installation;
 
-
+Markup: 
 * [icon-society](https://github.com/natgeosociety/icon-society/) custom icons
 * [ngkit](https://github.com/natgeosociety/ngkit) modified uikit for NG
 * [ngkit](https://github.com/natgeosociety/ngkit) global data for NG projects such as logos, headers and footers.
@@ -80,7 +80,7 @@ TBD
 
 <sub>Proprietary © [Nolawi Petros](https://github.com/natgeosociety/ngkit-assets)</sub>
 
-<sub><sub>If you have questions, please email Corey `coreyoordt@gmail.com` OR Nolawi `nolawi.petros@gmail.com.`</sub><sub>
+<sub>If you have questions, please email Corey `coreyoordt@gmail.com` OR Nolawi `nolawi.petros@gmail.com.`</sub>
 
 
 
