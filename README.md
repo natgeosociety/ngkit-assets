@@ -1,4 +1,4 @@
-# education [![NPM version](https://badge.fury.io/js/education.svg)](https://npmjs.org/package/education) [![Build Status](https://travis-ci.org/NGFieldScope/education.svg?branch=master)](https://travis-ci.org/NGFieldScope/education)
+# NGKIT ASSETS [![NPM version](https://badge.fury.io/js/education.svg)](https://npmjs.org/package/education) [![Build Status](https://travis-ci.org/NGFieldScope/education.svg?branch=master)](https://travis-ci.org/NGFieldScope/education)
 
 > ngkit-assets web site
 
@@ -6,10 +6,10 @@
 This Project has dependencies, that are included with the installation;
 
 
-[icon-society](https://github.com/natgeosociety/icon-society/) custom icons
-[ngkit](https://github.com/natgeosociety/ngkit) modified uikit for NG
-[ngkit](https://github.com/natgeosociety/ngkit) global data for NG projects such as logos, headers and footers.
-[jquery]() 2.0 or later included for sprite building - we can remove if conflict
+* [icon-society](https://github.com/natgeosociety/icon-society/) custom icons
+* [ngkit](https://github.com/natgeosociety/ngkit) modified uikit for NG
+* [ngkit](https://github.com/natgeosociety/ngkit) global data for NG projects such as logos, headers and footers.
+* [jquery]() 2.0 or later included for sprite building - we can remove if conflict
 
 
 ### Installing
