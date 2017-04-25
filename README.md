@@ -2,7 +2,7 @@
 
 > ngkit-assets web site
 
-###project dependencies
+###  project dependencies
 This Project has dependencies, that are included with the installation;
 
 
