@@ -539,6 +539,9 @@ b, strong {
     border-color:darken( $theme-primary-background, 10% ) ;
     color: $base-pre-background;
   }
+  a.ng-button:hover {
+    border-color: #444;
+  }
 }
 
 

@@ -1,0 +1,83 @@
+.ngg-uber-header-top {
+    background-color: #000;
+    height: 44px;
+    padding: 0 30px;
+}
+.ngg-uber-header-top .ng-icon {
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+}
+.ngg-uber-header-top .ng-icon svg {
+    margin-top: 2px;
+}
+.ngg-uber-header-top .ng-icon.active {
+    color: rgb(255, 204, 0);
+}
+.ngg-uber-header-trigger {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    color: #FFF;
+    height: 44px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2.2px;
+    outline: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.ngg-uber-header-trigger.active {
+    border-bottom: 2px solid rgb(255, 204, 0);
+}
+.ngg-uber-header h5 {
+    color: rgb(255, 204, 0);
+    font-family: "HCo Verlag", "CenturyGothic", "AppleGothic", "Gill Sans", "Gill Sans MT", "sans-serif";
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.ngg-uber-header-overlay {
+    background-color: rgb(34, 34, 34);
+    display: none;
+    padding-bottom: 80px;
+    bottom: 0;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.ngg-uber-header-overlay-section {
+    border-left: 1px solid rgb(255, 204, 0);
+    float: left;
+    margin: 40px 30px 0 55px;
+    padding-left: 30px;
+}
+.ngg-uber-header-overlay-section ul {
+    padding-left: 0;
+}
+.ngg-uber-header-overlay-section ul li {
+    float: left;
+    line-height: 1.125em;
+    list-style: none;
+}
+.ngg-uber-header-overlay-section ul li:not(:first-child) {
+    margin-left: 25px;
+}
+.ngg-uber-header-overlay a {
+    color: #ccc;
+    border-bottom: 0;
+    font-family: "HCo Verlag", "CenturyGothic", "AppleGothic", "Gill Sans", "Gill Sans MT", "sans-serif";
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+.ngg-uber-header-overlay a:hover {
+    color: #FFCC00;
+}
+@media (max-width: 767px) {
+    .ngg-uber-header-overlay-section ul li {
+        margin-left: 0 !important;
+        padding-right: 20px;
+    }
+}

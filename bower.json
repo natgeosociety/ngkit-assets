@@ -1,0 +1,23 @@
+{
+  "name": "education",
+  "version": "1.0.0",
+  "homepage": "https://github.com/natgeosociety/natgeoed",
+  "authors": [
+    "Nolawi Petros <nolawi.petros@gmail.com>"
+  ],
+  "description": "Education website",
+  "license": "Proprietary",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "icon-society": "git@github.com:natgeosociety/icon-society.git#0.1.6",
+    "jquery": "2.2.1",
+    "ngkit": "git@github.com:natgeosociety/ngkit.git#e8c2b0e",
+    "ngs-globaldata": "git@github.com:natgeosociety/globaldata.git#0.8"
+  }
+}
