@@ -8,7 +8,7 @@ This Project has dependencies, that are included with the installation;
 Markup: 
 * [icon-society](https://github.com/natgeosociety/icon-society/) custom icons
 * [ngkit](https://github.com/natgeosociety/ngkit) modified uikit for NG
-* [ngkit](https://github.com/natgeosociety/ngkit) global data for NG projects such as logos, headers and footers.
+* [globaldata](https://github.com/natgeosociety/globaldata) global data for NG projects such as logos, headers and footers.
 * [jquery]() 2.0 or later included for sprite building - we can remove if conflict
 
 
