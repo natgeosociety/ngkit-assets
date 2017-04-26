@@ -46,7 +46,7 @@ You can use fuzzy tags (e.g. `2.x`, `0.2.x`) or a specific version (e.g. `0.2.0`
     ```
   - for `.scss`  make certain that the `/ngkit-assets/ngkit/src/themes/dotorg/ngkit.scss` is referenced in you main `.scss` file
      ```scss
-         @import "../path/to/icon-society"
+         @import "..ngkit-assets/ngkit/src/themes/dotorg/ngkit.scss"
 
      ```
 2. **Including js**
@@ -56,11 +56,6 @@ You can use fuzzy tags (e.g. `2.x`, `0.2.x`) or a specific version (e.g. `0.2.0`
         <link rel="stylesheet" href="PATH/ngkit/dist/js/ngkit.min.js">
     </head>
     ```
-  - for `.scss`  make certain that the `ngkit/dist/js/ngkit.min.js.js` is referenced in you main `.scss` file
-     ```scss
-         @import "../path/to/icon-society"
-
-     ```
 
 3. **The Old way**
 
