@@ -5875,6 +5875,36 @@ html:not(.ng-touch) .ng-nav-offcanvas ul a:hover {
 .ng-pagination-right {
   text-align: right; }
 
+.ng-pagination > .ng-disabled > span {
+  background-color: transparent;
+  color: #999999;
+  border: none;
+  text-shadow: none; }
+
+.ng-pagination > li > a:hover, .ng-pagination > li > a:focus {
+  background-color: transparent; }
+
+.ng-pagination > li > a,
+.ng-pagination > li > span {
+  background: transparent;
+  color: #000000;
+  border: none;
+  border-right: 1px solid #999999;
+  border-radius: 0;
+  text-shadow: none; }
+
+.ng-pagination > .ng-active > span {
+  background: transparent;
+  color: #666666;
+  border: none;
+  border-right: 1px solid #999999;
+  text-shadow: none; }
+
+/****
+.ng-pagination > li > a:last-of-type {
+    border-right:none;
+}
+****/
 .ng-tab-border {
   background: #ddd;
   color: #fff; }
@@ -14425,7 +14455,8 @@ input[type="search"] {
   margin-bottom: 0 !important; }
 
 .grid .ng-search-grid-icon i,
-.list .ng-search-list-icon i {
+.list .ng-search-list-icon i,
+.globe .ng-search-globe-icon i {
   color: #999999; }
 
 /* Search Index Tile Results */

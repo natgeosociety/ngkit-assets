@@ -18,6 +18,7 @@
     "icon-society": "git@github.com:natgeosociety/icon-society.git#0.1.6",
     "jquery": "2.2.1",
     "ngkit": "git@github.com:natgeosociety/ngkit.git#e8c2b0e",
-    "ngs-globaldata": "git@github.com:natgeosociety/globaldata.git#0.8"
+    "ngs-globaldata": "git@github.com:natgeosociety/globaldata.git#0.8",
+    "swag" : "https://github.com/elving/swag.git"
   }
 }

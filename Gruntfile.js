@@ -54,7 +54,7 @@ module.exports = function(grunt) {
         kss: {
             options: {
                 template: 'ngkit/styleguide-template',
-                helpers: '<%= meta.prefix %>vendor/helpers/',
+                helpers: 'bower_components/swag/lib/',
                 css: 'https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,600i',
                 mask: 'ngkit.css'
                 // config: 'ngkit/styleguide-template/template_config.js'
