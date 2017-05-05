@@ -51,18 +51,7 @@ module.exports = function(grunt) {
                 }
             }
         },
-        kss: {
-            options: {
-                template: 'ngkit/styleguide-template',
-                helpers: 'bower_components/swag/lib/',
-                css: 'https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,600i',
-                mask: 'ngkit.css'
-                // config: 'ngkit/styleguide-template/template_config.js'
-            },
-            dist: {
-                files: {'ngkit/docs': 'ngkit/dist/css/'}
-            }
-        },
+   
         concat: {
             dist: {
                 options: {
@@ -246,7 +235,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-sass");
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-kss-node');
+
     grunt.loadNpmTasks("grunt-contrib-concat");
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks("grunt-contrib-uglify");
@@ -258,9 +247,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-concurrent');
 
     // Register grunt tasks
-    grunt.registerTask("build", ["clean", "jshint", "svgmin", "dr-svg-sprites", "copy:global", "sass:dev", "concat", "copy:jslibs", "bower-install-simple", "copy:styleguide", "kss" ]);
-    grunt.registerTask("default", ["clean", "jshint", "svgmin", "dr-svg-sprites", "concat", "copy:jslibs", "bower-install-simple", "copy:global", "uglify:distmin", "sass:dev", "sass:dist", "kss", "copy:styleguide"]);
-    grunt.registerTask("rebuildstyleguide", ["clean", "jshint", "sass:dev", "concat", "uglify:distmin", "sass:dist", "copy:styleguide", "kss" ]);
+    grunt.registerTask("build", ["clean", "jshint", "svgmin", "dr-svg-sprites", "copy:global", "sass:dev", "concat", "copy:jslibs", "bower-install-simple", "copy:styleguide" ]);
+    grunt.registerTask("default", ["clean", "jshint", "svgmin", "dr-svg-sprites", "concat", "copy:jslibs", "bower-install-simple", "copy:global", "uglify:distmin", "sass:dev", "sass:dist",  "copy:styleguide"]);
+    grunt.registerTask("rebuildstyleguide", ["clean", "jshint", "sass:dev", "concat", "uglify:distmin", "sass:dist", "copy:styleguide", ]);
     grunt.registerTask("watchsass", ["watch:sass"]);
     grunt.registerTask("fast", ["clean", "jshint", "concat", "copy:jslibs",  "copy:global",  "sass:dev", "sass:dist"]);
 };
